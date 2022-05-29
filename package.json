@@ -13,9 +13,12 @@
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
+    "@mattjennings/react-modal": "^1.0.3",
+    "@mattjennings/react-modal-stack": "^1.0.4",
     "@mdx-js/loader": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "@next/mdx": "^12.1.0",
+    "framer-motion": "2.0.0",
     "next": "^12.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
