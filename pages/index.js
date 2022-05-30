@@ -1,6 +1,7 @@
 import { Box, Button, Container, Flex, Grid, Heading, Image } from 'theme-ui'
 import { useState, useEffect, useRef } from 'react'
 import styles from './styles.module.css'
+import Parallax from '../components/Parallax';
 
 import {
   Modal,
@@ -33,7 +34,9 @@ function Letter(props) {
               Hello!
             </Text>
           </ModalTitle>
-          <ModalContent>
+          <ModalContent style={{
+            overflow: 'auto'
+          }}>
             <Text>This is a letter.</Text>
           </ModalContent>
           <Button
@@ -120,6 +123,11 @@ export default function Index(props) {
   } */
   return (
     <>
+    <Parallax background={true}></Parallax>
+    <div style={{
+      position: 'relative',
+      zIndex: '100'
+    }}>
       <Letter open={letter} onClose={() => setLetter(false)} />
       <Image
         src="/dinosaur-waving.png"
@@ -128,6 +136,8 @@ export default function Index(props) {
           bottom: -120,
           height: '240px',
           right: -45,
+          zIndex: '200',
+          cursor: 'pointer',
           transition: 'ease-in-out 0.3s',
           display: letter ? 'none' : 'block',
           '&:hover': {
@@ -136,7 +146,7 @@ export default function Index(props) {
         }}
         onClick={() => setLetter(true)}
       />
-      <Flex>
+      <Flex style={{ background: 'white' }}>
         <Heading
           p={3}
           sx={{ flexGrow: 1, display: 'flex', alignItems: 'center', gap: 2 }}
@@ -185,7 +195,7 @@ export default function Index(props) {
           in San Francisco from June 14th to June 17th.
         </Heading>
         </Box></Box>
-        <Box
+        {/* <Box
           as="video"
           autoPlay
           muted
@@ -204,9 +214,10 @@ export default function Index(props) {
           }}
         >
           <source src="https://stream.mux.com/dTJ01wpc7pKN84IZXzP02LipW6t00tr01U00sQJX00wuGSriE" />
-        </Box>
+        </Box> */}
       </Box>
-      <Container my={4}>
+      <div style={{ background: 'white' }}>
+      <Container mb={4} pt={4}>
         <Grid columns={2}>
           <Box>
             <Heading mb={3} as="h1">
@@ -436,9 +447,11 @@ export default function Index(props) {
           </Box>
         </Container>
       </Box>
+      </div>
       <Box bg="red" color="white" py={3}>
         <Container sx={{ textAlign: 'center' }}>Hack Club, 2022.</Container>
       </Box>
+      </div>
       <style>
         {`
           @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
