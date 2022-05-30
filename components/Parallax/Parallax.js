@@ -36,6 +36,7 @@ export default function Parallax({ children, background }) {
                 height: '100%',
                 overflow: 'hidden',
                 background: 'url("/ParallaxAssets/grain.svg")',
+                opacity: 0.5,
                 backgroundRepeat: 'repeat',
             }}>
             </Page>
