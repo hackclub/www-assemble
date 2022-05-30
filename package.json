@@ -13,6 +13,7 @@
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
+    "@hackclub/icons": "^0.0.9",
     "@mattjennings/react-modal": "^1.0.3",
     "@mattjennings/react-modal-stack": "^1.0.4",
     "@mdx-js/loader": "^1.6.22",

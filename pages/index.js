@@ -1,6 +1,6 @@
 import { Box, Button, Container, Flex, Grid, Heading, Image } from 'theme-ui'
 import { useState, useEffect, useRef } from 'react'
-import styles from './styles.module.css'
+import Icon from '@hackclub/icons'
 import Parallax from '../components/Parallax'
 import Link from 'next/link'
 
@@ -211,17 +211,18 @@ export default function Index(props) {
             FAQs
           </Heading>
           <Link href="/register">
-          <Heading
-            bg="red"
-            sx={{
-              display: 'flex',
-              alignItems: 'center',
-              color: 'white',
-              px: 3,
-            }}
-          >
-            Register
-          </Heading></Link>
+            <Heading
+              bg="red"
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                color: 'white',
+                px: 3,
+              }}
+            >
+              Register
+            </Heading>
+          </Link>
         </Flex>
         <Box
           px={3}
@@ -352,15 +353,176 @@ export default function Index(props) {
                   mollit anim id est laborum.
                 </Box>
               </Box>
+              <Box
+                sx={{
+                  p: 1,
+                  bg: 'sunken',
+                  color: 'black',
+                }}
+              >
+                <Box
+                  sx={{
+                    p: 3,
+                    display: 'flex',
+                  }}
+                >
+                  <Box>
+                    <Heading
+                      as="h3"
+                      mb={1}
+                      sx={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '4px',
+                        ml: '-2px',
+                      }}
+                    >
+                      <Icon glyph="rep" size={32} />
+                      Endless Fun
+                    </Heading>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.{' '}
+                  </Box>
+                </Box>
+              </Box>
+              <Box
+                sx={{
+                  p: 1,
+                  bg: 'sunken',
+                  color: 'black',
+                }}
+              >
+                <Box
+                  sx={{
+                    p: 3,
+                    display: 'flex',
+                  }}
+                >
+                  <Box>
+                    <Heading
+                      as="h3"
+                      mb={1}
+                      sx={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '4px',
+                        ml: '-2px',
+                      }}
+                    >
+                      <Icon glyph="food" size={32} />
+                      Fabulous Food
+                    </Heading>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.{' '}
+                  </Box>
+                </Box>
+              </Box>
+              <Box
+                sx={{
+                  p: 1,
+                  bg: 'sunken',
+                  color: 'black',
+                }}
+              >
+                <Box
+                  sx={{
+                    p: 3,
+                    display: 'flex',
+                  }}
+                >
+                  <Box>
+                    <Heading
+                      as="h3"
+                      mb={1}
+                      sx={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '4px',
+                        ml: '-2px',
+                      }}
+                    >
+                      <Icon glyph="welcome" size={32} />
+                      Everyone's Welcome
+                    </Heading>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.{' '}
+                  </Box>
+                </Box>
+              </Box>
+              <Box
+                sx={{
+                  p: 1,
+                  bg: 'sunken',
+                  color: 'black',
+                }}
+              >
+                <Box
+                  sx={{
+                    p: 3,
+                    display: 'flex',
+                    gap: '8px',
+                  }}
+                >
+                  <Box>
+                    <Heading
+                      as="h3"
+                      mb={1}
+                      sx={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '4px',
+                        ml: '-2px',
+                      }}
+                    >
+                      <Icon glyph="shirt-fill" size={32} />
+                      Goodies Galore
+                    </Heading>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.{' '}
+                  </Box>
+                </Box>
+              </Box>
             </Grid>
-            <Box>
-              "Features ~ Fun, Food, Everyone's Welcome, Goodies Galore" <br />
-              "Key Details ~ Time, Venue" <br />
-              "Register"
-            </Box>
           </Container>
+          <Box bg="red">
+            <Container py={4}>
+              <Heading
+                mb={3}
+                as="h1"
+                sx={{ textAlign: 'center', color: 'white' }}
+              >
+                The Rundown & Registration
+              </Heading>
+              <Grid>
+                <Box bg="white" p={3}>
+                  Date & Time: starts at 6:00pm on June 2nd and ends at 12pm on
+                  June 4th.
+                </Box>
+                <Box bg="white" p={3}>
+                  Venue: TBD
+                </Box>
+                <Box bg="white" p={3}>
+                  Travel Grants: TBD
+                </Box>
+                <Box bg="white" p={3}>
+                  Eligibility: TBD
+                </Box>
+                <Box
+                  bg="blue"
+                  p={3}
+                  sx={{ color: 'white', fontWeight: 800, textAlign: 'center', fontSize: 3 }}
+                >
+                  <u>Register</u>
+                </Box>
+              </Grid>
+            </Container>
+          </Box>
           <Box bg="green">
-            <Container mt={4} py={4}>
+            <Container py={4}>
               <Heading
                 mb={3}
                 as="h1"
