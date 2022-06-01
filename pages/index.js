@@ -304,14 +304,17 @@ export default function Index(props) {
                       p: 3,
                     }}
                   >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
+                    Hackathons have always been a special part of Hack Club and
+                    as we enter into the new normal, we want to reignite the
+                    spirit of hackathons and create a new generation of magical
+                    hackathons. That all starts with Assemble.
+                    <br />
+                    <br />
+                    Assemble embraces every word of the Hack Club Philosophy. We
+                    believe we're at our best when where making so we'll cut the
+                    BS and let you get straight into coding. But we also see
+                    making as a social and joyful process so don't expect to be
+                    bored!
                   </Box>
                 </Box>
               </Box>
@@ -343,14 +346,19 @@ export default function Index(props) {
                     p: 3,
                   }}
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
+                  You can expect the traditional Hack Club antics (but no
+                  surprises whatsoever 😉) and more. We may even see the return
+                  of the gorilla! Of course, we will have great food, awesome
+                  people and corgi-approved swag.
+                  <br /> <br />
+                  Assemble isn’t taking place in a vacuum, however. We’ll be
+                  hosted at Figma’s spectacular headquarters! It’s situated on
+                  Market St and is at the heart of SF. We’ll be running tours
+                  around San Francisco and collaborating with local tech
+                  companies to allow you to experience the city.
+                  <br /> <br />
+                  So, what’d you say? All are welcome at Assemble and we'd love
+                  to meet you!
                 </Box>
               </Box>
               <Box
@@ -380,9 +388,9 @@ export default function Index(props) {
                       <Icon glyph="rep" size={32} />
                       Endless Fun
                     </Heading>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.{' '}
+                    We guarantee you'll never want to sleep, the fun will
+                    out-weight the sleep deprivation even after 50 hours! What
+                    more can we say?
                   </Box>
                 </Box>
               </Box>
@@ -410,12 +418,11 @@ export default function Index(props) {
                         ml: '-2px',
                       }}
                     >
-                      <Icon glyph="food" size={32} />
-                      Fabulous Food
+                      <Icon glyph="admin" size={32} />
+                      Awesome People
                     </Heading>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.{' '}
+                    Expect CEOs & awesome programmers casually strolling around
+                    the venue to have a chat or to help with your hack.
                   </Box>
                 </Box>
               </Box>
@@ -446,9 +453,10 @@ export default function Index(props) {
                       <Icon glyph="welcome" size={32} />
                       Everyone's Welcome
                     </Heading>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.{' '}
+                    Hack Clubbers & non-Hack Clubbers are all invited. We'll
+                    also have resources and workshops for beginners. If you're
+                    curious, come along and give it a shot, we promise you'll
+                    have a good time!
                   </Box>
                 </Box>
               </Box>
@@ -480,9 +488,10 @@ export default function Index(props) {
                       <Icon glyph="shirt-fill" size={32} />
                       Goodies Galore
                     </Heading>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.{' '}
+                    When it comes to swag and prizes, you'll feel like a kid in
+                    the candy story. Of course, you'll be able to pick up a full
+                    collection of Hack Club's infamous stickers but we'll also
+                    have special swag and prizes!
                   </Box>
                 </Box>
               </Box>
@@ -499,24 +508,87 @@ export default function Index(props) {
               </Heading>
               <Grid>
                 <Box bg="white" p={3}>
-                  Date & Time: starts at 6:00pm on June 2nd and ends at 12pm on
-                  June 4th.
+                  <b>Date & Time:</b> starts at 6:00pm on July 29th and ends at
+                  12:00pm on June 31st.
+                </Box>
+                <Grid
+                  bg="white"
+                  p={3}
+                  sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}
+                >
+                  <Box>
+                    <b>Venue:</b> Figma HQ <br /> 760 Market St, San Francisco
+                    <br /> California 94102
+                    <Grid columns={2} mt={2}>
+                      <img
+                        src="https://www.officelovin.com/wp-content/uploads/2016/05/figma-san-francisco-office-8.jpg"
+                        height="200px"
+                        width="100%"
+                        style={{ objectFit: 'cover' }}
+                      />
+                      <img
+                        src="https://www.officelovin.com/wp-content/uploads/2016/05/figma-san-francisco-office-8.jpg"
+                        height="200px"
+                        width="100%"
+                        style={{ objectFit: 'cover' }}
+                      />
+                      <img
+                        src="https://www.officelovin.com/wp-content/uploads/2016/05/figma-san-francisco-office-8.jpg"
+                        height="200px"
+                        width="100%"
+                        style={{ objectFit: 'cover' }}
+                      />
+                      <img
+                        src="https://www.officelovin.com/wp-content/uploads/2016/05/figma-san-francisco-office-8.jpg"
+                        height="200px"
+                        width="100%"
+                        style={{ objectFit: 'cover' }}
+                      />
+                    </Grid>
+                  </Box>
+                  <Box>
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1516444326576!2d-122.40746738486592!3d37.786485779757264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807d45808df5%3A0x4d44fc8167718a61!2sFigma!5e0!3m2!1sen!2ssg!4v1654075144855!5m2!1sen!2ssg"
+                      height="100%"
+                      width="100%"
+                      style={{ border: '0' }}
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </Box>
+                </Grid>
+                <Box bg="white" p={3}>
+                  <b>Travel Stipends:</b> we're offering a limited number of
+                  $500 stipends to cover travel expenses. If you need support
+                  with your travel stipend, please indicate this on your
+                  registration form and we will consider you for a travel
+                  stipend.
                 </Box>
                 <Box bg="white" p={3}>
-                  Venue: TBD
-                </Box>
-                <Box bg="white" p={3}>
-                  Travel Grants: TBD
-                </Box>
-                <Box bg="white" p={3}>
-                  Eligibility: TBD
+                  <b>Eligibility:</b> all high-school & upper-middle-school aged
+                  students are welcome to come! You don't have to be a member of
+                  the Hack Club community or a Hack Club leader.
                 </Box>
                 <Box
                   bg="blue"
                   p={3}
-                  sx={{ color: 'white', fontWeight: 800, textAlign: 'center', fontSize: 3 }}
+                  sx={{
+                    color: 'white',
+                    fontWeight: 800,
+                    textAlign: 'center',
+                    fontSize: 3,
+                  }}
                 >
                   <u>Register</u>
+                  <Text
+                    sx={{
+                      transform: 'translateY(-3.5px)',
+                      display: 'inline-block',
+                    }}
+                  >
+                    <Icon glyph="external" size={16} />
+                  </Text>
                 </Box>
               </Grid>
             </Container>
@@ -574,20 +646,44 @@ export default function Index(props) {
                       >
                         ✈️ Traveling into SF
                       </Box>
-                      <Box bg="white" p={2} mt={'4px'} sx={{ height: '316px' }}>
-                        Pre-Hackathon San Francisco Exploration
+                      <Box bg="white" p={3} mt={'4px'} sx={{ height: '316px' }}>
+                        <b> Pre-Hackathon San Francisco Exploration</b> <br />
+                        As hackers trickle into the city, we'll offer early
+                        arrivers activities to do within the city. Some of the
+                        activities on offer will be neighborhood tours, office
+                        visits and hikes. These are all optional.
                       </Box>
-                      <Box bg="white" p={2} mt={'4px'} sx={{ height: '36px' }}>
-                        Check-in Opens @ GitHub HQ
+                      <Box
+                        bg="white"
+                        py={2}
+                        px={3}
+                        mt={'4px'}
+                        sx={{ height: '36px', fontWeight: 800 }}
+                      >
+                        Check-in Opens @ Figma HQ
                       </Box>
-                      <Box bg="white" p={2} mt={'4px'} sx={{ height: '36px' }}>
+                      <Box
+                        bg="white"
+                        py={2}
+                        px={3}
+                        mt={'4px'}
+                        sx={{ height: '36px', fontWeight: 800 }}
+                      >
                         Opening Ceremony
                       </Box>
-                      <Box bg="white" p={2} mt={'4px'} sx={{ height: '36px' }}>
+                      <Box
+                        bg="white"
+                        py={2}
+                        px={3}
+                        mt={'4px'}
+                        sx={{ height: '36px', fontWeight: 800 }}
+                      >
                         Dinner
                       </Box>
-                      <Box bg="white" p={2} mt={'4px'} sx={{ height: '156px' }}>
-                        Evening Activities & Workshops
+                      <Box bg="white" p={3} mt={'4px'} sx={{ height: '156px' }}>
+                        <b>Evening Activities & Workshops</b> <br />
+                        We’ll have a mixture of starter workshops and fun
+                        activities to kick off the evening.
                       </Box>
                     </Box>
                   </Box>
@@ -618,16 +714,25 @@ export default function Index(props) {
                         width: '100%',
                       }}
                     >
-                      <Box bg="white" p={2} mt={'2px'} sx={{ height: '276px' }}>
-                        Late Night Hacking / Down Time / Midnight Activities
+                      <Box bg="white" p={3} mt={'2px'} sx={{ height: '276px' }}>
+                        <b>
+                          Late Night Hacking / Down Time / Midnight Activities
+                        </b>
+                        <br />
+                        As the night winds down, we'll provide spaces for quiet
+                        hacking and rest. For hackers still ful of energy, we'll
+                        have all sorts of midnight activities from a murder mystery
+                        to a Kahoot.
                       </Box>
-                      <Box bg="white" p={2} mt={'4px'} sx={{ height: '76px' }}>
+                      <Box bg="white" py={2}
+                        px={3} mt={'4px'} sx={{ height: '76px', fontWeight: 800 }}>
                         Breakfast
                       </Box>
-                      <Box bg="white" p={2} mt={'4px'} sx={{ height: '356px' }}>
+                      <Box bg="white" p={3} mt={'4px'} sx={{ height: '356px' }}>
                         Hacking, Workshops & Activities
                       </Box>
-                      <Box bg="white" p={2} mt={'4px'} sx={{ height: '36px' }}>
+                      <Box bg="white" py={2}
+                        px={3} mt={'4px'} sx={{ height: '36px', fontWeight: 800 }}>
                         Dinner
                       </Box>
                       <Box bg="white" p={2} mt={'4px'} sx={{ height: '196px' }}>
