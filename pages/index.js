@@ -8,7 +8,6 @@ import {
   Modal,
   ModalTitle,
   ModalContent,
-  ModalFooter,
 } from '@mattjennings/react-modal'
 import { Text } from 'theme-ui'
 
@@ -78,6 +77,7 @@ function Letter(props) {
 }
 
 export default function Index(props) {
+  /*
   const [emoji, setEmoji] = useState('👾')
   const [stage, setStage] = useState(0)
   const [letter, setLetter] = useState(false)
@@ -156,7 +156,7 @@ export default function Index(props) {
           zIndex: '100',
         }}
       >
-        <Letter open={letter} onClose={() => setLetter(false)} />
+        {/*<Letter open={letter} onClose={() => setLetter(false)} />*/}
         <Image
           src="/dinosaur-waving.png"
           sx={{
@@ -167,7 +167,7 @@ export default function Index(props) {
             zIndex: '200',
             cursor: 'pointer',
             transition: 'ease-in-out 0.3s',
-            display: letter ? 'none' : 'block',
+            // display: letter ? 'none' : 'block',
             '&:hover': {
               bottom: '-80px',
             },
