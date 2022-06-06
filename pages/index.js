@@ -180,7 +180,7 @@ export default function Index(props) {
               bottom: '-80px',
             },
           }}
-          onClick={() => setLetter(true)}
+          onClick={() => window.open('mailto:assemble@hackclub.com','_blank')}
         />
         <Flex style={{ background: 'white' }}>
           <Heading
@@ -727,7 +727,8 @@ export default function Index(props) {
                         <br />
                         As the night winds down, we'll provide spaces for quiet
                         hacking and rest. For hackers still ful; of energy,
-                        we'll have all sorts of midnight activities.
+                        we'll have all sorts of midnight activities (including a murder mystery
+                        and a Kahoot).
                       </Box>
                       <Box
                         bg="white"
