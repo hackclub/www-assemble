@@ -721,8 +721,8 @@ export default function Index(props) {
                         <br />
                         As the night winds down, we'll provide spaces for quiet
                         hacking and rest. For hackers still ful of energy, we'll
-                        have all sorts of midnight activities from a murder mystery
-                        to a Kahoot.
+                        have all sorts of midnight activities (including a murder mystery
+                        and a Kahoot).
                       </Box>
                       <Box bg="white" py={2}
                         px={3} mt={'4px'} sx={{ height: '76px', fontWeight: 800 }}>
