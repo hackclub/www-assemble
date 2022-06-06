@@ -172,7 +172,7 @@ export default function Index(props) {
               bottom: '-80px',
             },
           }}
-          onClick={() => setLetter(true)}
+          onClick={() => window.open('mailto:assemble@hackclub.com','_blank')}
         />
         <Flex style={{ background: 'white' }}>
           <Heading
