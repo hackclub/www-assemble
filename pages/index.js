@@ -1,16 +1,9 @@
-import {
-  Box,
-  Button,
-  Container,
-  Flex,
-  Grid,
-  Heading,
-  Image,
-  Link,
-} from 'theme-ui'
+import { Box, Button, Container, Flex, Grid, Heading, Image } from 'theme-ui'
 import { useState, useEffect, useRef } from 'react'
 import Icon from '@hackclub/icons'
 import Parallax from '../components/Parallax'
+import Link from 'next/link'
+
 import {
   Modal,
   ModalTitle,
@@ -18,7 +11,6 @@ import {
   ModalFooter,
 } from '@mattjennings/react-modal'
 import { Text } from 'theme-ui'
-import NextLink from 'next/link'
 
 function Letter(props) {
   return (
@@ -180,7 +172,7 @@ export default function Index(props) {
               bottom: '-80px',
             },
           }}
-          onClick={() => setLetter(true)}
+          onClick={() => window.open('mailto:assemble@hackclub.com','_blank')}
         />
         <Flex style={{ background: 'white' }}>
           <Heading
@@ -218,7 +210,7 @@ export default function Index(props) {
           >
             FAQs
           </Heading>
-          <NextLink href="/register">
+          <Link href="/register">
             <Heading
               bg="red"
               sx={{
@@ -230,7 +222,7 @@ export default function Index(props) {
             >
               Register
             </Heading>
-          </NextLink>
+          </Link>
         </Flex>
         <Box
           px={3}
@@ -328,13 +320,15 @@ export default function Index(props) {
               </Box>
               <Box
                 sx={{
-                  backgroundImage: 'url(/flagship.jpg)',
+                  backgroundImage:
+                    'url(https://pbs.twimg.com/media/E85jl4uUcAM7O63?format=jpg&name=large)',
                   backgroundSize: 'cover',
                 }}
               ></Box>
               <Box
                 sx={{
-                  backgroundImage: 'url(/flagship2.jpg)',
+                  backgroundImage:
+                    'url(https://pbs.twimg.com/media/E85jl4uUcAM7O63?format=jpg&name=large)',
                   backgroundSize: 'cover',
                 }}
               ></Box>
@@ -726,39 +720,23 @@ export default function Index(props) {
                         </b>
                         <br />
                         As the night winds down, we'll provide spaces for quiet
-                        hacking and rest. For hackers still ful; of energy,
-                        we'll have all sorts of midnight activities.
+                        hacking and rest. For hackers still ful of energy, we'll
+                        have all sorts of midnight activities (including a murder mystery
+                        and a Kahoot).
                       </Box>
-                      <Box
-                        bg="white"
-                        py={2}
-                        px={3}
-                        mt={'4px'}
-                        sx={{ height: '76px', fontWeight: 800 }}
-                      >
+                      <Box bg="white" py={2}
+                        px={3} mt={'4px'} sx={{ height: '76px', fontWeight: 800 }}>
                         Breakfast
                       </Box>
                       <Box bg="white" p={3} mt={'4px'} sx={{ height: '356px' }}>
-                        <b>Hacking, Workshops & Activities</b> <br />
-                        After a hearty breakfast, we'll hit the road running
-                        with more hacking and exciting activities. We'll also
-                        have lunch in this time!
+                        Hacking, Workshops & Activities
                       </Box>
-                      <Box
-                        bg="white"
-                        py={2}
-                        px={3}
-                        mt={'4px'}
-                        sx={{ height: '36px', fontWeight: 800 }}
-                      >
+                      <Box bg="white" py={2}
+                        px={3} mt={'4px'} sx={{ height: '36px', fontWeight: 800 }}>
                         Dinner
                       </Box>
-                      <Box bg="white" p={3} mt={'4px'} sx={{ height: '196px' }}>
-                        <b>Evening Activities</b>
-                        <br />
-                        Just before everyone starts rushing their projects,
-                        we'll let some energy out with some optional social
-                        activities.
+                      <Box bg="white" p={2} mt={'4px'} sx={{ height: '196px' }}>
+                        Evening Activities & Workshops
                       </Box>
                     </Box>
                   </Box>
@@ -789,58 +767,23 @@ export default function Index(props) {
                         width: '100%',
                       }}
                     >
-                      <Box bg="white" p={3} mt={'2px'} sx={{ height: '276px' }}>
-                        <b>Last Minute Hacking</b>
-                        <br />
-                        Code. Code. Code! Expect everybody to be putting the
-                        finishing touches on their project or if they're lucky
-                        getting some sleep.
+                      <Box bg="white" p={2} mt={'2px'} sx={{ height: '276px' }}>
+                        Last Minute Hacking
                       </Box>
-                      <Box
-                        bg="white"
-                        p={2}
-                        px={3}
-                        mt={'4px'}
-                        sx={{ height: '36px', fontWeight: 800 }}
-                      >
+                      <Box bg="white" p={2} mt={'4px'} sx={{ height: '76px' }}>
                         Breakfast
                       </Box>
-                      <Box
-                        bg="white"
-                        p={3}
-                        py={2}
-                        mt={'4px'}
-                        sx={{ height: '116px' }}
-                      >
-                        <b>Project Showcase</b> <br />
-                        We'll have an exhibition where hackers can wander around
-                        to check out / judge each others projects.
+                      <Box bg="white" p={2} mt={'4px'} sx={{ height: '76px' }}>
+                        Project Showcase
                       </Box>
-                      <Box
-                        bg="white"
-                        p={2}
-                        px={3}
-                        mt={'4px'}
-                        sx={{ height: '36px', fontWeight: 800 }}
-                      >
+                      <Box bg="white" p={2} mt={'4px'} sx={{ height: '36px' }}>
                         Closing Ceremony
                       </Box>
-                      <Box
-                        bg="white"
-                        p={2}
-                        px={3}
-                        mt={'4px'}
-                        sx={{ height: '36px', fontWeight: 800 }}
-                      >
-                        Farewell Lunch
+                      <Box bg="white" p={2} mt={'4px'} sx={{ height: '36px' }}>
+                        Lunch
                       </Box>
-                      <Box bg="white" p={3} mt={'4px'} sx={{ height: '316px' }}>
-                        <b>Post-Hackathon San Francisco Exploration</b>
-                        <br />
-                        This will be similar to the pre-hackathon exploration
-                        just for those with late flights! It'll be a chance to
-                        hang out with new friends made at the hackathon before
-                        parting ways!
+                      <Box bg="white" p={2} mt={'4px'} sx={{ height: '316px' }}>
+                        Post-Hackathon San Francisco Exploration
                       </Box>
                       <Box
                         bg="text"
@@ -875,35 +818,20 @@ export default function Index(props) {
             </Heading>
             <Grid columns={3}>
               <Box bg="white" p={3}>
-                <b>How will sleeping work?</b> <br />
-                We'll have blackout zones that you can sleep in overnight. We
-                recommend bringing a sleeping bag!
+                Pre-Hackathon San Francisco Exploration
               </Box>
               <Box bg="white" p={3}>
-                <b>What should I bring?</b> <br />
-                Your computer, chargers, anything for your hack (hardware?),
-                toiletries, & a sleeping bag (optional).
+                Pre-Hackathon San Francisco Exploration
               </Box>
             </Grid>
           </Container>
         </Box>
         <Box bg="red" color="white" py={3}>
-          <Container
-            sx={{
-              textAlign: 'center',
-              '> a': {
-                color: 'white',
-                textDecoration: 'underline',
-              },
-            }}
-          >
+          <Container sx={{ textAlign: 'center' }}>
             <Box my={1} mb={1} sx={{ fontWeight: 800 }}>
               Hack Club HQ
             </Box>
-            <Link href="https://hackclub.com">Home</Link> |{' '}
-            <Link href="https://hackclub.com/slack">Slack</Link> |{' '}
-            <Link href="https://workshops.hackclub.com">Workshops</Link> |{' '}
-            <Link href="https://scrapbook.hackclub.com">Scrapbook</Link>
+            Home | Slack | Workshops | Scrapbook
           </Container>
         </Box>
       </div>
