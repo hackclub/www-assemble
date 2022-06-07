@@ -56,7 +56,7 @@ export default function Parallax({ children, background }) {
                     overflow: 'visible',
                     transform: 'scale(1.15)'
                 }}>
-                    <img src="/ParallaxAssets/golden.svg" style={{
+                    <img src="https://cloud-di09zekbt-hack-club-bot.vercel.app/1golden.png" style={{
                         width: '100%',
                         transform: bridgeTransform
                     }} />
@@ -77,7 +77,7 @@ export default function Parallax({ children, background }) {
                     width: '100vw',
                     overflow: 'hidden'
                 }}>
-                    <img src="/ParallaxAssets/skyline.svg" style={{
+                    <img src="https://cloud-di09zekbt-hack-club-bot.vercel.app/0skyline.png" style={{
                         transform: skylineTransform,
                         width: '120%'
                     }} />
