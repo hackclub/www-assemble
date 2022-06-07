@@ -18,6 +18,7 @@ import {
 } from '@mattjennings/react-modal'
 import { Text } from 'theme-ui'
 import NextLink from 'next/link'
+import ComicImage from '../components/ComicImage'
 
 function Letter(props) {
   return (
@@ -526,29 +527,29 @@ export default function Index(props) {
                     <b>Venue:</b> Figma HQ <br /> 760 Market St, San Francisco
                     <br /> California 94102
                     <Grid columns={2} mt={2}>
-                      <img
-                        src="https://www.officelovin.com/wp-content/uploads/2016/05/figma-san-francisco-office-8.jpg"
-                        height="200px"
-                        width="100%"
-                        style={{ objectFit: 'cover' }}
+                      <ComicImage
+                        webp="https://cloud-nmdl7opdm-hack-club-bot.vercel.app/3hibernia.webp"
+                        src="https://cloud-me9ijbqml-hack-club-bot.vercel.app/0hibernia.png"
+                        href="https://cloud-kmmvp0jlq-hack-club-bot.vercel.app/0img_1372.jpg"
+                        alt="At the corner of Figma HQ"
                       />
-                      <img
-                        src="https://www.officelovin.com/wp-content/uploads/2016/05/figma-san-francisco-office-8.jpg"
-                        height="200px"
-                        width="100%"
-                        style={{ objectFit: 'cover' }}
+                      <ComicImage
+                        webp="https://cloud-nmdl7opdm-hack-club-bot.vercel.app/2financial_district.webp"
+                        src="https://cloud-me9ijbqml-hack-club-bot.vercel.app/1financial_district.png"
+                        href="https://cloud-kmmvp0jlq-hack-club-bot.vercel.app/1img_1520.jpg"
+                        alt="Within 5 blocks of the venue, overlooking the financial district"
                       />
-                      <img
-                        src="https://www.officelovin.com/wp-content/uploads/2016/05/figma-san-francisco-office-8.jpg"
-                        height="200px"
-                        width="100%"
-                        style={{ objectFit: 'cover' }}
+                      <ComicImage
+                        webp="https://cloud-nmdl7opdm-hack-club-bot.vercel.app/0embarcadero.webp"
+                        src="https://cloud-me9ijbqml-hack-club-bot.vercel.app/2embarcadero.png"
+                        href="https://cloud-kmmvp0jlq-hack-club-bot.vercel.app/2img_1521.jpg"
+                        alt="Water-front Embarcadero, a 7 minute walk from Figma HQ"
                       />
-                      <img
-                        src="https://www.officelovin.com/wp-content/uploads/2016/05/figma-san-francisco-office-8.jpg"
-                        height="200px"
-                        width="100%"
-                        style={{ objectFit: 'cover' }}
+                      <ComicImage
+                        webp="https://cloud-nmdl7opdm-hack-club-bot.vercel.app/1ferry.webp"
+                        src="https://cloud-me9ijbqml-hack-club-bot.vercel.app/3ferry.png"
+                        href="https://cloud-kmmvp0jlq-hack-club-bot.vercel.app/3img_1377.jpg"
+                        alt="Historic ferry building only 2 bus stops from the venue"
                       />
                     </Grid>
                   </Box>
