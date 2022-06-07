@@ -11,11 +11,7 @@ import {
 import { useState, useEffect, useRef } from 'react'
 import Icon from '@hackclub/icons'
 import Parallax from '../components/Parallax'
-import {
-  Modal,
-  ModalTitle,
-  ModalContent,
-} from '@mattjennings/react-modal'
+import { Modal, ModalTitle, ModalContent } from '@mattjennings/react-modal'
 import { Text } from 'theme-ui'
 import NextLink from 'next/link'
 
@@ -180,7 +176,7 @@ export default function Index(props) {
               bottom: '-80px',
             },
           }}
-          onClick={() => window.open('mailto:assemble@hackclub.com','_blank')}
+          onClick={() => window.open('mailto:assemble@hackclub.com', '_blank')}
         />
         <Flex style={{ background: 'white' }}>
           <Heading
@@ -296,7 +292,7 @@ export default function Index(props) {
             <Grid columns={2}>
               <Box>
                 <Heading mb={3} as="h1">
-                  A Hackathon For The Ages
+                  Let's Get The Band Back Together
                 </Heading>
                 <Box
                   sx={{
@@ -313,16 +309,25 @@ export default function Index(props) {
                     }}
                   >
                     Hackathons have always been a special part of Hack Club and
-                    as we enter into the new normal, we want to reignite the
-                    spirit of hackathons and create a new generation of magical
-                    hackathons. That all starts with Assemble.
+                    as we enter into the <i>new normal</i>, we want to reignite
+                    the spirit of hackathons and create a new generation of
+                    magical hackathons. That all starts with Assemble - coding
+                    is a superpower and we .
                     <br />
                     <br />
-                    Assemble embraces every word of the Hack Club Philosophy. We
-                    believe we're at our best when where making so we'll cut the
-                    BS and let you get straight into coding. But we also see
-                    making as a social and joyful process so don't expect to be
-                    bored!
+                    You're at your best when your making and hackathons have
+                    been a place to ignite that first spark for teen coders all
+                    over the world. They're a place to get together with
+                    co-conspirators, meet new friends, learn something technical
+                    and do something you never thought you could. COVID hit and
+                    IRL high-school hackathons disappeared. IRL high school
+                    hacathons are yet to make thier return in the new normal. We
+                    think they should exist and the first step to that is
+                    running one ourselves. Assemble is only going to be the
+                    first step. All of Assemble will be replicable. By the end
+                    of this hackathon we'll create the README for making your
+                    own IRL high school hckathon. coding is a superpower.
+                    covid policy?
                   </Box>
                 </Box>
               </Box>
@@ -727,8 +732,8 @@ export default function Index(props) {
                         <br />
                         As the night winds down, we'll provide spaces for quiet
                         hacking and rest. For hackers still ful; of energy,
-                        we'll have all sorts of midnight activities (including a murder mystery
-                        and a Kahoot).
+                        we'll have all sorts of midnight activities (including a
+                        murder mystery and a Kahoot).
                       </Box>
                       <Box
                         bg="white"
@@ -841,7 +846,7 @@ export default function Index(props) {
                         This will be similar to the pre-hackathon exploration
                         just for those with late flights! It'll be a chance to
                         hang out with new friends made at the hackathon before
-                        parting ways!
+                        parting ways :(
                       </Box>
                       <Box
                         bg="text"
