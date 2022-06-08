@@ -8,7 +8,6 @@ import {
   Image,
   Link,
 } from 'theme-ui'
-import { useState, useEffect, useRef } from 'react'
 import Icon from '@hackclub/icons'
 import Parallax from '../components/Parallax'
 import { Modal, ModalTitle, ModalContent } from '@mattjennings/react-modal'
@@ -16,147 +15,11 @@ import { Text } from 'theme-ui'
 import NextLink from 'next/link'
 import ComicImage from '../components/ComicImage'
 
-function Letter(props) {
-  return (
-    <Modal
-      {...props}
-      sx={{
-        padding: 3,
-        width: '90vw',
-        bg: '#e8e0cc',
-        backgroundImage:
-          'url("https://www.transparenttextures.com/patterns/beige-paper.png")',
-        // border: ['none', null, null, '1px dashed black'],
-        borderRadius: ['0px', null, null, 6],
-        color: '#222',
-        mx: 0,
-        boxShadow: 'card',
-        p: [4, 5],
-      }}
-    >
-      {({ onClose }) => (
-        <>
-          <ModalTitle>
-            <Text
-              sx={{
-                fontSize: 2,
-                fontWeight: 'medium',
-              }}
-            >
-              Hello!
-            </Text>
-          </ModalTitle>
-          <ModalContent
-            style={{
-              overflow: 'auto',
-            }}
-          >
-            <Text>This is a letter.</Text>
-          </ModalContent>
-          <Button
-            onClick={onClose}
-            sx={{
-              position: 'absolute',
-              top: -10,
-              right: -10,
-              borderRadius: '999px',
-              height: '42px',
-              width: '42px',
-              bg: 'red',
-              color: 'white',
-            }}
-          >
-            <Text
-              sx={{
-                transform: 'scale(2) rotate(45deg)',
-                display: 'inline-block',
-              }}
-            >
-              +
-            </Text>
-          </Button>
-        </>
-      )}
-    </Modal>
-  )
-}
-
 export default function Index(props) {
-  /*
-  const [emoji, setEmoji] = useState('👾')
-  const [stage, setStage] = useState(0)
-  const [letter, setLetter] = useState(false)
-  const [commandLength, setCommandLength] = useState(0)
-  const commandLengthRef = useRef()
-  const command = `assemble()`
-  commandLengthRef.current = commandLength
-  useEffect(() => {
-    let emojiArray = ['👾', '💻', '🖥', '🎒', '🤯', '🖲', '📀', '💾', '🎮']
-    const interval = setInterval(
-      () => setEmoji(emojiArray[Math.floor(Math.random() * emojiArray.length)]),
-      5000,
-    )
-    return () => {
-      clearInterval(interval)
-    }
-  }, [])
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setStage(1)
-      const interval = setInterval(() => {
-        setCommandLength(commandLengthRef.current + 1)
-      }, 2500 / command.length)
-    }, 500)
-
-    return () => {
-      clearTimeout(timeout)
-    }
-  }, [])
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setStage(2)
-    }, 3200)
-    return () => {
-      clearTimeout(timeout)
-    }
-  }, [])
-  /*
-  if (stage == 0) {
-    return (
-      <Box
-        className={styles.crt}
-        sx={{
-          bg: 'dark',
-          color: 'green',
-          height: '100vh',
-          fontFamily: 'monospace',
-          fontWeight: 800,
-          fontSize: 5,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          pb: 6
-        }}
-      >
-        <h2>BOOTING...</h2>
-      </Box>
-    )
-  }
-  if (stage == 1) {
-    return (
-      <Box
-        className={styles.crt}
-        sx={{ bg: 'dark', color: 'green', height: '100vh', p: 3 }}
-      >
-        {'>'} {command.slice(0, commandLength)}
-      </Box>
-    )
-  } */
   return (
     <Box
       sx={{
-        backgroundImage: 'url(patterns/white.png)',
-        backgroundSize: '190px',
+        background: 'white'
       }}
     >
       <Parallax background={true}></Parallax>
@@ -166,7 +29,6 @@ export default function Index(props) {
           zIndex: '100',
         }}
       >
-        {/*<Letter open={letter} onClose={() => setLetter(false)} />*/}
         <Image
           src="/dinosaur-waving.png"
           sx={{
@@ -177,7 +39,6 @@ export default function Index(props) {
             zIndex: '200',
             cursor: 'pointer',
             transition: 'ease-in-out 0.3s',
-            // display: letter ? 'none' : 'block',
             '&:hover': {
               bottom: '-80px',
             },
@@ -194,12 +55,12 @@ export default function Index(props) {
               gap: 2,
               backgroundImage:
                 'linear-gradient(90deg, rgba(5, 11, 20, 0.7) 0%, rgba(5, 11, 20, 0.7) 100% ), url(patterns/black.png)',
-              textShadow: 'elevated',
               backgroundSize: '70px',
               color: 'white',
             }}
+            
           >
-            Hack Club Assemble
+            <img src="/textured-flag.png" height="30px"/>
           </Heading>
           <Heading
             sx={{
@@ -211,6 +72,7 @@ export default function Index(props) {
               alignItems: 'center',
               color: 'white',
               px: 3,
+              pt: 1,
             }}
           >
             Schedule
@@ -225,6 +87,7 @@ export default function Index(props) {
               backgroundImage: ' url(patterns/blue.png)',
               textShadow: 'elevated',
               backgroundSize: '40px',
+              pt: 1,
             }}
           >
             FAQs
@@ -239,6 +102,7 @@ export default function Index(props) {
                 backgroundImage: ' url(patterns/red.png)',
                 textShadow: 'elevated',
                 backgroundSize: '50px',
+                pt: 1,
               }}
             >
               Register
@@ -274,13 +138,13 @@ export default function Index(props) {
             }}
           >
             <Box>
-              <Heading as="h1">
+              <Heading as="h1" sx={{textShadow: 'elevated'}}>
                 Calling all hackers, makers, builders, painters...
               </Heading>
-              <Heading as="h1" sx={{ fontSize: 8 }}>
-                ASSEMBLE
+              <Heading as="h1" sx={{ fontSize: 9 }} className="comicHeader">
+                ASSEMBLE!
               </Heading>
-              <Heading as="h1" mt={2}>
+              <Heading as="h1" mt={2} sx={{textShadow: 'elevated'}}>
                 in San Francisco from June 14th to June 17th.
               </Heading>
             </Box>
@@ -321,7 +185,8 @@ export default function Index(props) {
                 <Box
                   sx={{
                     p: 1,
-                    bg: 'blue',
+                    backgroundImage: 'linear-gradient(90deg, rgba(5, 11, 20, 0.3) 0%, rgba(5, 11, 20, 0.3) 100% ), url(patterns/blue.png)',
+                    backgroundSize: '50px',
                     color: 'white',
                   }}
                 >
@@ -360,6 +225,7 @@ export default function Index(props) {
                   backgroundSize: 'cover',
                   border: '8px solid black',
                   position: 'relative',
+                  textTransform: 'uppercase'
                 }}
               >
                 <Box
@@ -384,6 +250,7 @@ export default function Index(props) {
                   backgroundSize: 'cover',
                   border: '8px solid black',
                   position: 'relative',
+                  textTransform: 'uppercase'
                 }}
               >
                 <Box
@@ -399,13 +266,15 @@ export default function Index(props) {
                     fontFamily: 'heading',
                   }}
                 >
-                  ... was amazing.
+                  ...was incredibly enriching.
                 </Box>
               </Box>
               <Box
                 sx={{
                   p: 1,
-                  bg: 'green',
+                  backgroundImage:
+                'linear-gradient(90deg, rgba(5, 11, 20, 0.3) 0%, rgba(5, 11, 20, 0.3) 100% ), url(/patterns/green.png)',
+                backgroundSize: '190px',
                   color: 'white',
                 }}
               >
@@ -436,8 +305,8 @@ export default function Index(props) {
                   p: 1,
                   backgroundSize: '30px',
                   backgroundImage:
-                    'linear-gradient(90deg, rgba(5, 11, 20, 0.3) 0%, rgba(5, 11, 20, 0.3) 100% ), url(/patterns/black.png)',
-                  color: 'white',
+                    'linear-gradient(90deg, rgba(5, 11, 20, 0.07) 0%, rgba(5, 11, 20, 0.07) 100% ), url(/patterns/white.png)',
+                  color: 'black',
                   border: '3px solid #FF544A'
                 }}
               >
@@ -472,8 +341,8 @@ export default function Index(props) {
                   p: 1,
                   backgroundSize: '30px',
                   backgroundImage:
-                    'linear-gradient(90deg, rgba(5, 11, 20, 0.3) 0%, rgba(5, 11, 20, 0.3) 100% ), url(/patterns/black.png)',
-                  color: 'white',
+                    'linear-gradient(90deg, rgba(5, 11, 20, 0.07) 0%, rgba(5, 11, 20, 0.07) 100% ), url(/patterns/white.png)',
+                  color: 'black',
                   border: '3px solid #FF544A'
                 }}
               >
@@ -507,8 +376,8 @@ export default function Index(props) {
                   p: 1,
                   backgroundSize: '30px',
                   backgroundImage:
-                    'linear-gradient(90deg, rgba(5, 11, 20, 0.3) 0%, rgba(5, 11, 20, 0.3) 100% ), url(/patterns/black.png)',
-                  color: 'white',
+                    'linear-gradient(90deg, rgba(5, 11, 20, 0.07) 0%, rgba(5, 11, 20, 0.07) 100% ), url(/patterns/white.png)',
+                  color: 'black',
                   border: '3px solid #FF544A'
                 }}
               >
@@ -544,8 +413,8 @@ export default function Index(props) {
                   p: 1,
                   backgroundSize: '30px',
                   backgroundImage:
-                    'linear-gradient(90deg, rgba(5, 11, 20, 0.3) 0%, rgba(5, 11, 20, 0.3) 100% ), url(/patterns/black.png)',
-                  color: 'white',
+                    'linear-gradient(90deg, rgba(5, 11, 20, 0.07) 0%, rgba(5, 11, 20, 0.07) 100% ), url(/patterns/white.png)',
+                  color: 'black',
                   border: '3px solid #FF544A'}}
               >
                 <Box
@@ -553,8 +422,10 @@ export default function Index(props) {
                     p: 3,
                     display: 'flex',
                     gap: '8px',
-
-                    color: 'white',
+                    backgroundSize: '30px',
+                    backgroundImage:
+                    'linear-gradient(90deg, rgba(5, 11, 20, 0.07) 0%, rgba(5, 11, 20, 0.07) 100% ), url(/patterns/white.png)',
+                  color: 'black',
                   }}
                 >
                   <Box>
@@ -587,8 +458,7 @@ export default function Index(props) {
                   textAlign: 'center',
                   backgroundSize: '30px',
                   backgroundImage:
-                    'linear-gradient(90deg, rgba(5, 11, 20, 0.3) 0%, rgba(5, 11, 20, 0.3) 100% ), url(/patterns/black.png)',
-                  color: 'white',
+                    'linear-gradient(90deg, rgba(5, 11, 20, 0.07) 0%, rgba(5, 11, 20, 0.07) 100% ), url(/patterns/white.png)',
                   border: '3px solid #FF544A'
                 }}
               >
@@ -1071,14 +941,100 @@ export default function Index(props) {
       </div>
       <style>
         {`
-          @import url('https://fonts.googleapis.com/css2?family=Acme&family=Fresca&display=swap');
-          @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-          @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Luckiest+Guy&display=swap');
+          @font-face {
+            font-family: 'Comic Helvetic';
+            src: url('ComicHelvetic-Light.woff2') format('woff2'),
+                url('ComicHelvetic-Light.woff') format('woff');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        @font-face {
+            font-family: 'Comic Helvetic';
+            src: url('ComicHelvetic-Medium.woff2') format('woff2'),
+                url('ComicHelvetic-Medium.woff') format('woff');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        @font-face {
+            font-family: 'Comic Helvetic';
+            src: url('ComicHelvetic-Heavy.woff2') format('woff2'),
+                url('ComicHelvetic-Heavy.woff') format('woff');
+            font-weight: 900;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        
           * {
             box-sizing: border-box;
           }
           b {
-            font-family: 'Acme'
+            font-weight: 700
+          }
+          .comicHeader {
+            color: #fcd1cf;
+            font-family: 'Luckiest Guy';
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            transform: translateY(22px);
+            letter-spacing: 12px;
+            text-shadow:   0px -2px 0 #212121,  
+                           0px -2px 0 #212121,
+                           0px  6px 0 #212121,
+                           0px  6px 0 #212121,
+                          -6px  0px 0 #212121,  
+                           6px  0px 0 #212121,
+                          -6px  0px 0 #212121,
+                           6px  0px 0 #212121,
+                          -6px -6px 0 #212121,  
+                           6px -6px 0 #212121,
+                          -6px  6px 0 #212121,
+                           6px  6px 0 #212121,
+                          -6px  18px 0 #212121,
+                           0px  18px 0 #212121,
+                           6px  18px 0 #212121,
+                           0 19px 1px rgba(0,0,0,.1),
+                           0 0 6px rgba(0,0,0,.1),
+                           0 6px 3px rgba(0,0,0,.3),
+                           0 12px 6px rgba(0,0,0,.2),
+                           0 18px 18px rgba(0,0,0,.25),
+                           0 24px 24px rgba(0,0,0,.2),
+                           0 36px 36px rgba(0,0,0,.15);
+          }
+          .smallComicHeader {
+            color: #fa6f66;
+            font-family: 'Luckiest Guy';
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            transform: translateY(6px);
+            letter-spacing: 4px;
+            text-shadow:   0px -2px 0 #212121,  
+                           0px -2px 0 #212121,
+                           0px  2px 0 #212121,
+                           0px  2px 0 #212121,
+                          -2px  0px 0 #212121,  
+                           2px  0px 0 #212121,
+                          -2px  0px 0 #212121,
+                           2px  0px 0 #212121,
+                          -2px -2px 0 #212121,  
+                           2px -2px 0 #212121,
+                          -2px  2px 0 #212121,
+                           2px  2px 0 #212121,
+                          -2px  4px 0 #212121,
+                           0px  4px 0 #212121,
+                           2px  4px 0 #212121,
+                           0 19px 1px rgba(0,0,0,.1),
+                           0 0 6px rgba(0,0,0,.1),
+                           0 6px 3px rgba(0,0,0,.3),
+                           0 12px 6px rgba(0,0,0,.2),
+                           0 18px 18px rgba(0,0,0,.25),
+                           0 24px 24px rgba(0,0,0,.2),
+                           0 36px 36px rgba(0,0,0,.15);
           }
         `}
       </style>
