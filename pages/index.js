@@ -1059,8 +1059,8 @@ export default function Index(props) {
               },
             }}
           >
-            <Box my={1} mb={1} sx={{ fontWeight: 800 }}>
-              Hack Club HQ
+            <Box my={1} mb={1}>
+              Inked by <strong>Hack Clubbers</strong>. 
             </Box>
 
             {/* only uncomment this once the bank project is in transparency mode & the site repo is public */}
