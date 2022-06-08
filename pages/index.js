@@ -1062,10 +1062,13 @@ export default function Index(props) {
             <Box my={1} mb={1} sx={{ fontWeight: 800 }}>
               Hack Club HQ
             </Box>
-            <Link href="https://hackclub.com">Home</Link> |{' '}
-            <Link href="https://hackclub.com/slack">Slack</Link> |{' '}
-            <Link href="https://workshops.hackclub.com">Workshops</Link> |{' '}
-            <Link href="https://scrapbook.hackclub.com">Scrapbook</Link>
+
+            {/* only uncomment this once the bank project is in transparency mode & the site repo is public */}
+
+            {/* Open source:{' '}
+            <Link href="https://github.com/hackclub/www-assemble">Code</Link>
+            {' & '}
+            <Link href="https://bank.hackclub.com/assemble">Finances</Link> */}
           </Container>
         </Box>
       </div>
