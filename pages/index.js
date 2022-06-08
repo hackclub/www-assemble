@@ -153,7 +153,12 @@ export default function Index(props) {
     )
   } */
   return (
-    <>
+    <Box
+      sx={{
+        backgroundImage: 'url(patterns/white.png)',
+        backgroundSize: '190px',
+      }}
+    >
       <Parallax background={true}></Parallax>
       <div
         style={{
@@ -187,15 +192,21 @@ export default function Index(props) {
               display: 'flex',
               alignItems: 'center',
               gap: 2,
-              bg: 'darker',
+              backgroundImage:
+                'linear-gradient(90deg, rgba(5, 11, 20, 0.7) 0%, rgba(5, 11, 20, 0.7) 100% ), url(patterns/black.png)',
+              textShadow: 'elevated',
+              backgroundSize: '70px',
               color: 'white',
             }}
           >
             Hack Club Assemble
           </Heading>
           <Heading
-            bg="green"
             sx={{
+              backgroundImage:
+                'linear-gradient(90deg, rgba(5, 11, 20, 0.3) 0%, rgba(5, 11, 20, 0.3) 100% ), url(/patterns/green.png)',
+              textShadow: 'elevated',
+              backgroundSize: '190px',
               display: 'flex',
               alignItems: 'center',
               color: 'white',
@@ -211,18 +222,23 @@ export default function Index(props) {
               alignItems: 'center',
               color: 'white',
               px: 3,
+              backgroundImage: ' url(patterns/blue.png)',
+              textShadow: 'elevated',
+              backgroundSize: '40px',
             }}
           >
             FAQs
           </Heading>
           <NextLink href="/register">
             <Heading
-              bg="red"
               sx={{
                 display: 'flex',
                 alignItems: 'center',
                 color: 'white',
                 px: 3,
+                backgroundImage: ' url(patterns/red.png)',
+                textShadow: 'elevated',
+                backgroundSize: '50px',
               }}
             >
               Register
@@ -258,9 +274,11 @@ export default function Index(props) {
             }}
           >
             <Box>
-              <Heading as="h1">This summer, we will</Heading>
+              <Heading as="h1">
+                Calling all hackers, makers, builders, painters...
+              </Heading>
               <Heading as="h1" sx={{ fontSize: 8 }}>
-                Assemble
+                ASSEMBLE
               </Heading>
               <Heading as="h1" mt={2}>
                 in San Francisco from June 14th to June 17th.
@@ -288,7 +306,12 @@ export default function Index(props) {
           <source src="https://stream.mux.com/dTJ01wpc7pKN84IZXzP02LipW6t00tr01U00sQJX00wuGSriE" />
         </Box> */}
         </Box>
-        <div style={{ background: 'white' }}>
+        <div
+          style={{
+            backgroundImage: 'url(patterns/white.png)',
+            backgroundSize: '50px',
+          }}
+        >
           <Container mb={4} pt={4}>
             <Grid columns={2}>
               <Box>
@@ -309,26 +332,25 @@ export default function Index(props) {
                       p: 3,
                     }}
                   >
+                    Hackathons are a hard to understand concept if you haven’t
+                    been to one before– let’s make it easier! Hackathons are a
+                    place to{' '}
+                    <Link
+                      sx={{ color: 'white', textDecoration: 'underline' }}
+                      target="_blank,  "
+                      href="https://www.youtube.com/watch?v=45cYwDMibGo"
+                    >
+                      come together
+                    </Link>{' '}
+                    and team up with others to combine your powers. You'll team
+                    up with co-conspirators, meet new friends, learn something
+                    technical and do something you never thought you could.
+                    <br />
+                    <br />
                     Hackathons have always been a special part of Hack Club and
                     as we enter into the <i>new normal</i>, we want to reignite
                     the spirit of hackathons and create a new generation of
-                    magical hackathons. That all starts with Assemble - coding
-                    is a superpower and we .
-                    <br />
-                    <br />
-                    You're at your best when your making and hackathons have
-                    been a place to ignite that first spark for teen coders all
-                    over the world. They're a place to get together with
-                    co-conspirators, meet new friends, learn something technical
-                    and do something you never thought you could. COVID hit and
-                    IRL high-school hackathons disappeared. IRL high school
-                    hacathons are yet to make thier return in the new normal. We
-                    think they should exist and the first step to that is
-                    running one ourselves. Assemble is only going to be the
-                    first step. All of Assemble will be replicable. By the end
-                    of this hackathon we'll create the README for making your
-                    own IRL high school hckathon. coding is a superpower.
-                    covid policy?
+                    magical hackathons. That all starts with Assemble.
                   </Box>
                 </Box>
               </Box>
@@ -336,14 +358,50 @@ export default function Index(props) {
                 sx={{
                   backgroundImage: 'url(/flagship.jpg)',
                   backgroundSize: 'cover',
+                  border: '8px solid black',
+                  position: 'relative',
                 }}
-              ></Box>
+              >
+                <Box
+                  sx={{
+                    bg: '#000',
+                    p: 2,
+                    position: 'absolute',
+                    bottom: 0,
+                    left: 0,
+                    pb: 0,
+                    pr: 3,
+                    color: 'white',
+                    fontFamily: 'heading',
+                  }}
+                >
+                  The last time we were in San Francisco (Flagship, 2019)...
+                </Box>
+              </Box>
               <Box
                 sx={{
                   backgroundImage: 'url(/flagship2.jpg)',
                   backgroundSize: 'cover',
+                  border: '8px solid black',
+                  position: 'relative',
                 }}
-              ></Box>
+              >
+                <Box
+                  sx={{
+                    bg: '#000',
+                    p: 2,
+                    position: 'absolute',
+                    bottom: 0,
+                    right: 0,
+                    pb: 0,
+                    pl: 3,
+                    color: 'white',
+                    fontFamily: 'heading',
+                  }}
+                >
+                  ... was amazing.
+                </Box>
+              </Box>
               <Box
                 sx={{
                   p: 1,
@@ -376,8 +434,11 @@ export default function Index(props) {
               <Box
                 sx={{
                   p: 1,
-                  bg: 'sunken',
-                  color: 'black',
+                  backgroundSize: '30px',
+                  backgroundImage:
+                    'linear-gradient(90deg, rgba(5, 11, 20, 0.3) 0%, rgba(5, 11, 20, 0.3) 100% ), url(/patterns/black.png)',
+                  color: 'white',
+                  border: '3px solid #FF544A'
                 }}
               >
                 <Box
@@ -409,8 +470,11 @@ export default function Index(props) {
               <Box
                 sx={{
                   p: 1,
-                  bg: 'sunken',
-                  color: 'black',
+                  backgroundSize: '30px',
+                  backgroundImage:
+                    'linear-gradient(90deg, rgba(5, 11, 20, 0.3) 0%, rgba(5, 11, 20, 0.3) 100% ), url(/patterns/black.png)',
+                  color: 'white',
+                  border: '3px solid #FF544A'
                 }}
               >
                 <Box
@@ -441,8 +505,11 @@ export default function Index(props) {
               <Box
                 sx={{
                   p: 1,
-                  bg: 'sunken',
-                  color: 'black',
+                  backgroundSize: '30px',
+                  backgroundImage:
+                    'linear-gradient(90deg, rgba(5, 11, 20, 0.3) 0%, rgba(5, 11, 20, 0.3) 100% ), url(/patterns/black.png)',
+                  color: 'white',
+                  border: '3px solid #FF544A'
                 }}
               >
                 <Box
@@ -475,15 +542,19 @@ export default function Index(props) {
               <Box
                 sx={{
                   p: 1,
-                  bg: 'sunken',
-                  color: 'black',
-                }}
+                  backgroundSize: '30px',
+                  backgroundImage:
+                    'linear-gradient(90deg, rgba(5, 11, 20, 0.3) 0%, rgba(5, 11, 20, 0.3) 100% ), url(/patterns/black.png)',
+                  color: 'white',
+                  border: '3px solid #FF544A'}}
               >
                 <Box
                   sx={{
                     p: 3,
                     display: 'flex',
                     gap: '8px',
+
+                    color: 'white',
                   }}
                 >
                   <Box>
@@ -507,9 +578,61 @@ export default function Index(props) {
                   </Box>
                 </Box>
               </Box>
+              <Box
+                sx={{
+                  p: 1,
+                  bg: 'sunken',
+                  color: 'black',
+                  gridColumn: '1 / 3',
+                  textAlign: 'center',
+                  backgroundSize: '30px',
+                  backgroundImage:
+                    'linear-gradient(90deg, rgba(5, 11, 20, 0.3) 0%, rgba(5, 11, 20, 0.3) 100% ), url(/patterns/black.png)',
+                  color: 'white',
+                  border: '3px solid #FF544A'
+                }}
+              >
+                <Box
+                  sx={{
+                    p: 3,
+                    display: 'flex',
+                    gap: '8px',
+                  }}
+                >
+                  <Box>
+                    <Heading
+                      as="h3"
+                      mb={1}
+                      sx={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '4px',
+                        ml: '-2px',
+                        margin: 'auto',
+                        width: 'fit-content',
+                      }}
+                    >
+                      <Box sx={{ color: '#FF544A', pt: '1px' }}>
+                        <Icon glyph="like-fill" size={32} />
+                      </Box>
+                      Everything Open Sourced
+                    </Heading>
+                    IRL high school hackathons are yet to make their return in
+                    the <i>new normal</i>, together we want to change this. All
+                    of Assemble will be replicable and by the end of this
+                    hackathon we'll create the README for starting your own IRL
+                    high school hackathon.
+                  </Box>
+                </Box>
+              </Box>
             </Grid>
           </Container>
-          <Box bg="red">
+          <Box
+            sx={{
+              backgroundImage: 'url(patterns/red.png)',
+              backgroundSize: '100px',
+            }}
+          >
             <Container py={4}>
               <Heading
                 mb={3}
@@ -582,13 +705,22 @@ export default function Index(props) {
                   students are welcome to come! You don't have to be a member of
                   the Hack Club community or a Hack Club leader.
                 </Box>
+                <Box bg="white" p={3}>
+                  <b>COVID-19:</b> we'll be providing all participants with N95
+                  masks and rapid tests. We'll also be performing anonymous
+                  contact tracing and supporting any participant who tests
+                  positive with isolation.
+                </Box>
                 <Box
-                  bg="blue"
+
                   p={3}
                   sx={{
                     color: 'white',
                     fontWeight: 800,
                     textAlign: 'center',
+                    backgroundImage: 'url(patterns/blue.png)',
+            backgroundSize: '50px',
+            boxShadow: 'elevated',
                     fontSize: 3,
                   }}
                 >
@@ -605,7 +737,13 @@ export default function Index(props) {
               </Grid>
             </Container>
           </Box>
-          <Box bg="green">
+          <Box
+            sx={{
+              backgroundImage:
+                'linear-gradient(90deg, rgba(5, 11, 20, 0.3) 0%, rgba(5, 11, 20, 0.3) 100% ), url(/patterns/green.png)',
+              backgroundSize: '190px',
+            }}
+          >
             <Container py={4}>
               <Heading
                 mb={3}
@@ -644,7 +782,6 @@ export default function Index(props) {
                       }}
                     >
                       <Box
-                        bg="text"
                         p={2}
                         mt={'2px'}
                         sx={{
@@ -654,6 +791,9 @@ export default function Index(props) {
                           justifyContent: 'center',
                           fontWeight: 800,
                           color: 'white',
+                          backgroundSize: '50px',
+                          backgroundImage:
+                          'linear-gradient(90deg, rgba(5, 11, 20, 0.7) 0%, rgba(5, 11, 20, 0.7) 100% ), url(patterns/black.png)',
                         }}
                       >
                         ✈️ Traveling into SF
@@ -850,7 +990,7 @@ export default function Index(props) {
                         parting ways :(
                       </Box>
                       <Box
-                        bg="text"
+
                         p={2}
                         mt={'4px'}
                         sx={{
@@ -860,6 +1000,9 @@ export default function Index(props) {
                           justifyContent: 'center',
                           fontWeight: 800,
                           color: 'white',
+                          backgroundSize: '50px',
+                          backgroundImage:
+                          'linear-gradient(90deg, rgba(5, 11, 20, 0.7) 0%, rgba(5, 11, 20, 0.7) 100% ), url(patterns/black.png)',
                         }}
                       >
                         👋 Goodbye!
@@ -871,7 +1014,12 @@ export default function Index(props) {
             </Container>
           </Box>
         </div>
-        <Box bg="blue">
+        <Box
+          sx={{
+            backgroundImage: 'url(patterns/blue.png)',
+            backgroundSize: '50px',
+          }}
+        >
           <Container py={4}>
             <Heading
               mb={3}
@@ -894,7 +1042,14 @@ export default function Index(props) {
             </Grid>
           </Container>
         </Box>
-        <Box bg="red" color="white" py={3}>
+        <Box
+          sx={{
+            backgroundImage: ' url(patterns/red.png)',
+            backgroundSize: '150px',
+          }}
+          color="white"
+          py={3}
+        >
           <Container
             sx={{
               textAlign: 'center',
@@ -916,13 +1071,17 @@ export default function Index(props) {
       </div>
       <style>
         {`
+          @import url('https://fonts.googleapis.com/css2?family=Acme&family=Fresca&display=swap');
           @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-
+          @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
           * {
             box-sizing: border-box;
           }
+          b {
+            font-family: 'Acme'
+          }
         `}
       </style>
-    </>
+    </Box>
   )
 }
