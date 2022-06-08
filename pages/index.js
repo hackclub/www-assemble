@@ -19,7 +19,7 @@ export default function Index(props) {
   return (
     <Box
       sx={{
-        background: 'white'
+        background: 'white',
       }}
     >
       <Parallax background={true}></Parallax>
@@ -58,9 +58,8 @@ export default function Index(props) {
               backgroundSize: '70px',
               color: 'white',
             }}
-            
           >
-            <img src="/textured-flag.png" height="30px"/>
+            <img src="/textured-flag.png" height="30px" />
           </Heading>
           <Heading
             sx={{
@@ -138,13 +137,13 @@ export default function Index(props) {
             }}
           >
             <Box>
-              <Heading as="h1" sx={{textShadow: 'elevated'}}>
+              <Heading as="h1" sx={{ textShadow: 'elevated' }}>
                 Calling all hackers, makers, builders, painters...
               </Heading>
               <Heading as="h1" sx={{ fontSize: 9 }} className="comicHeader">
                 ASSEMBLE!
               </Heading>
-              <Heading as="h1" mt={2} sx={{textShadow: 'elevated'}}>
+              <Heading as="h1" mt={2} sx={{ textShadow: 'elevated' }}>
                 in San Francisco from June 14th to June 17th.
               </Heading>
             </Box>
@@ -185,7 +184,8 @@ export default function Index(props) {
                 <Box
                   sx={{
                     p: 1,
-                    backgroundImage: 'linear-gradient(90deg, rgba(5, 11, 20, 0.3) 0%, rgba(5, 11, 20, 0.3) 100% ), url(patterns/blue.png)',
+                    backgroundImage:
+                      'linear-gradient(90deg, rgba(5, 11, 20, 0.3) 0%, rgba(5, 11, 20, 0.3) 100% ), url(patterns/blue.png)',
                     backgroundSize: '50px',
                     color: 'white',
                   }}
@@ -225,7 +225,7 @@ export default function Index(props) {
                   backgroundSize: 'cover',
                   border: '8px solid black',
                   position: 'relative',
-                  textTransform: 'uppercase'
+                  textTransform: 'uppercase',
                 }}
               >
                 <Box
@@ -250,7 +250,7 @@ export default function Index(props) {
                   backgroundSize: 'cover',
                   border: '8px solid black',
                   position: 'relative',
-                  textTransform: 'uppercase'
+                  textTransform: 'uppercase',
                 }}
               >
                 <Box
@@ -273,8 +273,8 @@ export default function Index(props) {
                 sx={{
                   p: 1,
                   backgroundImage:
-                'linear-gradient(90deg, rgba(5, 11, 20, 0.3) 0%, rgba(5, 11, 20, 0.3) 100% ), url(/patterns/green.png)',
-                backgroundSize: '190px',
+                    'linear-gradient(90deg, rgba(5, 11, 20, 0.3) 0%, rgba(5, 11, 20, 0.3) 100% ), url(/patterns/green.png)',
+                  backgroundSize: '190px',
                   color: 'white',
                 }}
               >
@@ -307,7 +307,7 @@ export default function Index(props) {
                   backgroundImage:
                     'linear-gradient(90deg, rgba(5, 11, 20, 0.07) 0%, rgba(5, 11, 20, 0.07) 100% ), url(/patterns/white.png)',
                   color: 'black',
-                  border: '3px solid #FF544A'
+                  border: '3px solid #FF544A',
                 }}
               >
                 <Box
@@ -343,7 +343,7 @@ export default function Index(props) {
                   backgroundImage:
                     'linear-gradient(90deg, rgba(5, 11, 20, 0.07) 0%, rgba(5, 11, 20, 0.07) 100% ), url(/patterns/white.png)',
                   color: 'black',
-                  border: '3px solid #FF544A'
+                  border: '3px solid #FF544A',
                 }}
               >
                 <Box
@@ -378,7 +378,7 @@ export default function Index(props) {
                   backgroundImage:
                     'linear-gradient(90deg, rgba(5, 11, 20, 0.07) 0%, rgba(5, 11, 20, 0.07) 100% ), url(/patterns/white.png)',
                   color: 'black',
-                  border: '3px solid #FF544A'
+                  border: '3px solid #FF544A',
                 }}
               >
                 <Box
@@ -415,7 +415,8 @@ export default function Index(props) {
                   backgroundImage:
                     'linear-gradient(90deg, rgba(5, 11, 20, 0.07) 0%, rgba(5, 11, 20, 0.07) 100% ), url(/patterns/white.png)',
                   color: 'black',
-                  border: '3px solid #FF544A'}}
+                  border: '3px solid #FF544A',
+                }}
               >
                 <Box
                   sx={{
@@ -424,8 +425,8 @@ export default function Index(props) {
                     gap: '8px',
                     backgroundSize: '30px',
                     backgroundImage:
-                    'linear-gradient(90deg, rgba(5, 11, 20, 0.07) 0%, rgba(5, 11, 20, 0.07) 100% ), url(/patterns/white.png)',
-                  color: 'black',
+                      'linear-gradient(90deg, rgba(5, 11, 20, 0.07) 0%, rgba(5, 11, 20, 0.07) 100% ), url(/patterns/white.png)',
+                    color: 'black',
                   }}
                 >
                   <Box>
@@ -459,7 +460,7 @@ export default function Index(props) {
                   backgroundSize: '30px',
                   backgroundImage:
                     'linear-gradient(90deg, rgba(5, 11, 20, 0.07) 0%, rgba(5, 11, 20, 0.07) 100% ), url(/patterns/white.png)',
-                  border: '3px solid #FF544A'
+                  border: '3px solid #FF544A',
                 }}
               >
                 <Box
@@ -514,7 +515,7 @@ export default function Index(props) {
               <Grid>
                 <Box bg="white" p={3}>
                   <b>Date & Time:</b> starts at 6:00pm on July 29th and ends at
-                  12:00pm on June 31st.
+                  2:00pm on June 31st.
                 </Box>
                 <Grid
                   bg="white"
@@ -582,15 +583,14 @@ export default function Index(props) {
                   positive with isolation.
                 </Box>
                 <Box
-
                   p={3}
                   sx={{
                     color: 'white',
                     fontWeight: 800,
                     textAlign: 'center',
                     backgroundImage: 'url(patterns/blue.png)',
-            backgroundSize: '50px',
-            boxShadow: 'elevated',
+                    backgroundSize: '50px',
+                    boxShadow: 'elevated',
                     fontSize: 3,
                   }}
                 >
@@ -663,13 +663,13 @@ export default function Index(props) {
                           color: 'white',
                           backgroundSize: '50px',
                           backgroundImage:
-                          'linear-gradient(90deg, rgba(5, 11, 20, 0.7) 0%, rgba(5, 11, 20, 0.7) 100% ), url(patterns/black.png)',
+                            'linear-gradient(90deg, rgba(5, 11, 20, 0.7) 0%, rgba(5, 11, 20, 0.7) 100% ), url(patterns/black.png)',
                         }}
                       >
                         ✈️ Traveling into SF
                       </Box>
-                      <Box bg="white" p={3} mt={'4px'} sx={{ height: '316px' }}>
-                        <b> Pre-Hackathon San Francisco Exploration</b> <br />
+                      <Box bg="white" px={2} mt={'4px'} sx={{ height: '316px', border: '3px solid #5bc0de', py: 3}}>
+                        <b>🌉 Pre-Event Exploration</b> <br />
                         As hackers trickle into the city, we'll offer early
                         arrivers activities to do within the city. Some of the
                         activities on offer will be neighborhood tours, office
@@ -677,33 +677,51 @@ export default function Index(props) {
                       </Box>
                       <Box
                         bg="white"
-                        py={2}
-                        px={3}
+                        px={2}
                         mt={'4px'}
-                        sx={{ height: '36px', fontWeight: 800 }}
+                        sx={{
+                          height: '36px',
+                          fontWeight: 800,
+                          border: '3px solid #33d6a6',
+                          display: 'flex',
+                          alignItems: 'center',
+                          pt: 1,
+                        }}
                       >
-                        Check-in Opens @ Figma HQ
+                        👋 Check-in Opens @ Figma HQ
                       </Box>
                       <Box
                         bg="white"
-                        py={2}
-                        px={3}
+                        px={2}
                         mt={'4px'}
-                        sx={{ height: '36px', fontWeight: 800 }}
+                        sx={{
+                          height: '36px',
+                          fontWeight: 800,
+                          border: '3px solid #33d6a6',
+                          display: 'flex',
+                          alignItems: 'center',
+                          pt: 1,
+                        }}
                       >
-                        Opening Ceremony
+                        📽️ Opening Ceremony
                       </Box>
                       <Box
                         bg="white"
-                        py={2}
-                        px={3}
+                        px={2}
                         mt={'4px'}
-                        sx={{ height: '36px', fontWeight: 800 }}
+                        sx={{
+                          height: '36px',
+                          fontWeight: 800,
+                          border: '3px solid #ff8c37',
+                          display: 'flex',
+                          alignItems: 'center',
+                          pt: 1,
+                        }}
                       >
-                        Dinner
+                        🍝 Dinner
                       </Box>
-                      <Box bg="white" p={3} mt={'4px'} sx={{ height: '156px' }}>
-                        <b>Evening Activities & Workshops</b> <br />
+                      <Box bg="white" px={2} mt={'4px'} sx={{ height: '156px', border: '3px solid #5bc0de', py: 3}}>
+                        <b>🕺 Evening Activities & Workshops</b> <br />
                         We’ll have a mixture of starter workshops and fun
                         activities to kick off the evening.
                       </Box>
@@ -736,10 +754,8 @@ export default function Index(props) {
                         width: '100%',
                       }}
                     >
-                      <Box bg="white" p={3} mt={'2px'} sx={{ height: '276px' }}>
-                        <b>
-                          Late Night Hacking / Down Time / Midnight Activities
-                        </b>
+                      <Box bg="white" px={2} mt={'4px'} sx={{ height: '276px', border: '3px solid #5bc0de', py: 3}}>
+                        <b>💤 Midnight Activities & Quiet Time</b>
                         <br />
                         As the night winds down, we'll provide spaces for quiet
                         hacking and rest. For hackers still ful; of energy,
@@ -748,30 +764,42 @@ export default function Index(props) {
                       </Box>
                       <Box
                         bg="white"
-                        py={2}
-                        px={3}
+                        px={2}
                         mt={'4px'}
-                        sx={{ height: '76px', fontWeight: 800 }}
+                        sx={{
+                          height: '36px',
+                          fontWeight: 800,
+                          border: '3px solid #ff8c37',
+                          display: 'flex',
+                          alignItems: 'center',
+                          pt: 1,
+                        }}
                       >
-                        Breakfast
+                        🧇 Breakfast
                       </Box>
-                      <Box bg="white" p={3} mt={'4px'} sx={{ height: '356px' }}>
-                        <b>Hacking, Workshops & Activities</b> <br />
+                      <Box bg="white" px={2} mt={'4px'} sx={{ height: '396px', border: '3px solid #5bc0de', py: 3}}>
+                        <b>🎉 Hacking, Workshops & Activities</b> <br />
                         After a hearty breakfast, we'll hit the road running
                         with more hacking and exciting activities. We'll also
                         have lunch in this time!
                       </Box>
                       <Box
                         bg="white"
-                        py={2}
-                        px={3}
+                        px={2}
                         mt={'4px'}
-                        sx={{ height: '36px', fontWeight: 800 }}
+                        sx={{
+                          height: '36px',
+                          fontWeight: 800,
+                          border: '3px solid #ff8c37',
+                          display: 'flex',
+                          alignItems: 'center',
+                          pt: 1,
+                        }}
                       >
-                        Dinner
+                        🌯 Dinner
                       </Box>
-                      <Box bg="white" p={3} mt={'4px'} sx={{ height: '196px' }}>
-                        <b>Evening Activities</b>
+                      <Box bg="white" px={2} mt={'4px'} sx={{ height: '196px', border: '3px solid #5bc0de', py: 3}}>
+                        <b>🌔 Evening Activities</b>
                         <br />
                         Just before everyone starts rushing their projects,
                         we'll let some energy out with some optional social
@@ -806,8 +834,8 @@ export default function Index(props) {
                         width: '100%',
                       }}
                     >
-                      <Box bg="white" p={3} mt={'2px'} sx={{ height: '276px' }}>
-                        <b>Last Minute Hacking</b>
+                      <Box bg="white" px={2} mt={'4px'} sx={{ height: '276px', border: '3px solid #a633d6', py: 3}}>
+                        <b>💻 Last Minute Hacking</b>
                         <br />
                         Code. Code. Code! Expect everybody to be putting the
                         finishing touches on their project or if they're lucky
@@ -815,52 +843,45 @@ export default function Index(props) {
                       </Box>
                       <Box
                         bg="white"
-                        p={2}
-                        px={3}
+                        px={2}
                         mt={'4px'}
-                        sx={{ height: '36px', fontWeight: 800 }}
+                        sx={{
+                          height: '36px',
+                          fontWeight: 800,
+                          border: '3px solid #ff8c37',
+                          display: 'flex',
+                          alignItems: 'center',
+                          pt: 1,
+                        }}
                       >
-                        Breakfast
+                        🥞 Breakfast
                       </Box>
                       <Box
-                        bg="white"
-                        p={3}
-                        py={2}
-                        mt={'4px'}
-                        sx={{ height: '116px' }}
+                        bg="white" px={2} mt={'4px'} sx={{ height: '156px', border: '3px solid #a633d6', py: 3}}
                       >
-                        <b>Project Showcase</b> <br />
+                        <b>📼 Project Showcase</b> <br />
                         We'll have an exhibition where hackers can wander around
                         to check out / judge each others projects.
                       </Box>
                       <Box
-                        bg="white"
-                        p={2}
-                        px={3}
-                        mt={'4px'}
-                        sx={{ height: '36px', fontWeight: 800 }}
+                        bg="white" px={2} mt={'4px'} sx={{ height: '36px', border: '3px solid #33d6a6', pt: '6px', fontWeight: 800}}
                       >
-                        Closing Ceremony
+                        🤫 Closing Ceremony
                       </Box>
                       <Box
-                        bg="white"
-                        p={2}
-                        px={3}
-                        mt={'4px'}
-                        sx={{ height: '36px', fontWeight: 800 }}
+                        bg="white" px={2} mt={'4px'} sx={{ height: '36px', border: '3px solid #ff8c37', pt: '6px', fontWeight: 800}}
                       >
-                        Farewell Lunch
+                        😥 Farewell Lunch
                       </Box>
-                      <Box bg="white" p={3} mt={'4px'} sx={{ height: '316px' }}>
-                        <b>Post-Hackathon San Francisco Exploration</b>
+                      <Box bg="white" px={2} mt={'4px'} sx={{ height: '276px', border: '3px solid #5bc0de', py: 3}}>
+                        <b>🧭 Post-Event Exploration</b>
                         <br />
-                        This will be similar to the pre-hackathon exploration
+                        This will be similar to the pre-event exploration
                         just for those with late flights! It'll be a chance to
                         hang out with new friends made at the hackathon before
                         parting ways :(
                       </Box>
                       <Box
-
                         p={2}
                         mt={'4px'}
                         sx={{
@@ -872,7 +893,7 @@ export default function Index(props) {
                           color: 'white',
                           backgroundSize: '50px',
                           backgroundImage:
-                          'linear-gradient(90deg, rgba(5, 11, 20, 0.7) 0%, rgba(5, 11, 20, 0.7) 100% ), url(patterns/black.png)',
+                            'linear-gradient(90deg, rgba(5, 11, 20, 0.7) 0%, rgba(5, 11, 20, 0.7) 100% ), url(patterns/black.png)',
                         }}
                       >
                         👋 Goodbye!
@@ -908,6 +929,26 @@ export default function Index(props) {
                 <b>What should I bring?</b> <br />
                 Your computer, chargers, anything for your hack (hardware?),
                 toiletries, & a sleeping bag (optional).
+              </Box>
+              <Box bg="white" p={3}>
+                <b>How much will it cost?</b> <br />
+                Nothing! We’ll have meals, snacks, and beverages onsite at the
+                hackathon, as well as swag, prizes, and fun mini-events.
+              </Box>
+              <Box bg="white" p={3}>
+                <b>My parents have concerned, what can I do?</b> <br />
+                We're here to help, ask them to reach out to us at
+                assemble@hackclub.com and we'll make sure they're convinced.
+              </Box>
+              <Box bg="white" p={3}>
+                <b>What can I make?</b> <br />
+                Anything! Apps, art, websites and hardware projects are all
+                perfect for a hackathon!
+              </Box>
+              <Box bg="white" p={3}>
+                <b>Will there be travel assistance?</b> <br />
+                We will be providing a number of travel stipends, and will be
+                able to help issue letters for visa applications.
               </Box>
             </Grid>
           </Container>
