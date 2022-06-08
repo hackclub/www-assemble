@@ -758,7 +758,7 @@ export default function Index(props) {
                         <b>💤 Midnight Activities & Quiet Time</b>
                         <br />
                         As the night winds down, we'll provide spaces for quiet
-                        hacking and rest. For hackers still ful; of energy,
+                        hacking and rest. For hackers still full of energy,
                         we'll have all sorts of midnight activities (including a
                         murder mystery and a Kahoot).
                       </Box>
