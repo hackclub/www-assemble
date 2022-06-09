@@ -302,7 +302,6 @@ export default function Index(props) {
               </Box>
             </Grid>
 
-            {/* Other grid thing at the bottom */}
             <Grid columns={[1, null, 2]} sx={{ py: 3 }}>
               <InfoBox icon="rep" title="Endless Fun" borderColor="#FF544A">
                 We guarantee you'll never want to sleep, the fun will outweigh
