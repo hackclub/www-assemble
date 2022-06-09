@@ -176,7 +176,7 @@ export default function Index(props) {
           }}
         >
           <Container mb={4} pt={4}>
-            <Grid columns={2}>
+            <Grid columns={[1, null, 2]}>
               <Box>
                 <Heading mb={3} as="h1">
                   Let's Get The Band Back Together
@@ -300,203 +300,55 @@ export default function Index(props) {
                   to meet you!
                 </Box>
               </Box>
-              <Box
-                sx={{
-                  p: 1,
-                  backgroundSize: '30px',
-                  backgroundImage:
-                    'linear-gradient(90deg, rgba(5, 11, 20, 0.07) 0%, rgba(5, 11, 20, 0.07) 100% ), url(/patterns/white.png)',
-                  color: 'black',
-                  border: '3px solid #FF544A',
-                }}
-              >
-                <Box
-                  sx={{
-                    p: 3,
-                    display: 'flex',
-                  }}
-                >
-                  <Box>
-                    <Heading
-                      as="h3"
-                      mb={1}
-                      sx={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '4px',
-                        ml: '-2px',
-                      }}
-                    >
-                      <Icon glyph="rep" size={32} />
-                      Endless Fun
-                    </Heading>
-                    We guarantee you'll never want to sleep, the fun will
-                    out-weight the sleep deprivation even after 50 hours! What
-                    more can we say?
-                  </Box>
-                </Box>
-              </Box>
-              <Box
-                sx={{
-                  p: 1,
-                  backgroundSize: '30px',
-                  backgroundImage:
-                    'linear-gradient(90deg, rgba(5, 11, 20, 0.07) 0%, rgba(5, 11, 20, 0.07) 100% ), url(/patterns/white.png)',
-                  color: 'black',
-                  border: '3px solid #FF544A',
-                }}
-              >
-                <Box
-                  sx={{
-                    p: 3,
-                    display: 'flex',
-                  }}
-                >
-                  <Box>
-                    <Heading
-                      as="h3"
-                      mb={1}
-                      sx={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '4px',
-                        ml: '-2px',
-                      }}
-                    >
-                      <Icon glyph="admin" size={32} />
-                      Awesome People
-                    </Heading>
-                    Expect CEOs & awesome programmers casually strolling around
-                    the venue to have a chat or to help with your hack.
-                  </Box>
-                </Box>
-              </Box>
-              <Box
-                sx={{
-                  p: 1,
-                  backgroundSize: '30px',
-                  backgroundImage:
-                    'linear-gradient(90deg, rgba(5, 11, 20, 0.07) 0%, rgba(5, 11, 20, 0.07) 100% ), url(/patterns/white.png)',
-                  color: 'black',
-                  border: '3px solid #FF544A',
-                }}
-              >
-                <Box
-                  sx={{
-                    p: 3,
-                    display: 'flex',
-                  }}
-                >
-                  <Box>
-                    <Heading
-                      as="h3"
-                      mb={1}
-                      sx={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '4px',
-                        ml: '-2px',
-                      }}
-                    >
-                      <Icon glyph="welcome" size={32} />
-                      Everyone's Welcome
-                    </Heading>
-                    Hack Clubbers & non-Hack Clubbers are all invited. We'll
-                    also have resources and workshops for beginners. If you're
-                    curious, come along and give it a shot, we promise you'll
-                    have a good time!
-                  </Box>
-                </Box>
-              </Box>
-              <Box
-                sx={{
-                  p: 1,
-                  backgroundSize: '30px',
-                  backgroundImage:
-                    'linear-gradient(90deg, rgba(5, 11, 20, 0.07) 0%, rgba(5, 11, 20, 0.07) 100% ), url(/patterns/white.png)',
-                  color: 'black',
-                  border: '3px solid #FF544A',
-                }}
-              >
-                <Box
-                  sx={{
-                    p: 3,
-                    display: 'flex',
-                    gap: '8px',
-                    backgroundSize: '30px',
-                    backgroundImage:
-                      'linear-gradient(90deg, rgba(5, 11, 20, 0.07) 0%, rgba(5, 11, 20, 0.07) 100% ), url(/patterns/white.png)',
-                    color: 'black',
-                  }}
-                >
-                  <Box>
-                    <Heading
-                      as="h3"
-                      mb={1}
-                      sx={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '4px',
-                        ml: '-2px',
-                      }}
-                    >
-                      <Icon glyph="shirt-fill" size={32} />
-                      Goodies Galore
-                    </Heading>
-                    When it comes to swag and prizes, you'll feel like a kid in
-                    the candy story. Of course, you'll be able to pick up a full
-                    collection of Hack Club's infamous stickers but we'll also
-                    have special swag and prizes!
-                  </Box>
-                </Box>
-              </Box>
-              <Box
-                sx={{
-                  p: 1,
-                  bg: 'sunken',
-                  color: 'black',
-                  gridColumn: '1 / 3',
-                  textAlign: 'center',
-                  backgroundSize: '30px',
-                  backgroundImage:
-                    'linear-gradient(90deg, rgba(5, 11, 20, 0.07) 0%, rgba(5, 11, 20, 0.07) 100% ), url(/patterns/white.png)',
-                  border: '3px solid #FF544A',
-                }}
-              >
-                <Box
-                  sx={{
-                    p: 3,
-                    display: 'flex',
-                    gap: '8px',
-                  }}
-                >
-                  <Box>
-                    <Heading
-                      as="h3"
-                      mb={1}
-                      sx={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '4px',
-                        ml: '-2px',
-                        margin: 'auto',
-                        width: 'fit-content',
-                      }}
-                    >
-                      <Box sx={{ color: '#FF544A', pt: '1px' }}>
-                        <Icon glyph="like-fill" size={32} />
-                      </Box>
-                      Everything Open Sourced
-                    </Heading>
-                    IRL high school hackathons are yet to make their return in
-                    the <i>new normal</i>, together we want to change this. All
-                    of Assemble will be replicable and by the end of this
-                    hackathon we'll create the README for starting your own IRL
-                    high school hackathon.
-                  </Box>
-                </Box>
-              </Box>
             </Grid>
+
+            {/* Other grid thing at the bottom */}
+            <Grid columns={[1, null, 2]} sx={{ py: 3 }}>
+              <InfoBox icon="rep" title="Endless Fun" borderColor="#FF544A">
+                We guarantee you'll never want to sleep, the fun will outweigh
+                the sleep deprivation even after 50 hours! What more can we say?
+              </InfoBox>
+              <InfoBox
+                icon="admin"
+                title="Awesome People"
+                borderColor="#FF544A"
+              >
+                Expect CEOs & awesome programmers casually strolling around the
+                venue to have a chat or to help with your hack.
+              </InfoBox>
+              <InfoBox
+                icon="welcome"
+                title="Everyone's Welcome"
+                borderColor="#FF544A"
+              >
+                Hack Clubbers & non-Hack Clubbers are all invited. We'll also
+                have resources and workshops for beginners. If you're curious,
+                come along and give it a shot, we promise you'll have a good
+                time!
+              </InfoBox>
+              <InfoBox
+                icon="shirt"
+                title="Goodies Galore"
+                borderColor="#FF544A"
+              >
+                When it comes to swag and prizes, you'll feel like a kid in the
+                candy story. Of course, you'll be able to pick up a full
+                collection of Hack Club's infamous stickers but we'll also have
+                special swag and prizes!
+              </InfoBox>
+            </Grid>
+            <InfoBox
+              icon="like-fill"
+              iconColor=""
+              title="Everything Open Sourced"
+              borderColor="#FF544A"
+              center
+            >
+              IRL high school hackathons are yet to make their return in the{' '}
+              <i>new normal</i>, together we want to change this. All of
+              Assemble will be replicable and by the end of this hackathon we'll
+              create the README for starting your own IRL high school hackathon.
+            </InfoBox>
           </Container>
           <Box
             sx={{
@@ -668,7 +520,16 @@ export default function Index(props) {
                       >
                         ✈️ Traveling into SF
                       </Box>
-                      <Box bg="white" px={2} mt={'4px'} sx={{ height: '316px', border: '3px solid #5bc0de', py: 3}}>
+                      <Box
+                        bg="white"
+                        px={2}
+                        mt={'4px'}
+                        sx={{
+                          height: '316px',
+                          border: '3px solid #5bc0de',
+                          py: 3,
+                        }}
+                      >
                         <b>🌉 Pre-Event Exploration</b> <br />
                         As hackers trickle into the city, we'll offer early
                         arrivers activities to do within the city. Some of the
@@ -720,7 +581,16 @@ export default function Index(props) {
                       >
                         🍝 Dinner
                       </Box>
-                      <Box bg="white" px={2} mt={'4px'} sx={{ height: '156px', border: '3px solid #5bc0de', py: 3}}>
+                      <Box
+                        bg="white"
+                        px={2}
+                        mt={'4px'}
+                        sx={{
+                          height: '156px',
+                          border: '3px solid #5bc0de',
+                          py: 3,
+                        }}
+                      >
                         <b>🕺 Evening Activities & Workshops</b> <br />
                         We’ll have a mixture of starter workshops and fun
                         activities to kick off the evening.
@@ -754,7 +624,16 @@ export default function Index(props) {
                         width: '100%',
                       }}
                     >
-                      <Box bg="white" px={2} mt={'4px'} sx={{ height: '276px', border: '3px solid #5bc0de', py: 3}}>
+                      <Box
+                        bg="white"
+                        px={2}
+                        mt={'4px'}
+                        sx={{
+                          height: '276px',
+                          border: '3px solid #5bc0de',
+                          py: 3,
+                        }}
+                      >
                         <b>💤 Midnight Activities & Quiet Time</b>
                         <br />
                         As the night winds down, we'll provide spaces for quiet
@@ -777,7 +656,16 @@ export default function Index(props) {
                       >
                         🧇 Breakfast
                       </Box>
-                      <Box bg="white" px={2} mt={'4px'} sx={{ height: '396px', border: '3px solid #5bc0de', py: 3}}>
+                      <Box
+                        bg="white"
+                        px={2}
+                        mt={'4px'}
+                        sx={{
+                          height: '396px',
+                          border: '3px solid #5bc0de',
+                          py: 3,
+                        }}
+                      >
                         <b>🎉 Hacking, Workshops & Activities</b> <br />
                         After a hearty breakfast, we'll hit the road running
                         with more hacking and exciting activities. We'll also
@@ -798,7 +686,16 @@ export default function Index(props) {
                       >
                         🌯 Dinner
                       </Box>
-                      <Box bg="white" px={2} mt={'4px'} sx={{ height: '196px', border: '3px solid #5bc0de', py: 3}}>
+                      <Box
+                        bg="white"
+                        px={2}
+                        mt={'4px'}
+                        sx={{
+                          height: '196px',
+                          border: '3px solid #5bc0de',
+                          py: 3,
+                        }}
+                      >
                         <b>🌔 Evening Activities</b>
                         <br />
                         Just before everyone starts rushing their projects,
@@ -834,7 +731,16 @@ export default function Index(props) {
                         width: '100%',
                       }}
                     >
-                      <Box bg="white" px={2} mt={'4px'} sx={{ height: '276px', border: '3px solid #a633d6', py: 3}}>
+                      <Box
+                        bg="white"
+                        px={2}
+                        mt={'4px'}
+                        sx={{
+                          height: '276px',
+                          border: '3px solid #a633d6',
+                          py: 3,
+                        }}
+                      >
                         <b>💻 Last Minute Hacking</b>
                         <br />
                         Code. Code. Code! Expect everybody to be putting the
@@ -857,28 +763,60 @@ export default function Index(props) {
                         🥞 Breakfast
                       </Box>
                       <Box
-                        bg="white" px={2} mt={'4px'} sx={{ height: '156px', border: '3px solid #a633d6', py: 3}}
+                        bg="white"
+                        px={2}
+                        mt={'4px'}
+                        sx={{
+                          height: '156px',
+                          border: '3px solid #a633d6',
+                          py: 3,
+                        }}
                       >
                         <b>📼 Project Showcase</b> <br />
                         We'll have an exhibition where hackers can wander around
                         to check out / judge each others projects.
                       </Box>
                       <Box
-                        bg="white" px={2} mt={'4px'} sx={{ height: '36px', border: '3px solid #33d6a6', pt: '6px', fontWeight: 800}}
+                        bg="white"
+                        px={2}
+                        mt={'4px'}
+                        sx={{
+                          height: '36px',
+                          border: '3px solid #33d6a6',
+                          pt: '6px',
+                          fontWeight: 800,
+                        }}
                       >
                         🤫 Closing Ceremony
                       </Box>
                       <Box
-                        bg="white" px={2} mt={'4px'} sx={{ height: '36px', border: '3px solid #ff8c37', pt: '6px', fontWeight: 800}}
+                        bg="white"
+                        px={2}
+                        mt={'4px'}
+                        sx={{
+                          height: '36px',
+                          border: '3px solid #ff8c37',
+                          pt: '6px',
+                          fontWeight: 800,
+                        }}
                       >
                         😥 Farewell Lunch
                       </Box>
-                      <Box bg="white" px={2} mt={'4px'} sx={{ height: '276px', border: '3px solid #5bc0de', py: 3}}>
+                      <Box
+                        bg="white"
+                        px={2}
+                        mt={'4px'}
+                        sx={{
+                          height: '276px',
+                          border: '3px solid #5bc0de',
+                          py: 3,
+                        }}
+                      >
                         <b>🧭 Post-Event Exploration</b>
                         <br />
-                        This will be similar to the pre-event exploration
-                        just for those with late flights! It'll be a chance to
-                        hang out with new friends made at the hackathon before
+                        This will be similar to the pre-event exploration just
+                        for those with late flights! It'll be a chance to hang
+                        out with new friends made at the hackathon before
                         parting ways :(
                       </Box>
                       <Box
@@ -919,37 +857,34 @@ export default function Index(props) {
             >
               Frequently Asked Questions
             </Heading>
-            <Grid columns={3}>
-              <Box bg="white" p={3}>
-                <b>How will sleeping work?</b> <br />
+            <Grid columns={[1, null, 3]}>
+              <InfoBox title="How will sleeping work?" bgColor="white">
                 We'll have blackout zones that you can sleep in overnight. We
                 recommend bringing a sleeping bag!
-              </Box>
-              <Box bg="white" p={3}>
-                <b>What should I bring?</b> <br />
+              </InfoBox>
+              <InfoBox title="What should I bring?" bgColor="white">
                 Your computer, chargers, anything for your hack (hardware?),
                 toiletries, & a sleeping bag (optional).
-              </Box>
-              <Box bg="white" p={3}>
-                <b>How much will it cost?</b> <br />
+              </InfoBox>
+              <InfoBox title="How much will it cost?" bgColor="white">
                 Nothing! We’ll have meals, snacks, and beverages onsite at the
                 hackathon, as well as swag, prizes, and fun mini-events.
-              </Box>
-              <Box bg="white" p={3}>
-                <b>My parents have concerned, what can I do?</b> <br />
+              </InfoBox>
+              <InfoBox
+                title="My parents have concerns, what can I do?"
+                bgColor="white"
+              >
                 We're here to help, ask them to reach out to us at
                 assemble@hackclub.com and we'll make sure they're convinced.
-              </Box>
-              <Box bg="white" p={3}>
-                <b>What can I make?</b> <br />
+              </InfoBox>
+              <InfoBox title="What can I make?" bgColor="white">
                 Anything! Apps, art, websites and hardware projects are all
                 perfect for a hackathon!
-              </Box>
-              <Box bg="white" p={3}>
-                <b>Will there be travel assistance?</b> <br />
+              </InfoBox>
+              <InfoBox title="Will there be travel assistance?" bgColor="white">
                 We will be providing a number of travel stipends, and will be
                 able to help issue letters for visa applications.
-              </Box>
+              </InfoBox>
             </Grid>
           </Container>
         </Box>
@@ -1082,3 +1017,45 @@ export default function Index(props) {
     </Box>
   )
 }
+
+const InfoBox = ({ icon, title, children, borderColor, bgColor, center }) => (
+  <Box
+    sx={{
+      p: 1,
+      backgroundSize: '30px',
+      backgroundImage:
+        !bgColor &&
+        'linear-gradient(90deg, rgba(5, 11, 20, 0.07) 0%, rgba(5, 11, 20, 0.07) 100% ), url(/patterns/white.png)',
+      backgroundColor: bgColor,
+      color: 'black',
+      border: borderColor && '3px solid',
+      borderColor: borderColor || 'none',
+      textAlign: center ? 'center' : 'left',
+    }}
+  >
+    <Box
+      sx={{
+        p: 3,
+        display: 'flex',
+      }}
+    >
+      <Box>
+        <Heading
+          as="h3"
+          mb={1}
+          sx={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: center ? 'center' : 'flex-start',
+            gap: '4px',
+            ml: '-2px',
+          }}
+        >
+          {icon && <Icon glyph={icon} size={32} />}
+          {title}
+        </Heading>
+        {children}
+      </Box>
+    </Box>
+  </Box>
+)
