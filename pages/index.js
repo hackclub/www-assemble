@@ -199,7 +199,13 @@ export default function Index(props) {
               color: 'white',
             }}
           >
-            Hack Club Assemble
+            <Flex
+              sx={{
+                flexDirection: 'column'
+              }}>
+              <Text sx={{opacity: 0.8, fontSize: 1}}>Hack&nbsp;Club</Text>
+              <span>Assemble</span>
+            </Flex>
           </Heading>
           <Heading
             sx={{
