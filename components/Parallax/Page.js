@@ -1,7 +1,7 @@
 export default function Page ({ children, style, raw }) {
     return (
         <div style={{
-            height: '100vh',
+            height: '100%',
             minHeight: '500px',
             width: '100%',
             display: 'flex',

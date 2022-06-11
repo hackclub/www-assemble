@@ -1,16 +1,16 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useReducer } from 'react';
 import styles from './Parallax.module.css'
 import Page from './Page';
 
 export default function Parallax({ children, background }) {
-    const [bridgeTransform, setBridgeTransform] = useState(`translateX(${0}px) translateY(${0}px)`);
-    const [skylineTransform, setSkylineTransform] = useState(`translateX(calc(${0 * 0.1}px - 20%)) scale(1.15) translateY(calc(${0 * 0.1}px - 75px))`);
+    const [bridgeTransform, setBridgeTransform] = useState(`translateX(${0}px) translateY(${150}px)`);
+    const [skylineTransform, setSkylineTransform] = useState(`translateX(calc(${0 * 0.1}px - 20%)) scale(1.15) translateY(200px)`);
+    const [_, forceUpdate] = useReducer((x) => x + 1, 0);
     useEffect(() => {
         window.onscroll = event => {
             const y = window.scrollY;
-
             setBridgeTransform(`translateX(${0 - (y / 2) * 0.5}px) translateY(${y * 0.5}px)`);
-            setSkylineTransform(`translateX(calc(${y * 0.4 * 0.5}px - 20%)) scale(1.15) translateY(calc(${0}px - 75px))`);
+            setSkylineTransform(`translateX(calc(${y * 0.4 * 0.5}px - 20%)) scale(1.15) translateY(calc(${200}px - 75px))`);
         }
     }, []);
     return (
