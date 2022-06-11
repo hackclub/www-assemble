@@ -177,7 +177,7 @@ export default function Index(props) {
         >
           <Container mb={4} pt={4}>
             <Grid columns={2}>
-              <Box>
+              <Box sx={{gridColumn: '1 / 3'}}>
                 <Heading mb={3} as="h1">
                   Let's Get The Band Back Together
                 </Heading>
@@ -226,6 +226,7 @@ export default function Index(props) {
                   border: '8px solid black',
                   position: 'relative',
                   textTransform: 'uppercase',
+                  height: '400px'
                 }}
               >
                 <Box
@@ -269,7 +270,8 @@ export default function Index(props) {
                   ...was incredibly enriching.
                 </Box>
               </Box>
-              <Box
+              {
+             /* <Box
                 sx={{
                   p: 1,
                   backgroundImage:
@@ -300,7 +302,7 @@ export default function Index(props) {
                   to meet you!
                 </Box>
               </Box>
-              <Box
+             <Box
                 sx={{
                   p: 1,
                   backgroundSize: '30px',
@@ -449,7 +451,7 @@ export default function Index(props) {
                     have special swag and prizes!
                   </Box>
                 </Box>
-              </Box>
+              </Box> */}
               <Box
                 sx={{
                   p: 1,
@@ -558,9 +560,9 @@ export default function Index(props) {
                       height="100%"
                       width="100%"
                       style={{ border: '0' }}
-                      allowfullscreen=""
+                      allowFullScreen=""
                       loading="lazy"
-                      referrerpolicy="no-referrer-when-downgrade"
+                      referrerPolicy="no-referrer-when-downgrade"
                     ></iframe>
                   </Box>
                 </Grid>
@@ -588,8 +590,9 @@ export default function Index(props) {
                     color: 'white',
                     fontWeight: 800,
                     textAlign: 'center',
-                    backgroundImage: 'url(patterns/blue.png)',
-                    backgroundSize: '50px',
+                    backgroundImage:
+                'linear-gradient(90deg, rgba(5, 11, 20, 0.3) 0%, rgba(5, 11, 20, 0.3) 100% ), url(/patterns/green.png)',
+              backgroundSize: '190px',
                     boxShadow: 'elevated',
                     fontSize: 3,
                   }}
@@ -609,6 +612,7 @@ export default function Index(props) {
           </Box>
           <Box
             sx={{
+              display: 'none',
               backgroundImage:
                 'linear-gradient(90deg, rgba(5, 11, 20, 0.3) 0%, rgba(5, 11, 20, 0.3) 100% ), url(/patterns/green.png)',
               backgroundSize: '190px',
@@ -917,7 +921,7 @@ export default function Index(props) {
               as="h1"
               sx={{ textAlign: 'center', color: 'white' }}
             >
-              Frequently Asked Questions
+              The Glossary
             </Heading>
             <Grid columns={3}>
               <Box bg="white" p={3}>
@@ -955,7 +959,7 @@ export default function Index(props) {
         </Box>
         <Box
           sx={{
-            backgroundImage: ' url(patterns/red.png)',
+            backgroundImage: 'linear-gradient(90deg, rgba(5, 11, 20, 0.9) 0%, rgba(5, 11, 20, 0.9) 100% ), url(patterns/red.png)',
             backgroundSize: '150px',
           }}
           color="white"
