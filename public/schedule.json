@@ -1,0 +1,45 @@
+{
+   "events": [
+       {
+           "id": "d1ddaae9-5975-4b8c-84a5-1bb2991c1383",
+           "name": "Hackathon Opening Ceremony",
+           "description": "This is an event where things happen.",
+           "time": {
+               "start": "2022-07-22T18:00:00-07:00",
+           "end": "2022-07-22T20:00:00-07:00"
+           },
+           "location": {
+               "id": "ad029d24-0224-4f5d-b438-afd100f9393c",
+               "name": "Figma HQ",
+               "subplace": {
+                 "id": "ad029d24-0224-4f5d-b438-afd100f9393d",
+                 "name": "Inside"
+               },
+               "lat": 37.7821767,
+               "long": -122.3915876
+           }
+           "imageLocation": "https://hackclub.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fgolden-train.9e4e38e9.png&w=2048&q=75",
+       },
+       {
+           "id": "d1ddaae9-5975-4b8c-84a5-1bb2991c2383",
+           "name": "Hackathon Opening Ceremony 2",
+           "description": "This is an event where things happen. 2",
+           "time": {
+               "start": "2022-07-22T18:00:00-07:00",
+           "end": "2022-07-22T20:00:00-07:00"
+           },
+           "location": {
+               "id": "ad029d24-0224-4f5d-b438-afd1d0f9393c",
+               "name": "Figma HQ 2",
+               "subplace": {
+                 "id": "ad029d24-3224-4f5d-b438-afd100f9393d",
+                 "name": "Inside 2"
+               },
+               "lat": 37.7821767,
+               "long": -122.3915876
+           }
+           "imageLocation": "https://hackclub.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fgolden-train.9e4e38e9.png&w=2048&q=75",
+       }
+   ]
+}
+ 
