@@ -154,7 +154,7 @@ export default function Index(props) {
                       fontFamily: 'heading',
                     }}
                   >
-                    ... for Flagship 2019 was magical.
+                    ... for Flagship 2019, it was magical.
                   </Box>
                 </Box>
                 <Box
