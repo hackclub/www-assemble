@@ -5,7 +5,6 @@ import {
   Flex,
   Grid,
   Heading,
-  Image,
   Link,
 } from 'theme-ui'
 import Icon from '@hackclub/icons'
@@ -18,6 +17,9 @@ import Copy from '../components/copy.mdx'
 import DinoEasterEgg from '../components/dino-easter-egg'
 import Footer from '../components/footer'
 import Glossary from '../components/glossary'
+import ImgFlagship1 from '../public/flagship.jpg'
+import ImgFlagship2 from '../public/flagship2.jpg'
+import NextImage from 'next/image'
 
 export default function Index(props) {
   return (
@@ -96,22 +98,23 @@ export default function Index(props) {
           </Box>
           <div
             style={{
-              backgroundImage: 'url(patterns/blue.png), linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100% )',
-              backgroundSize: '100px',
+              backgroundImage: 'url(patterns/dots_blue.png), linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100% )',
+              // backgroundSize: '100px',
             }}
           >
             <Container mb={4} pt={4}>
               <Grid columns={2}>
                 <Box
                   sx={{
-                    backgroundImage: 'url(/flagship.jpg)',
-                    backgroundSize: 'cover',
+                    // backgroundImage: 'url(/flagship.jpg)',
+                    // backgroundSize: 'cover',
                     border: '8px solid black',
                     position: 'relative',
                     textTransform: 'uppercase',
                     height: '400px'
                   }}
                 >
+                  <NextImage src={ImgFlagship1} alt="Flagship 2019" placeholder='blur' layout='fill' objectFit={'cover'} sizes='40vw' />
                   <Box
                     sx={{
                       bg: '#000',
@@ -130,13 +133,14 @@ export default function Index(props) {
                 </Box>
                 <Box
                   sx={{
-                    backgroundImage: 'url(/flagship2.jpg)',
-                    backgroundSize: 'cover',
+                    // backgroundImage: 'url(/flagship2.jpg)',
+                    // backgroundSize: 'cover',
                     border: '8px solid black',
                     position: 'relative',
                     textTransform: 'uppercase',
                   }}
                 >
+                  <NextImage src={ImgFlagship2} alt="Flagship 2019" placeholder='blur' layout='fill' objectFit={'cover'} sizes='40vw' />
                   <Box
                     sx={{
                       bg: '#000',
@@ -288,8 +292,8 @@ export default function Index(props) {
                       fontWeight: 800,
                       textAlign: 'center',
                       backgroundImage:
-                        'linear-gradient(90deg, rgba(5, 11, 20, 0.3) 0%, rgba(5, 11, 20, 0.3) 100% ), url(/patterns/green.png)',
-                      backgroundSize: '190px',
+                        'url(/patterns/dots_red.png),linear-gradient(90deg, rgba(5, 11, 20, 0.3) 0%, rgba(5, 11, 20, 0.3) 100% )',
+                      // backgroundSize: '190px',
                       boxShadow: 'elevated',
                       fontSize: 3,
                     }}
