@@ -199,8 +199,8 @@ export default function Index(props) {
             </Container>
             <Box
               sx={{
-                backgroundImage: 'url(patterns/dots_red.png)',
-                // backgroundSize: '100px',
+                backgroundImage: 'url(patterns/red.png)',
+                backgroundSize: '100px',
               }}
             >
               <Container py={4}>
@@ -288,7 +288,7 @@ export default function Index(props) {
                       fontWeight: 800,
                       textAlign: 'center',
                       backgroundImage:
-                        'url(/patterns/stripes_green.png), linear-gradient(90deg, rgba(5, 11, 20, 0.3) 0%, rgba(5, 11, 20, 0.3) 100% )',
+                        'url(/patterns/dots_red.png),linear-gradient(90deg, rgba(5, 11, 20, 0.3) 0%, rgba(5, 11, 20, 0.3) 100% )',
                       // backgroundSize: '190px',
                       boxShadow: 'elevated',
                       fontSize: 3,
