@@ -25,7 +25,7 @@ const Footer = () => (
       }}
     >
       <Box my={1} mb={1}>
-        Pages hand inked by <Text sx={{ fontWeight: 'bold' }}>Hack&nbsp;Club</Text>
+        Pages hand inked by <Text sx={{ fontWeight: 'bold' }}>Hack&nbsp;Club</Text> | Send mail 📮 to <Link href='mailto:assemble@hackclub.com' sx={{color: 'white'}}>assemble@hackclub.com</Link>
       </Box>
       {/* only uncomment this once the bank project is in transparency mode & the site repo is public */}
 

@@ -74,7 +74,7 @@ export default function Index(props) {
                   position: 'relative',
                 }}
               >
-                <img src="/date.svg" style={{
+                <img src="/date-2.svg" style={{
                   width: '20%',
                   position: 'absolute',
                   top: "-8px",
