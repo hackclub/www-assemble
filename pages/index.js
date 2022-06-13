@@ -20,6 +20,9 @@ import Glossary from '../components/glossary'
 import ImgFlagship1 from '../public/flagship.jpg'
 import ImgFlagship2 from '../public/flagship2.jpg'
 import NextImage from 'next/image'
+import { fonts } from '../lib/theme'
+import PreviouslySection from '../components/PreviouslySection'
+import ProjectSection from '../components/ProjectSection'
 
 export default function Index(props) {
   return (
@@ -51,7 +54,7 @@ export default function Index(props) {
                 textAlign: 'center'
               }}
             >
-              <img src="/textured-flag.png" height="30px" style={{margin: 'auto'}} />
+              <img src="/textured-flag.png" height="30px" style={{ margin: 'auto' }} />
             </Heading>
           </Flex>
           <Box
@@ -60,8 +63,8 @@ export default function Index(props) {
             }}
           >
             <Box sx={{
-              backgroundImage: 'linear-gradient(90deg, rgba(5, 11, 20, 0.6) 0%, rgba(5, 11, 20, 0.5) 100% )', 
-              py: 4, 
+              backgroundImage: 'linear-gradient(90deg, rgba(5, 11, 20, 0.6) 0%, rgba(5, 11, 20, 0.5) 100% )',
+              py: 4,
               position: 'relative',
               zIndex: 99
             }}>
@@ -82,6 +85,20 @@ export default function Index(props) {
                   top: "-8px",
                   right: 0
                 }} />
+                <Box sx={{
+                  position: 'absolute',
+                  bottom: 0,
+                  right: 0,
+                  bg: 'red',
+                  px: 3,
+                  py:2,
+                  color: 'white',
+                  fontWeight: 800,
+                  fontFamily: fonts.replace('ui-rounded,', ''),
+                  border: '2.5px solid black'
+                }}>
+                  REGISTER →
+                  </Box>
                 <Box
                   sx={{
                     border: '2px dashed',
@@ -96,6 +113,7 @@ export default function Index(props) {
             </Box>
             <Parallax background={true}></Parallax>
           </Box>
+          <ProjectSection />
           <div
             style={{
               backgroundImage: 'url(patterns/dots_blue.png), linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100% )',
@@ -104,6 +122,52 @@ export default function Index(props) {
           >
             <Container mb={4} pt={4}>
               <Grid columns={2}>
+              <Box
+                  sx={{
+                    p: 1,
+                    bg: 'sunken',
+                    color: 'black',
+                    gridColumn: '1 / 3',
+                    textAlign: 'center',
+                    backgroundSize: '30px',
+                    backgroundImage:
+                      'url(/patterns/white.png)',
+                    border: '3px solid #FF544A',
+                  }}
+                >
+                  <Box
+                    sx={{
+                      p: 3,
+                      display: 'flex',
+                      gap: '8px',
+                      
+                    }}
+                  >
+                    <Box>
+                      <Heading
+                        as="h3"
+                        mb={1}
+                        sx={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: '4px',
+                          ml: '-2px',
+                          margin: 'auto',
+                          width: 'fit-content',
+                        }}
+                      >
+                        <Box sx={{ color: '#FF544A', pt: '1px' }}>
+                          <Icon glyph="sam" size={32} />
+                        </Box>
+                        Welcome to The Club
+                      </Heading>
+                      You don't have to be in Hack Club to join– in fact we only
+                      expect half of attendees to be in a club.  We just care
+                      that you care about learning/building stuff with us.
+                      Registrations from middle or high schoolers welcome!
+                    </Box>
+                  </Box>
+                </Box>
                 <Box
                   sx={{
                     // backgroundImage: 'url(/flagship.jpg)',
@@ -111,7 +175,8 @@ export default function Index(props) {
                     border: '8px solid black',
                     position: 'relative',
                     textTransform: 'uppercase',
-                    height: '400px'
+                    height: '400px',
+                    position: 'relative'
                   }}
                 >
                   <NextImage src={ImgFlagship1} alt="Flagship 2019" placeholder='blur' layout='fill' objectFit={'cover'} sizes='40vw' />
@@ -292,13 +357,13 @@ export default function Index(props) {
                       fontWeight: 800,
                       textAlign: 'center',
                       backgroundImage:
-                        'url(/patterns/dots_red.png),linear-gradient(90deg, rgba(5, 11, 20, 0.3) 0%, rgba(5, 11, 20, 0.3) 100% )',
+                        'linear-gradient(90deg, rgba(5, 11, 20, 0.3) 0%, rgba(5, 11, 20, 0.3) 100% ), url(/patterns/dots_blue.png)',
                       // backgroundSize: '190px',
                       boxShadow: 'elevated',
                       fontSize: 3,
                     }}
                   >
-                    <u>Register</u>
+                    REGISTER
                     <Text
                       sx={{
                         transform: 'translateY(-3.5px)',
@@ -312,7 +377,8 @@ export default function Index(props) {
               </Container>
             </Box>
           </div>
-          { false && <Glossary /> }
+          {false && <Glossary />}
+          {true && <PreviouslySection />}
           <Footer />
         </div>
         <style>
