@@ -195,7 +195,7 @@ export default function Index(props) {
                         </Box>
                         Everything Open Sourced
                       </Heading>
-                      One hackathon doesn’t constitute a renaissance, so we’re open sourcing and documenting everything we work on for Assemble to allow others to create amazing hackathons in their cities and towns. At the end of the hackathon, we’ll launch a comprehensive guide for hackathon organizing, Hack Club-style.
+                      One hackathon doesn’t constitute a renaissance, so we’re open-sourcing and documenting everything we work on for Assemble to allow others to create incredible hackathons in their communities. At the end of Assemble, we’ll launch a comprehensive guide for hackathon organizing, Hack Club-style.
                     </Box>
                   </Box>
                 </Box>
@@ -217,7 +217,7 @@ export default function Index(props) {
                 </Heading>
                 <Grid>
                   <Box bg="white" p={3}>
-                    <b>Date & Time:</b> starts at 6:00pm on July 29th and ends at
+                    <b>Date & Time:</b> Starts at 6:00pm on July 29th and ends at
                     2:00pm on June 31st.
                   </Box>
                   <Grid
@@ -268,19 +268,19 @@ export default function Index(props) {
                     </Box>
                   </Grid>
                   <Box bg="white" p={3}>
-                    <b>Travel Stipends:</b> we're offering a limited number of
+                    <b>Travel Stipends:</b> We're offering a limited number of
                     $500 stipends to cover travel expenses. If you need support
                     with your travel stipend, please indicate this on your
                     registration form and we will consider you for a travel
                     stipend.
                   </Box>
                   <Box bg="white" p={3}>
-                    <b>Eligibility:</b> all high-school & upper-middle-school aged
+                    <b>Eligibility:</b> All high-school & upper-middle-school aged
                     students are welcome to come! You don't have to be a member of
-                    the Hack Club community or a Hack Club leader.
+                    the Hack Club community or be a Hack Club leader.
                   </Box>
                   <Box bg="white" p={3}>
-                    <b>COVID-19:</b> we'll be providing all participants with N95
+                    <b>COVID-19:</b> We'll be providing all participants with N95
                     masks and rapid tests. We'll also be performing anonymous
                     contact tracing and supporting any participant who tests
                     positive with isolation.
