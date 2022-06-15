@@ -1,9 +1,9 @@
 import * as React from 'react'
 import { withModalTheme } from '@mattjennings/react-modal'
 import Meta from '../components/meta'
-import ColorSwitcher from '../components/color-switcher'
 import theme from '../lib/theme'
 import { ThemeProvider } from 'theme-ui'
+import '../public/global.css'
 
 const App = ({ Component, pageProps }) => {
   return (

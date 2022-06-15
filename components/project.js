@@ -88,8 +88,6 @@ const ProjectSection = () => {
     setIndex(updatedIndex)
   }
 
-  return <></>
-
   return (
     <div
       style={{

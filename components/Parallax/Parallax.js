@@ -1,6 +1,6 @@
 import { useEffect, useState, useReducer } from 'react';
 import styles from './Parallax.module.css'
-import Page from './Page';
+import Page from './page';
 
 export default function Parallax({ children, background }) {
     const [bridgeTransform, setBridgeTransform] = useState(`translateX(${0}px) translateY(${150}px)`);
