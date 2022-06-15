@@ -1,5 +1,5 @@
 import { useEffect, useState, useReducer } from 'react';
-import styles from './Parallax.module.css'
+import styles from './parallax.module.css'
 import Page from './page';
 
 export default function Parallax({ children, background }) {
