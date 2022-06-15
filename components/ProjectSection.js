@@ -12,14 +12,19 @@ const projectData = [
   //   desc: 'text description', 
   // }
   {
-    src: ImgFlagship1,
-    alt: 'At flagship',
+    src: 'https://cloud-qcrf01idm-hack-club-bot.vercel.app/0-45017250971189591042019-10-20_14.27.38.gif',
+    alt: 'Created by @quackduck.',
     desc: 'What if you made a search engine?'
   },
   {
-    src: ImgFlagship2,
-    alt: 'A laptop explodes after encountering a fatal error',
+    src: 'https://cloud-qcrf01idm-hack-club-bot.vercel.app/0-45017250971189591042019-10-20_14.27.38.gif',
+    alt: 'Created by @zachlatta.',
     desc: 'What if you made compiling a fatal error more fatal?'
+  },
+  {
+    src: 'https://cloud-j1v4vj6pn-hack-club-bot.vercel.app/0asdjkhasjkd.png',
+    alt: 'Created by @aidenybai.',
+    desc: 'What if you made a camera with a middle finger trigger?'
   }
 ]
 
@@ -40,7 +45,7 @@ const ProjectCopy = ({ handleClick, desc }) => (
 
         <Heading sx={{ fontSize: 3, mt: 2 }}>We'll be building all weekend, so...</Heading>
         <Heading sx={{ textShadow: 'elevated', fontSize: 6, my: 2, lineSpacing: '1', lineHeight: '1', flexGrow: 1 }}>{desc}</Heading>
-        <Button onClick={handleClick} sx={{borderRadius: 0, width: 'fit-content'}}>Get another idea!</Button>
+        <Button onClick={handleClick} sx={{borderRadius: 0, width: 'fit-content', mt: 2}}>Get another idea!</Button>
         <Box>
       </Box>
     </Box>
@@ -51,10 +56,12 @@ const ProjectImage = ({ src, alt, desc }) => (
     sx={{
       border: '8px solid black',
       position: 'relative',
-      minHeight: '400px'
+      minHeight: '450px',
+      backgroundImage: `url(${src})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center'
     }}
   >
-    <NextImage src={src} alt={alt || desc} placeholder='blur' layout='fill' objectFit={'cover'} sizes='40vw' />
     <Box
       sx={{
         bg: '#000',
@@ -68,7 +75,7 @@ const ProjectImage = ({ src, alt, desc }) => (
         fontFamily: 'heading',
       }}
     >
-      {desc}
+      {alt}
     </Box>
   </Box>
 )
@@ -80,6 +87,8 @@ const ProjectSection = () => {
     let updatedIndex = ++index % projectData.length
     setIndex(updatedIndex)
   }
+
+  return <></>
 
   return (
     <div
