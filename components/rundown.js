@@ -50,7 +50,7 @@ export const Rundown = () => (
               <Box sx={{ color: '#FF544A', pt: '1px' }}>
                 <Icon glyph="sam" size={32} />
               </Box>
-              Welcome to The Club
+              Welcome To The Club
             </Heading>
             You don't have to be in Hack Club to join– in fact we only
             expect half of attendees to be in a club.  We just care
