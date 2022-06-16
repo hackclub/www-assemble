@@ -249,6 +249,9 @@ export const Rundown = () => (
             boxShadow: 'elevated',
             fontSize: 3,
           }}
+          as="a"
+          href="https://airtable.com/shrqNfrlrI6JT5XYP"
+          target="_blank"
         >
           REGISTER
           <Text
