@@ -1,6 +1,6 @@
 import { useEffect, useState, useReducer } from 'react';
-import styles from './Parallax.module.css'
-import Page from './Page';
+import styles from './parallax.module.css'
+import Page from './page';
 
 export default function Parallax({ children, background }) {
     const [bridgeTransform, setBridgeTransform] = useState(`translateX(${0}px) translateY(${150}px)`);
@@ -35,7 +35,7 @@ export default function Parallax({ children, background }) {
                 width: '100%',
                 height: '100%',
                 overflow: 'hidden',
-                background: 'url("/ParallaxAssets/grain.svg")',
+                background: 'url("/parallax/grain.svg")',
                 opacity: 0.5,
                 backgroundRepeat: 'repeat',
             }}>
@@ -56,7 +56,7 @@ export default function Parallax({ children, background }) {
                     overflow: 'visible',
                     transform: 'scale(1.15)'
                 }}>
-                    <img src="https://cloud-di09zekbt-hack-club-bot.vercel.app/1golden.png" style={{
+                    <img src="https://cloud-axpm5xcqh-hack-club-bot.vercel.app/0golden.webp" style={{
                         width: '100%',
                         transform: bridgeTransform
                     }} />
@@ -77,7 +77,7 @@ export default function Parallax({ children, background }) {
                     width: '100vw',
                     overflow: 'hidden'
                 }}>
-                    <img src="https://cloud-di09zekbt-hack-club-bot.vercel.app/0skyline.png" style={{
+                    <img src="https://cloud-axpm5xcqh-hack-club-bot.vercel.app/1skyline.webp" style={{
                         transform: skylineTransform,
                         width: '120%'
                     }} />

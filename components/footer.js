@@ -11,6 +11,7 @@ const Footer = () => (
     sx={{
       backgroundImage: 'linear-gradient(90deg, rgba(5, 11, 20, 0.9) 0%, rgba(5, 11, 20, 0.9) 100% ), url(patterns/red.png)',
       backgroundSize: '150px',
+      fontFamily: 'cursive'
     }}
     color="white"
     py={3}
