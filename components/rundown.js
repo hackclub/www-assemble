@@ -240,7 +240,7 @@ export const Rundown = () => (
         <Box
           p={3}
           sx={{
-            color: 'white',
+            color: 'white!important',
             fontWeight: 800,
             textAlign: 'center',
             backgroundImage:
