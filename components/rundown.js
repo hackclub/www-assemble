@@ -221,7 +221,7 @@ export const Rundown = () => (
         </Grid>
         <Box bg="white" p={3}>
           <b>Travel Stipends:</b> We're offering a limited number of
-          $500 stipends to cover travel expenses. If you need support
+          stipends to cover travel expenses. If you need support
           with your travel stipend, please indicate this on your
           registration form and we will consider you for a travel
           stipend.
