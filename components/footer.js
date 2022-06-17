@@ -5,8 +5,6 @@ import {
   Text
 } from 'theme-ui'
 const Footer = () => (
-
-
   <Box
     sx={{
       backgroundImage: 'linear-gradient(90deg, rgba(5, 11, 20, 0.9) 0%, rgba(5, 11, 20, 0.9) 100% ), url(patterns/red.png)',
@@ -26,7 +24,7 @@ const Footer = () => (
       }}
     >
       <Box my={1} mb={1}>
-        Pages hand inked by <Text sx={{ fontWeight: 'bold' }}>Hack&nbsp;Club</Text> | Send mail 📮 to <Link href='mailto:assemble@hackclub.com' sx={{color: 'white'}}>assemble@hackclub.com</Link>
+        Pages hand inked by <Text sx={{ fontWeight: 'bold' }}>Hack&nbsp;Club</Text> | Send mail 📮 to <Link href='mailto:assemble@hackclub.com' sx={{color: 'white', fontWeight: 800}}>assemble@hackclub.com</Link>
       </Box>
       {/* only uncomment this once the bank project is in transparency mode & the site repo is public */}
 
