@@ -30,8 +30,7 @@ export const Rundown = () => (
           sx={{
             p: 3,
             display: 'flex',
-            gap: '8px',
-            
+            gap: '8px',  
           }}
         >
           <Box>
@@ -65,7 +64,8 @@ export const Rundown = () => (
           position: 'relative',
           textTransform: 'uppercase',
           height: '400px',
-          position: 'relative'
+          position: 'relative',
+          gridColumn: ['1/3', '1/3', 'unset']
         }}
       >
         <NextImage src={ImgFlagship1} alt="Flagship 2019" placeholder='blur' layout='fill' objectFit={'cover'} sizes='40vw' />
@@ -90,6 +90,8 @@ export const Rundown = () => (
           border: '8px solid black',
           position: 'relative',
           textTransform: 'uppercase',
+          height: '400px',
+          gridColumn: ['1/3', '1/3', 'unset']
         }}
       >
         <NextImage src={ImgFlagship2} alt="Flagship 2019" placeholder='blur' layout='fill' objectFit={'cover'} sizes='40vw' />
@@ -175,7 +177,7 @@ export const Rundown = () => (
         <Grid
           bg="white"
           p={3}
-          sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}
+          sx={{ display: 'grid', gridTemplateColumns: ['1fr', '1fr', '1fr 1fr']}}
         >
           <Box>
             <b>Venue:</b> Figma HQ <br /> 760 Market St, San Francisco
@@ -212,7 +214,7 @@ export const Rundown = () => (
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1516444326576!2d-122.40746738486592!3d37.786485779757264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807d45808df5%3A0x4d44fc8167718a61!2sFigma!5e0!3m2!1sen!2ssg!4v1654075144855!5m2!1sen!2ssg"
               height="100%"
               width="100%"
-              style={{ border: '0' }}
+              style={{ border: '0', minHeight: '300px' }}
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
