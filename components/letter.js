@@ -2,6 +2,7 @@ import { Box, Image } from 'theme-ui'
 import { fonts } from '../lib/theme'
 import Copy from './copy.mdx'
 import Parallax from './parallax'
+import noselect from './noselect.js'
 
 export const Letter = () => (
   <Box
@@ -9,11 +10,13 @@ export const Letter = () => (
       position: 'relative',
     }}
   >
+
     <Box
       sx={{
         backgroundImage:
           'linear-gradient(90deg, rgba(5, 11, 20, 0.6) 0%, rgba(5, 11, 20, 0.5) 100% )',
         py: 4,
+        pb: ['50vh', 4], 
         position: 'relative',
         zIndex: 99,
       }}
@@ -21,6 +24,7 @@ export const Letter = () => (
       <Box
         sx={{
           p: 2,
+          // display: ['none', 'none', 'inherit'],
           backgroundImage: 'url(patterns/white.png)',
           backgroundSize: '50px',
           maxWidth: '700px',
@@ -47,8 +51,16 @@ export const Letter = () => (
             py: 2,
             color: 'white',
             fontWeight: 800,
+            cursor: 'pointer',
             fontFamily: fonts.replace('ui-rounded,', ''),
             border: '2.5px solid black',
+            '&:active': {
+              transform: 'translateY(2px) translateX(1px)',
+              boxShadow: '-2px -2px #000',
+            }
+          }}
+          style={{
+            ...noselect
           }}
         >
           REGISTER →
