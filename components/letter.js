@@ -1,4 +1,4 @@
-import { Box, Image } from 'theme-ui'
+import { Box, Image, Link } from 'theme-ui'
 import { fonts } from '../lib/theme'
 import Copy from './copy.mdx'
 import Parallax from './parallax'
@@ -40,53 +40,55 @@ export const Letter = () => (
             right: 0,
           }}
         />
-        <Box
-          sx={{
-            position: 'absolute',
-            bottom: 0,
-            right: 0,
-            bg: 'red',
-            px: 3,
-            py: 2,
-            color: 'white',
-            fontWeight: 800,
-            cursor: 'pointer',
-            fontFamily: fonts.replace('ui-rounded,', ''),
-            border: '2.5px solid black',
-            boxShadow: '1.5px 1.5px #000',
-            '&:active': {
-              transform: 'translateY(2px) translateX(2px)',
-              boxShadow: 'none',
-            },
-            '& span': {
-              opacity: '0',
-              position: 'relative',
-              display: 'inline-block',
-              transition: '0.5s',
-            },
-            '& span:after': {
-              content: '"hi"',
+        <Link href="/register">
+          <Box
+            sx={{
               position: 'absolute',
-              opacity: '0',
-              top: '-17px',
-              right: '-20px',
-              transition: '0.5s',
-            },
-            '&:hover span': {
-              paddingRight: '25px',
-              opacity: '1',
-            },
-            '&:hover span:after': {
-              right: '0',
-              opacity: '1',
-            },
-          }}
-          style={{
-            ...noselect,
-          }}
-        >
-          REGISTER <span></span>
-        </Box>
+              bottom: 0,
+              right: 0,
+              bg: 'red',
+              px: 3,
+              py: 2,
+              color: 'white',
+              fontWeight: 800,
+              cursor: 'pointer',
+              fontFamily: fonts.replace('ui-rounded,', ''),
+              border: '2.5px solid black',
+              boxShadow: '1.5px 1.5px #000',
+              '&:active': {
+                transform: 'translateY(2px) translateX(2px)',
+                boxShadow: 'none',
+              },
+              '& span': {
+                opacity: '0',
+                position: 'relative',
+                display: 'inline-block',
+                transition: '0.5s',
+              },
+              '& span:after': {
+                content: '"→"',
+                position: 'absolute',
+                opacity: '0',
+                top: '-17px',
+                right: '-20px',
+                transition: '0.5s',
+              },
+              '&:hover span': {
+                paddingRight: '25px',
+                opacity: '1',
+              },
+              '&:hover span:after': {
+                right: '0',
+                opacity: '1',
+              },
+            }}
+            style={{
+              ...noselect,
+            }}
+          >
+            REGISTER <span></span>
+          </Box>
+        </Link>
         <Box
           sx={{
             border: '2px dashed',
