@@ -33,8 +33,8 @@ export const Letter = () => (
       >
         <Image
           src="/date.svg"
-          style={{
-            width: '20%',
+          sx={{
+            width: ['30%', '25%', '20%'],
             position: 'absolute',
             top: '-8px',
             right: 0,
