@@ -31,7 +31,7 @@ export const Letter = () => (
         <Image
           src="/date.svg"
           style={{
-            width: '20%',
+            width: '25%',
             position: 'absolute',
             top: '-8px',
             right: 0,
@@ -49,6 +49,7 @@ export const Letter = () => (
             fontWeight: 800,
             fontFamily: fonts.replace('ui-rounded,', ''),
             border: '2.5px solid black',
+            fontSize: 3
           }}
         >
           REGISTER →
@@ -59,6 +60,7 @@ export const Letter = () => (
             borderColor: 'muted',
             p: 3,
             pt: 2,
+            fontSize: 3
           }}
         >
           <Copy />

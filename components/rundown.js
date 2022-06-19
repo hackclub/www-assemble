@@ -34,9 +34,9 @@ export const Rundown = () => (
             
           }}
         >
-          <Box>
+          <Box sx={{fontSize: '18px'}}>
             <Heading
-              as="h3"
+              as="h2"
               mb={1}
               sx={{
                 display: 'flex',
@@ -48,7 +48,7 @@ export const Rundown = () => (
               }}
             >
               <Box sx={{ color: '#FF544A', pt: '1px' }}>
-                <Icon glyph="sam" size={32} />
+                <Icon glyph="sam" size={38} />
               </Box>
               Welcome To The Club
             </Heading>
@@ -129,9 +129,9 @@ export const Rundown = () => (
             gap: '8px',
           }}
         >
-          <Box>
+          <Box sx={{fontSize: '18px'}}>
             <Heading
-              as="h3"
+              as="h2"
               mb={1}
               sx={{
                 display: 'flex',
@@ -143,11 +143,11 @@ export const Rundown = () => (
               }}
             >
               <Box sx={{ color: '#FF544A', pt: '1px' }}>
-                <Icon glyph="like-fill" size={32} />
+                <Icon glyph="like-fill" size={38} />
               </Box>
               Everything Open Sourced
             </Heading>
-            One hackathon doesn’t constitute a renaissance, so we’re open-sourcing and documenting everything we work on for Assemble to allow others to create incredible hackathons in their communities. At the end of Assemble, we’ll launch a comprehensive guide for hackathon organizing, Hack Club-style.
+            One hackathon doesn’t constitute a renaissance, so we’re open-sourcing and documenting everything we create for Assemble to allow others to create incredible hackathons in their communities. After Assemble, we’ll launch a comprehensive guide for hackathon organizing, Hack Club-style.
           </Box>
         </Box>
       </Box>
@@ -163,11 +163,11 @@ export const Rundown = () => (
       <Heading
         mb={3}
         as="h1"
-        sx={{ textAlign: 'center', color: 'white' }}
+        sx={{ textAlign: 'center', color: 'white', fontSize: 4, textDecoration: 'underline' }}
       >
         The Rundown & Registration
       </Heading>
-      <Grid>
+      <Grid sx={{fontSize: 1}}>
         <Box bg="white" p={3}>
           <b>Date & Time:</b> Starts at 6:00pm on August 5th and ends at
           2:00pm on August 7th.
@@ -247,7 +247,7 @@ export const Rundown = () => (
               'linear-gradient(90deg, rgba(5, 11, 20, 0.3) 0%, rgba(5, 11, 20, 0.3) 100% ), url(/patterns/dots_blue.png)',
             // backgroundSize: '190px',
             boxShadow: 'elevated',
-            fontSize: 3,
+            fontSize: 4,
           }}
           as="a"
           href="https://airtable.com/shrqNfrlrI6JT5XYP"
