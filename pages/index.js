@@ -12,7 +12,7 @@ export default function Index() {
   return (
     <>
       <DinoEasterEgg />
-      <Nav />
+      {false && <Nav /> }
       <Letter />
       {false && <ProjectSection />}
       <Rundown />
