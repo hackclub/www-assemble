@@ -58,7 +58,7 @@ export const Letter = () => {
             paddingTop: '32px',
           }}
         >
-          <img src="welcome.png" height="84px" />
+          <img src="welcome.png" height="84px" style={{maxWidth: '70vw'}}/>
         </motion.div>
         <motion.div
           initial="hidden"
