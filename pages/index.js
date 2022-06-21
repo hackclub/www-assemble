@@ -7,6 +7,7 @@ import ProjectSection from '../components/project'
 import { Nav } from '../components/nav'
 import { Letter } from '../components/letter'
 import { Rundown } from '../components/rundown'
+import { Rundown2 } from '../components/rundown2'
 
 export default function Index() {
   return (
@@ -15,7 +16,9 @@ export default function Index() {
       {true && <Nav /> }
       <Letter />
       {false && <ProjectSection />}
-      <Rundown />
+      {false && <Rundown />}
+
+      <Rundown2 /> 
       {true && <Glossary />}
       {true && <PreviouslySection />}
       <Footer />
