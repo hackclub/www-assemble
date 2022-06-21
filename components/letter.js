@@ -10,7 +10,6 @@ const variants = {
   visible: { opacity: 1 },
 }
 
-
 export const Letter = () => {
   const { scrollYProgress } = useViewportScroll()
   const controls = useAnimation()
