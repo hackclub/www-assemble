@@ -1,5 +1,4 @@
-import { Box, Image } from 'theme-ui'
-import { fonts } from '../lib/theme'
+import { Box, Container } from 'theme-ui'
 import Copy from './fade.mdx'
 import Parallax from './parallax'
 import { motion, useViewportScroll, useAnimation } from 'framer-motion'
@@ -57,7 +56,9 @@ export const Letter = () => {
             paddingTop: '32px',
           }}
         >
-          <img src="welcome.png" height="84px" style={{maxWidth: '70vw'}}/>
+          <Container variant="narrow">
+            <img src="welcome.png" height="84px" style={{maxWidth: '70vw'}}/>
+          </Container>
         </motion.div>
         <motion.div
           initial="hidden"
@@ -71,7 +72,9 @@ export const Letter = () => {
             margin: 'auto',
           }}
         >
-          <Copy />
+          <Container variant="narrow">
+            <Copy />
+          </Container>
         </motion.div>
       </motion.div>
       <Parallax background={true}></Parallax>
