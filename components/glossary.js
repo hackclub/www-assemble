@@ -1,5 +1,5 @@
 import {
-  Box, Grid, Container, Heading
+  Box, Grid, Container, Heading, Text
 } from 'theme-ui'
 
 const Card = ({ question = "question", answer = "answer" }) => (
@@ -12,20 +12,20 @@ const Card = ({ question = "question", answer = "answer" }) => (
 const Glossary = () => (
   <Box bg="black">
     <Container variant="copy" sx={{ py: [4, 6] }}>
-      <Heading
-        mb={3}
-        as="h1"
-        sx={{ textAlign: 'center', color: 'white' }}
+      <Text
+        variant="text.title"
+        sx={{ color: 'white', pb: 3 }}
+        style={{ display: 'block' }}
       >
-        The Glossary
-      </Heading>
-      <Grid columns={[1, null, 2]} gap={4}>
+        Anything else?
+      </Text>
+      <Grid columns={[1, null, 2]} gap={[3, 3, 4]}>
         <Card
           question="Who is judging?"
           answer={
             <>
               Judging is done by the people that matter the most– attendees. If you ship a project you can vote on other projects. That said, we'll still have
-              <a style={{ color: 'black' }} href="https://hackclub.com/amas#past-amas">pretty cool people</a> hang out with us.
+              {' '}<a style={{ color: 'black' }} href="https://hackclub.com/amas#past-amas">pretty cool people</a> hang out with us.
             </>
           }
         />
