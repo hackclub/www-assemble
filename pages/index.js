@@ -16,7 +16,7 @@ export default function Index() {
       <Letter />
       {false && <ProjectSection />}
       <Rundown />
-      {false && <Glossary />}
+      {true && <Glossary />}
       {true && <PreviouslySection />}
       <Footer />
     </>

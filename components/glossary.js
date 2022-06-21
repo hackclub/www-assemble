@@ -2,14 +2,16 @@ import {
   Box, Grid, Container, Heading
 } from 'theme-ui'
 
+const Card = ({ question = "question", answer = "answer" }) => (
+  <Box sx={{ bg: 'white', p: 3, borderRadius: 3 }}>
+    <Heading as="h4" pb={2}>{question}</Heading>
+    {answer}
+  </Box>
+)
+
 const Glossary = () => (
-  <Box
-    sx={{
-      backgroundImage: 'url(patterns/blue.png)',
-      backgroundSize: '50px',
-    }}
-  >
-    <Container py={4}>
+  <Box bg="black">
+    <Container variant="copy" sx={{ py: [4, 6] }}>
       <Heading
         mb={3}
         as="h1"
@@ -17,37 +19,30 @@ const Glossary = () => (
       >
         The Glossary
       </Heading>
-      <Grid columns={3}>
-        <Box bg="white" p={3}>
-          <b>How will sleeping work?</b> <br />
-          We'll have blackout zones that you can sleep in overnight. We
-          recommend bringing a sleeping bag!
-        </Box>
-        <Box bg="white" p={3}>
-          <b>What should I bring?</b> <br />
-          Your computer, chargers, anything for your hack (hardware?),
-          toiletries, & a sleeping bag (optional).
-        </Box>
-        <Box bg="white" p={3}>
-          <b>How much will it cost?</b> <br />
-          Nothing! We’ll have meals, snacks, and beverages onsite at the
-          hackathon, as well as swag, prizes, and fun mini-events.
-        </Box>
-        <Box bg="white" p={3}>
-          <b>My parents have concerned, what can I do?</b> <br />
-          We're here to help, ask them to reach out to us at
-          assemble@hackclub.com and we'll make sure they're convinced.
-        </Box>
-        <Box bg="white" p={3}>
-          <b>What can I make?</b> <br />
-          Anything! Apps, art, websites and hardware projects are all
-          perfect for a hackathon!
-        </Box>
-        <Box bg="white" p={3}>
-          <b>Will there be travel assistance?</b> <br />
-          We will be providing a number of travel stipends, and will be
-          able to help issue letters for visa applications.
-        </Box>
+      <Grid columns={[1, null, 2]} gap={4}>
+        <Card
+          question="Who is judging?"
+          answer={
+            <>
+              Judging is done by the people that matter the most– attendees. If you ship a project you can vote on other projects. That said, we'll still have
+              <a style={{ color: 'black' }} href="https://hackclub.com/amas#past-amas">pretty cool people</a> hang out with us.
+            </>
+          }
+        />
+        <Card
+          question="What do I need?"
+          answer="Your laptop, chargers, anything for your hack (hardware?), toiletries, and an open mind. We can help with the laptop. The mind thing is on you."
+        />
+        <Card
+          question="How much does it cost?"
+          answer="Nothing! We’ll have meals, snacks, and beverages onsite at the hackathon, as well as swag, prizes, and fun mini-events."
+        />
+        <Card
+          question="My parent are worried!"
+          answer="We're here to help, ask them to reach out to us at assemble@hackclub.com and we'll make sure to answer all their questions."
+        />
+        <Card question="What can I make?" answer="Anything! Apps, art, sites, and hardware projects are all perfect for a hackathon." />
+        <Card question="I can't pay for travel..." answer="We're working on providing travel stipends & can issue letters for visa applications." />
       </Grid>
     </Container>
   </Box>
