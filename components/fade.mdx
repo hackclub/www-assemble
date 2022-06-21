@@ -1,4 +1,6 @@
-import { Heading } from 'theme-ui'
+import { Heading, Box } from 'theme-ui'
+
+<Box className="copy">
 
 Dear reader, viewer, person behind the screen,
 
@@ -22,16 +24,18 @@ experience the energy of being in-person again.
 We can't do this alone. After Assemble, we'll open source the entire event, launch a guide to creating a hackathon and work with you to start your own hackathon. Together, we'll kick start a high school hackathon renaissance. 
 
 **Hackers, [assemble](https://airtable.com/shrqNfrlrI6JT5XYP)!**
+</Box>
 
 <style>
+  {/* TODO: don't force these to be global */}
   {`
-  p {
-    font-size: 18px!important;
-    color: var(--theme-ui-colors-white)!important;
+  .copy p {
+    font-size: 18px;
+    color: var(--theme-ui-colors-white);
   }
-  a {
-    color: var(--theme-ui-colors-white)!important;
-    text-decoration: underline!important;
+  .copy a {
+    color: var(--theme-ui-colors-white) !important;
+    text-decoration: underline;
   }
   `}
 </style>
