@@ -1,7 +1,7 @@
 const ComicImage = ({href, src, alt, webp, objectPosition = undefined}) => {
   const content = (
-    <picture style={{height: '100%'}}>
-      {Boolean(webp) && <source srcset={webp} type="image/webp" />}
+    <picture>
+      {Boolean(webp) && <source srcSet={webp} type="image/webp" />}
       <img src={src}
       alt={alt}
       title={alt}
