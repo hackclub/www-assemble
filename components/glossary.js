@@ -13,7 +13,7 @@ const Glossary = () => (
   <Box sx={{
       backgroundSize: '150px',
       backgroundImage:
-        'url(/patterns/green.png)'
+        'linear-gradient(90deg, rgba(5, 11, 20, 0.3) 0%, rgba(5, 11, 20, 0.3) 100% ), url(/patterns/green.png)'
   }}>
     <Container variant="copy" sx={{ py: [4, 6] }}>
       <Text
