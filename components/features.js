@@ -2,7 +2,7 @@ import { Container, Grid, Box, Heading, Text, Link } from 'theme-ui'
 import Icon from '@hackclub/icons'
 import ComicImage from './comic-image'
 
-export const Rundown2 = () => (
+export const Features = () => (
   <Box
     sx={{
       py: 5,
