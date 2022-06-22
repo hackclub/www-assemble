@@ -16,9 +16,8 @@ export default function Index() {
       {true && <Nav /> }
       <Letter />
       {false && <ProjectSection />}
-      {false && <Rundown />}
-
-      <Rundown2 /> 
+       <Rundown2 /> 
+      {true && <Rundown />}
       {true && <Glossary />}
       {true && <PreviouslySection />}
       <Footer />
