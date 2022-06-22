@@ -15,15 +15,14 @@ const Glossary = () => (
       backgroundImage:
         'linear-gradient(90deg, rgba(5, 11, 20, 0.3) 0%, rgba(5, 11, 20, 0.3) 100% ), url(/patterns/green.png)'
   }}>
-    <Container variant="copy" sx={{ py: [4, 6] }}>
+    <Container sx={{ py: [4, 6] }}>
       <Text
         variant="text.title"
-        sx={{ color: 'white', pb: 3 }}
-        style={{ display: 'block' }}
+        sx={{ color: 'white', pb: 4, display: 'block', textShadow: 'elevated', textDecoration: 'underline' }}
       >
         Anything else?
       </Text>
-      <Grid columns={[1, null, 2]} gap={[3, 3, 4]}>
+      <Grid columns={[1, null, 3]} gap={[3, 3, 3]}>
         <Card
           question="Who is judging?"
           answer={

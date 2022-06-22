@@ -1,6 +1,6 @@
 const ComicImage = ({href, src, alt, webp, objectPosition = undefined}) => {
   const content = (
-    <picture>
+    <picture style={{height: '100%'}}>
       {Boolean(webp) && <source srcset={webp} type="image/webp" />}
       <img src={src}
       alt={alt}
@@ -8,16 +8,15 @@ const ComicImage = ({href, src, alt, webp, objectPosition = undefined}) => {
       style={{
         objectFit: 'cover',
         border: '3px solid black',
-        // height: '200px',
         objectPosition,
-        maxHeight: '300px',
+        height: '100%',
         width: '100%'
       }}/>
     </picture>
   )
 
   if (href) {
-    return <a href={href} target="_blank" style={{padding: 0, margin: 0}}>{content}</a>
+    return <a href={href} target="_blank" style={{padding: 0, margin: 0, height: '100%'}}>{content}</a>
   } else {
     return content
   }
