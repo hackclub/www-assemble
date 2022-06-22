@@ -6,153 +6,7 @@ import NextImage from 'next/image'
 import ComicImage from './comic-image'
 
 export const Rundown = () => (
-  <div
-  style={{
-    backgroundImage: 'url(patterns/dots_blue.png), linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100% )',
-  }}
->
-  <Container mb={4} pt={4}>
-    <Grid columns={2}>
-    <Box
-        sx={{
-          p: 1,
-          bg: 'sunken',
-          color: 'black',
-          gridColumn: '1 / 3',
-          textAlign: 'center',
-          backgroundSize: '30px',
-          backgroundImage:
-            'url(/patterns/white.png)',
-          border: '3px solid #FF544A',
-        }}
-      >
-        <Box
-          sx={{
-            p: 3,
-            display: 'flex',
-            gap: '8px',
-            
-          }}
-        >
-          <Box>
-            <Heading
-              as="h3"
-              mb={1}
-              sx={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '4px',
-                ml: '-2px',
-                margin: 'auto',
-                width: 'fit-content',
-              }}
-            >
-              <Box sx={{ color: '#FF544A', pt: '1px' }}>
-                <Icon glyph="sam" size={32} />
-              </Box>
-              Welcome To The Club
-            </Heading>
-            You don't have to be in Hack Club to join– in fact we only
-            expect half of attendees to be in a club.  We just care
-            that you care about learning/building stuff with us.
-            Registrations from middle or high schoolers welcome!
-          </Box>
-        </Box>
-      </Box>
-      <Box
-        sx={{
-          border: '8px solid black',
-          position: 'relative',
-          textTransform: 'uppercase',
-          height: '400px',
-          position: 'relative'
-        }}
-      >
-        <NextImage src={ImgFlagship1} alt="Flagship 2019" placeholder='blur' layout='fill' objectFit={'cover'} sizes='40vw' />
-        <Box
-          sx={{
-            bg: '#000',
-            p: 2,
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            pt: 0,
-            pr: 3,
-            color: 'white',
-            fontFamily: 'heading',
-          }}
-        >
-          The last time we were in San Francisco...
-        </Box>
-      </Box>
-      <Box
-        sx={{
-          border: '8px solid black',
-          position: 'relative',
-          textTransform: 'uppercase',
-        }}
-      >
-        <NextImage src={ImgFlagship2} alt="Flagship 2019" placeholder='blur' layout='fill' objectFit={'cover'} sizes='40vw' />
-        <Box
-          sx={{
-            bg: '#000',
-            p: 2,
-            position: 'absolute',
-            bottom: 0,
-            right: 0,
-            pb: 0,
-            pl: 3,
-            color: 'white',
-            fontFamily: 'heading',
-          }}
-        >
-          ... for Flagship 2019, it was magical.
-        </Box>
-      </Box>
-      <Box
-        sx={{
-          p: 1,
-          bg: 'sunken',
-          color: 'black',
-          gridColumn: '1 / 3',
-          textAlign: 'center',
-          backgroundSize: '30px',
-          backgroundImage:
-            'url(/patterns/white.png)',
-          border: '3px solid #FF544A',
-        }}
-      >
-        <Box
-          sx={{
-            p: 3,
-            display: 'flex',
-            gap: '8px',
-          }}
-        >
-          <Box>
-            <Heading
-              as="h3"
-              mb={1}
-              sx={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '4px',
-                ml: '-2px',
-                margin: 'auto',
-                width: 'fit-content',
-              }}
-            >
-              <Box sx={{ color: '#FF544A', pt: '1px' }}>
-                <Icon glyph="like-fill" size={32} />
-              </Box>
-              Everything Open Sourced
-            </Heading>
-            One hackathon doesn’t constitute a renaissance, so we’re open-sourcing and documenting everything we work on for Assemble to allow others to create incredible hackathons in their communities. At the end of Assemble, we’ll launch a comprehensive guide for hackathon organizing, Hack Club-style.
-          </Box>
-        </Box>
-      </Box>
-    </Grid>
-  </Container>
+<div>
   <Box
     sx={{
       backgroundImage: 'url(patterns/red.png)',
@@ -232,7 +86,8 @@ export const Rundown = () => (
           the Hack Club community or be a Hack Club leader.
         </Box>
         <Box bg="white" p={3}>
-          <b>COVID-19:</b> We'll be providing all participants with N95
+          <b>COVID-19:</b> We require all participants to be vaccinated against COVID-19 or to have a medical exemption.
+          We'll be providing all participants with N95
           masks and rapid tests. We'll also be performing anonymous
           contact tracing and supporting any participant who tests
           positive with isolation.
