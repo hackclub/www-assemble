@@ -58,7 +58,6 @@ export const Nav = () => {
       </Heading>
       <Heading as="h3">The Hackathon</Heading>
       <Heading as="h3">The Rundown</Heading>
-      <Heading as="h3">Last Summer</Heading>
       <Heading as="h3" p={2} bg="green" sx={{ borderRadius: '4px' }}>
         Register
       </Heading>
