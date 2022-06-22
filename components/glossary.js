@@ -10,7 +10,11 @@ const Card = ({ question = "question", answer = "answer" }) => (
 )
 
 const Glossary = () => (
-  <Box bg="black">
+  <Box sx={{
+      backgroundSize: '150px',
+      backgroundImage:
+        'url(/patterns/green.png)'
+  }}>
     <Container variant="copy" sx={{ py: [4, 6] }}>
       <Text
         variant="text.title"
