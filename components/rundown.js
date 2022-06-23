@@ -37,12 +37,12 @@ export const Rundown = () => (
           <Grid
             bg="white"
             p={3}
-            sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}
+            sx={{ display: 'grid', gridTemplateColumns: ['1fr', '1fr', '1fr 1fr']}}
           >
             <Box>
               <b>Venue:</b> Figma HQ <br /> 760 Market St, San Francisco
               <br /> California 94102
-              <Grid columns={2} mt={2}>
+              <Grid columns={[1, 2, 2]} mt={2}>
                 <ComicImage
                   webp="https://cloud-nmdl7opdm-hack-club-bot.vercel.app/3hibernia.webp"
                   src="https://cloud-me9ijbqml-hack-club-bot.vercel.app/0hibernia.png"
@@ -74,7 +74,7 @@ export const Rundown = () => (
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1516444326576!2d-122.40746738486592!3d37.786485779757264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807d45808df5%3A0x4d44fc8167718a61!2sFigma!5e0!3m2!1sen!2ssg!4v1654075144855!5m2!1sen!2ssg"
                 height="100%"
                 width="100%"
-                style={{ border: '0' }}
+                style={{ border: '0', minHeight: '300px' }}
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
@@ -111,16 +111,18 @@ export const Rundown = () => (
               boxShadow: 'elevated',
               fontSize: 3,
             }}
+            className="largeRegisterButton"
             as="a"
             href="https://airtable.com/shrqNfrlrI6JT5XYP"
             target="_blank"
           >
-            REGISTER
+            <span className="assembleRegisterText">REGISTER</span>
             <Text
               sx={{
                 transform: 'translateY(-3.5px)',
                 display: 'inline-block',
               }}
+              className="externalIcon"
             >
               <Icon glyph="external" size={16} />
             </Text>
