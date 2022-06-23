@@ -1,7 +1,5 @@
 import Copy from './copy.mdx'
-import { Box, Image, Link, Container } from 'theme-ui'
-import { fonts } from '../lib/theme'
-import noselect from './noselect.js'
+import { Box, Container } from 'theme-ui'
 import { motion, useViewportScroll, useAnimation } from 'framer-motion'
 import { useEffect } from 'react'
 import Parallax from './parallax'
@@ -36,6 +34,7 @@ export const Letter = () => {
           'linear-gradient(90deg, rgba(5, 11, 20, 0.6) 0%, rgba(5, 11, 20, 0.5) 100% )',
         position: 'relative',
       }}
+      id="letter"
     >
       <motion.div
         animate={controls}
