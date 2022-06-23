@@ -8,12 +8,14 @@ import { Nav } from '../components/nav'
 import { Letter } from '../components/letter'
 import { Rundown } from '../components/rundown'
 import { Features } from '../components/features'
+import { BetaWelcome } from '../components/beta-welcome'
 
 export default function Index() {
   return (
     <>
       <DinoEasterEgg />
       {true && <Nav /> }
+      {/* <BetaWelcome /> */}
       <Letter />
       {false && <ProjectSection />}
       <Features /> 
