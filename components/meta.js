@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import theme from '../lib/theme'
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const makeTitle = (title, name) =>
   title === name ? title : `${title} – ${name}`
@@ -36,7 +36,7 @@ const Meta = ({
     <meta key="og_type" property="og:type" content="website" />
     <meta key="og_site" property="og:site_name" content={name} />
     <meta key="tw_site" name="twitter:site" content="@hackclub" />
-    <title key="title">{makeTitle(title, name)}</title>
+    <title key="title">{focus ? 'Come together...' : '...over me'}</title>
     <meta key="og_title" property="og:title" content={makeTitle(title, name)} />
     <meta
       key="tw_title"
