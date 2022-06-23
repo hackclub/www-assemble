@@ -27,7 +27,7 @@ const DinoEasterEgg = (props) => {
           cursor: 'pointer',
           transition: 'ease-in-out 0.3s',
         }}
-        onClick={() => window.open('https://dinosaurbbq.org', '_blank')}
+        onClick={() => window.open('https://www.dinosaurbbq.org/', '_blank')}
       />
       </Box>
     </>

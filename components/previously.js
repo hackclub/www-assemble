@@ -71,17 +71,16 @@ const PreviouslySection = () => {
           width="100vw"
           height="100vh"
           playing={video == '1' ? true : false}
-          style={{ pointerEvents: 'none' }}
           url={`https://www.youtube.com/watch?v=2BID8_pGuqA`}
-          onClick={() => toggleVideo('0.1')}
           onEnded={() => toggleVideo('0')}
           config={{
             youtube: {
               playerVars: {
-                showinfo: 0,
+                showinfo: 1,
                 autoplay: 0,
-                modestbranding: 1,
+                modestbranding: 0,
                 rel: 0,
+                controls: 1
               },
             },
           }}

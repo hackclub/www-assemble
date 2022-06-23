@@ -13,18 +13,20 @@
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
+    "@hackclub/design-system": "^0.0.1-18",
     "@hackclub/icons": "^0.0.9",
     "@mattjennings/react-modal": "^1.0.3",
     "@mattjennings/react-modal-stack": "^1.0.4",
     "@mdx-js/loader": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "@next/mdx": "^12.1.0",
-    "framer-motion": "2.0.0",
+    "framer-motion": "3.10.6",
     "next": "^12.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-player": "^2.10.1",
     "sharp": "^0.30.6",
+    "styled-components": "^5.3.5",
     "theme-ui": "^0.14.5"
   },
   "devDependencies": {

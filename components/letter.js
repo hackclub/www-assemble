@@ -1,106 +1,87 @@
-import { Box, Image, Link } from 'theme-ui'
-import { fonts } from '../lib/theme'
 import Copy from './copy.mdx'
-import Parallax from './parallax'
+import { Box, Image, Link, Container } from 'theme-ui'
+import { fonts } from '../lib/theme'
 import noselect from './noselect.js'
+import { motion, useViewportScroll, useAnimation } from 'framer-motion'
+import { useEffect } from 'react'
+import Parallax from './parallax'
 
-export const Letter = () => (
-  <Box
-    sx={{
-      position: 'relative',
-    }}
-  >
+const variants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 },
+}
+
+export const Letter = () => {
+  const { scrollYProgress } = useViewportScroll()
+  const controls = useAnimation()
+  useEffect(() => scrollYProgress.onChange(latest => {
+    if(latest>0){
+      controls.start({
+        backgroundImage: 'linear-gradient(90deg, rgba(5, 11, 20, 0.9) 0%, rgba(5, 11, 20, 0.9) 100% )',
+        transition: { duration: 0.5 },
+      })
+    }
+    if(latest == 0){
+      controls.start({
+        backgroundImage: 'linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100% )',
+        transition: { duration: 1 },
+      })
+    }
+  }), [])
+  
+  return (
     <Box
       sx={{
         backgroundImage:
           'linear-gradient(90deg, rgba(5, 11, 20, 0.6) 0%, rgba(5, 11, 20, 0.5) 100% )',
-        py: 4,
-        pb: ['50vh', 4],
         position: 'relative',
-        zIndex: 99,
       }}
     >
-      <Box
-        sx={{
-          p: 2,
-          // display: ['none', 'none', 'inherit'],
-          backgroundImage: 'url(patterns/white.png)',
-          backgroundSize: '50px',
-          maxWidth: '700px',
-          margin: 'auto',
+      <motion.div
+        animate={controls}
+        style={{
+          paddingTop: '32px',
+          paddingBottom: '32px',
           position: 'relative',
+          zIndex: 99,
+          minHeight: '100vh',
+          backgroundImage: 'linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100% )'
         }}
       >
-        <Image
-          src="/date.svg"
-          sx={{
-            width: ['30%', '25%', '20%'],
-            position: 'absolute',
-            top: '-8px',
-            right: 0,
-          }}
-        />
-        <Link href="/register">
-          <Box
-            sx={{
-              position: 'absolute',
-              bottom: 0,
-              right: 0,
-              bg: 'red',
-              px: 3,
-              py: 2,
-              color: 'white',
-              fontWeight: 800,
-              cursor: 'pointer',
-              fontFamily: fonts.replace('ui-rounded,', ''),
-              border: '2.5px solid black',
-              boxShadow: '1.5px 1.5px #000',
-              '&:active': {
-                transform: 'translateY(2px) translateX(2px)',
-                boxShadow: 'none',
-              },
-              '& span': {
-                opacity: '0',
-                position: 'relative',
-                display: 'inline-block',
-                transition: '0.5s',
-              },
-              '& span:after': {
-                content: '"→"',
-                position: 'absolute',
-                opacity: '0',
-                top: '-17px',
-                right: '-20px',
-                transition: '0.5s',
-              },
-              '&:hover span': {
-                paddingRight: '25px',
-                opacity: '1',
-              },
-              '&:hover span:after': {
-                right: '0',
-                opacity: '1',
-              },
-            }}
-            style={{
-              ...noselect,
-            }}
-          >
-            REGISTER <span></span>
-          </Box>
-        </Link>
-        <Box
-          sx={{
-            border: '2px dashed',
-            borderColor: 'muted',
-            p: 3,
-            pt: 2,
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={variants}
+          transition={{ duration: 4 }}
+          style={{
+            textAlign: 'left',
+            width: '70vw',
+            margin: 'auto',
+            paddingTop: '32px',
           }}
         >
-          <Copy />
-        </Box>
-      </Box>
+          <Container variant="narrow">
+            <img src="welcome.png" height="84px" style={{maxWidth: '70vw'}} alt="welcome home..." />
+          </Container>
+        </motion.div>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={variants}
+          transition={{ duration: 4, delay: 3 }}
+          style={{
+            textAlign: 'left',
+            paddingTop: '18px',
+            width: '70vw',
+            margin: 'auto',
+          }}
+        >
+          <Container variant="narrow">
+            <Copy />
+          </Container>
+        </motion.div>
+      </motion.div>
+      <Parallax background={true}></Parallax>
     </Box>
-    <Parallax background={true}></Parallax>
-  </Box>
-)
+  )
+}

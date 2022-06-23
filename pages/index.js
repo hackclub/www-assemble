@@ -7,16 +7,20 @@ import ProjectSection from '../components/project'
 import { Nav } from '../components/nav'
 import { Letter } from '../components/letter'
 import { Rundown } from '../components/rundown'
+import { Features } from '../components/features'
+import { BetaWelcome } from '../components/beta-welcome'
 
 export default function Index() {
   return (
     <>
       <DinoEasterEgg />
-      <Nav />
+      {true && <Nav /> }
+      {/* <BetaWelcome /> */}
       <Letter />
       {false && <ProjectSection />}
-      <Rundown />
-      {false && <Glossary />}
+      <Features /> 
+      {true && <Rundown />}
+      {true && <Glossary />}
       {true && <PreviouslySection />}
       <Footer />
     </>
