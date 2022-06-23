@@ -10,7 +10,7 @@ const Meta = ({
   name = 'Assemble', // site name
   description = 'Join us in SF!', // page description
   image = '', // social card image URL
-  url = 'https://assemble.hackclub.com',
+  url = 'https://hackclub.com',
   children,
 }) => {
   const [focus, setFocus] = useState(true)
@@ -88,7 +88,6 @@ const Meta = ({
         sizes="16x16"
         href={`${url}/favicon-16x16.png`}
       />
-      <link key="manifest" rel="manifest" href={`${url}/site.webmanifest`} />
       {children}
     </Head>
   )
