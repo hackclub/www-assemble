@@ -23,13 +23,13 @@ export const Rundown = () => (
             letterSpacing: 'title',
             lineHeight: 'title',
             textDecoration: 'underline',
-            mb: 4, 
-            mt: 3
+            mb: 4,
+            mt: 3,
           }}
         >
           The Rundown & Registration
         </Heading>
-        <Grid sx={{fontSize: '18px'}}>
+        <Grid sx={{ fontSize: '18px' }}>
           <Box bg="white" p={3}>
             <b>Date & Time:</b> Starts at 6:00pm on August 5th and ends at
             2:00pm on August 7th.
@@ -37,7 +37,10 @@ export const Rundown = () => (
           <Grid
             bg="white"
             p={3}
-            sx={{ display: 'grid', gridTemplateColumns: ['1fr', '1fr', '1fr 1fr']}}
+            sx={{
+              display: 'grid',
+              gridTemplateColumns: ['1fr', '1fr', '1fr 1fr'],
+            }}
           >
             <Box>
               <b>Venue:</b> Figma HQ <br /> 760 Market St, San Francisco

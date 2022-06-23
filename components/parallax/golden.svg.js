@@ -1,12 +1,20 @@
-export default function Golden () {
-    return (
-        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="1039.000000pt" height="608.000000pt" viewBox="0 0 1039.000000 608.000000"
- preserveAspectRatio="xMidYMid meet">
-
-            <g transform="translate(0.000000,608.000000) scale(0.100000,-0.100000)"
-            fill="#c0362c" stroke="none">
-                <path d="M3867 5953 c-9 -2 -28 -23 -42 -46 -37 -64 -106 -127 -151 -138 -69
+export default function Golden() {
+  return (
+    <svg
+      version="1.0"
+      xmlns="http://www.w3.org/2000/svg"
+      width="1039.000000pt"
+      height="608.000000pt"
+      viewBox="0 0 1039.000000 608.000000"
+      preserveAspectRatio="xMidYMid meet"
+    >
+      <g
+        transform="translate(0.000000,608.000000) scale(0.100000,-0.100000)"
+        fill="#c0362c"
+        stroke="none"
+      >
+        <path
+          d="M3867 5953 c-9 -2 -28 -23 -42 -46 -37 -64 -106 -127 -151 -138 -69
                 -16 -94 -12 -94 14 0 29 -18 47 -46 47 -30 0 -48 -25 -41 -58 l6 -29 -81 -9
                 c-74 -9 -81 -8 -94 10 -8 11 -14 27 -14 35 0 24 -50 81 -71 81 -10 0 -103 -65
                 -207 -144 -712 -546 -1440 -1006 -2709 -1712 l-323 -179 0 -37 0 -37 112 63
@@ -323,8 +331,9 @@ export default function Golden () {
                 -3 c-17 -2 -43 -2 -56 0 l-25 3 22 32 c13 18 26 33 30 33 3 0 19 -15 34 -32z
                 m-6339 -252 l-62 -90 -2 39 c-2 22 -4 96 -5 164 l-3 123 67 -73 66 -73 -61
                 -90z m222 -96 l91 -105 -171 -3 c-95 -1 -174 0 -176 2 -3 3 30 55 73 116 42
-                61 81 107 85 103 4 -4 48 -55 98 -113z"/>
-            </g>
-        </svg>
-    );
+                61 81 107 85 103 4 -4 48 -55 98 -113z"
+        />
+      </g>
+    </svg>
+  )
 }

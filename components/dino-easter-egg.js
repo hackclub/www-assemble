@@ -1,6 +1,6 @@
 import { Image, Box } from 'theme-ui'
 
-const DinoEasterEgg = (props) => {
+const DinoEasterEgg = props => {
   // return null
   return (
     <>
@@ -15,20 +15,21 @@ const DinoEasterEgg = (props) => {
           '&:hover > img': {
             bottom: '-80px',
           },
-        }}>
-      <Image
-        src="/dinosaur-waving.png"
-        sx={{
-          position: 'relative',
-          bottom: '-100%',
-          height: '240px',
-          right: -45,
-          zIndex: '200',
-          cursor: 'pointer',
-          transition: 'ease-in-out 0.3s',
         }}
-        onClick={() => window.open('https://www.dinosaurbbq.org/', '_blank')}
-      />
+      >
+        <Image
+          src="/dinosaur-waving.png"
+          sx={{
+            position: 'relative',
+            bottom: '-100%',
+            height: '240px',
+            right: -45,
+            zIndex: '200',
+            cursor: 'pointer',
+            transition: 'ease-in-out 0.3s',
+          }}
+          onClick={() => window.open('https://www.dinosaurbbq.org/', '_blank')}
+        />
       </Box>
     </>
   )

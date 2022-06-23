@@ -1,2 +1,2 @@
-import Parallax from './parallax.js';
-export default Parallax;
+import Parallax from './parallax.js'
+export default Parallax

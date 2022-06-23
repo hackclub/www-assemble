@@ -58,11 +58,13 @@ export const Nav = () => {
         className="navMainLink"
       >
         <Link href="#letter">
-          <Image src="/invert.png" height="40px" sx={{ height: '40px', cursor: 'pointer' }} />
+          <Image
+            src="/invert.png"
+            height="40px"
+            sx={{ height: '40px', cursor: 'pointer' }}
+          />
         </Link>
-        <Link href="#letter">
-          ASSEMBLE
-        </Link>
+        <Link href="#letter">ASSEMBLE</Link>
       </Heading>
       <Link href="#features">
         <Heading as="h3" sx={{ cursor: 'pointer' }}>

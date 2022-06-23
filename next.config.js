@@ -9,7 +9,7 @@ module.exports = withMDX({
         source: '/register',
         permanent: true,
         destination: 'https://www-assemble-register.hackclub.dev/',
-      }
+      },
     ]
   },
 })

@@ -28,7 +28,7 @@ const PreviouslySection = () => {
           height: '100vh',
           display: video != '1' ? 'default' : 'none',
           textAlign: 'center',
-          pt: '25vh'
+          pt: '25vh',
         }}
       >
         <Container>
@@ -37,10 +37,11 @@ const PreviouslySection = () => {
               fontSize: ['2.3rem', '3rem', '3rem'],
               marginBottom: '16px',
               maxWidth: '700px',
-              mx: 'auto'
+              mx: 'auto',
             }}
           >
-            Curious about what we did last summer? Check out The Hacker Zephyr story!
+            Curious about what we did last summer? Check out The Hacker Zephyr
+            story!
           </Heading>
           <Text
             sx={{
@@ -80,7 +81,7 @@ const PreviouslySection = () => {
                 autoplay: 0,
                 modestbranding: 0,
                 rel: 0,
-                controls: 1
+                controls: 1,
               },
             },
           }}

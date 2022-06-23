@@ -12,21 +12,27 @@ const variants = {
 export const Letter = () => {
   const { scrollYProgress } = useViewportScroll()
   const controls = useAnimation()
-  useEffect(() => scrollYProgress.onChange(latest => {
-    if(latest>0){
-      controls.start({
-        backgroundImage: 'linear-gradient(90deg, rgba(5, 11, 20, 0.9) 0%, rgba(5, 11, 20, 0.9) 100% )',
-        transition: { duration: 0.5 },
-      })
-    }
-    if(latest == 0){
-      controls.start({
-        backgroundImage: 'linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100% )',
-        transition: { duration: 1 },
-      })
-    }
-  }), [])
-  
+  useEffect(
+    () =>
+      scrollYProgress.onChange(latest => {
+        if (latest > 0) {
+          controls.start({
+            backgroundImage:
+              'linear-gradient(90deg, rgba(5, 11, 20, 0.9) 0%, rgba(5, 11, 20, 0.9) 100% )',
+            transition: { duration: 0.5 },
+          })
+        }
+        if (latest == 0) {
+          controls.start({
+            backgroundImage:
+              'linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100% )',
+            transition: { duration: 1 },
+          })
+        }
+      }),
+    [],
+  )
+
   return (
     <Box
       sx={{
@@ -44,7 +50,8 @@ export const Letter = () => {
           position: 'relative',
           zIndex: 99,
           minHeight: '100vh',
-          backgroundImage: 'linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100% )'
+          backgroundImage:
+            'linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100% )',
         }}
       >
         <motion.div
@@ -60,7 +67,12 @@ export const Letter = () => {
           }}
         >
           <Container variant="narrow">
-            <img src="welcome.png" height="84px" style={{maxWidth: '70vw'}} alt="welcome home..." />
+            <img
+              src="welcome.png"
+              height="84px"
+              style={{ maxWidth: '70vw' }}
+              alt="welcome home..."
+            />
           </Container>
         </motion.div>
         <motion.div

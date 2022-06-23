@@ -14,11 +14,11 @@ export default function Index() {
   return (
     <>
       <DinoEasterEgg />
-      {true && <Nav /> }
+      {true && <Nav />}
       {/* <BetaWelcome /> */}
       <Letter />
       {false && <ProjectSection />}
-      <Features /> 
+      <Features />
       {true && <Rundown />}
       {true && <Glossary />}
       {true && <PreviouslySection />}

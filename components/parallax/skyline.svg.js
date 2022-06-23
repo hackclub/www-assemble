@@ -1,11 +1,29 @@
-export default function Skyline () {
-    return (
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1314px"
-	 height="786.141px" viewBox="0 0 1314 786.141" enable-background="new 0 0 1314 786.141" xml:space="preserve">
-            <g id="Layer_1">
-                <rect x="-8.275" y="-4.274" fill="url(#SVGID_1_)" width="1330.551" height="794.689"/>
-                <g>
-                    <path fill="#5f93b2" d="M1419.826,599.039v-3.622h-10.891v-8.325h-20.329v-44.896h-7.986V536.4h-26.864v-7.964h-56.63v-80.018
+export default function Skyline() {
+  return (
+    <svg
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      x="0px"
+      y="0px"
+      width="1314px"
+      height="786.141px"
+      viewBox="0 0 1314 786.141"
+      enable-background="new 0 0 1314 786.141"
+      xml:space="preserve"
+    >
+      <g id="Layer_1">
+        <rect
+          x="-8.275"
+          y="-4.274"
+          fill="url(#SVGID_1_)"
+          width="1330.551"
+          height="794.689"
+        />
+        <g>
+          <path
+            fill="#5f93b2"
+            d="M1419.826,599.039v-3.622h-10.891v-8.325h-20.329v-44.896h-7.986V536.4h-26.864v-7.964h-56.63v-80.018
                         h-2.18c0,0-1.452,3.619-5.444,2.896v-3.619h-2.541c0,0-26.863,18.827-29.769,22.81c0,0-0.724-5.792-9.438-6.517v2.534h-1.815
                         v-2.896c0,0-16.336,0-35.574,14.481v3.983h-2.542c0,0-11.255-14.12-33.761-16.654v4.345h-1.814l-1.453-4.345
                         c0,0-7.986-2.175-10.526,8.325v26.327h-13.433v-99.484h-15.609v-3.257h-55.917V500.09h-57.103V371.526h-67.885v24.982h-11.254
@@ -17,9 +35,12 @@ export default function Skyline () {
                         v-23.171h-18.151v-2.173h-5.811v-1.812h-2.54v2.174h-6.169v1.811h-12.347v53.945h-21.417v1.811h-5.082v6.879l-15.609-8.325
                         l-10.167,2.533v-48.881H268.958v22.091h-11.254v-24.982h-67.886v70.136h-2.82v80.145H83.862V416.217h-7.064v3.258H61.188v38.273
                         H47.757v-26.327c-2.542-10.501-10.527-8.325-10.527-8.325l-1.455,4.346h-1.814v-4.346C11.458,425.629,0.2,439.75,0.2,439.75
-                        h-2.541v-3.983c-1.332-1.003-2.647-1.928-3.946-2.796v166.068H1419.826z M81.114,474.292h-5.502v-17.146h5.502V474.292z"/>
-                    <g>
-                        <path fill="url(#SVGID_2_)" d="M280.604,616.545v-164.02h15.653v-26.09h15.762v-21.571c0-1.589,1.293-2.881,2.881-2.881
+                        h-2.541v-3.983c-1.332-1.003-2.647-1.928-3.946-2.796v166.068H1419.826z M81.114,474.292h-5.502v-17.146h5.502V474.292z"
+          />
+          <g>
+            <path
+              fill="url(#SVGID_2_)"
+              d="M280.604,616.545v-164.02h15.653v-26.09h15.762v-21.571c0-1.589,1.293-2.881,2.881-2.881
                             c0.324,0,0.656,0.062,0.988,0.183l0.207,0.076l18.725,5.018v-65.366h17.036l1.431-2.566l0.828-1.428l0.033-1.406v-6.557h8.199
                             l1.107-0.596c3.671-1.973,7.827-3.016,12.02-3.016c4.193,0,8.35,1.043,12.02,3.016l1.109,0.596h12.538l31.823,8.526v6.778
                             l19.328,5.179v52.328l11.992,3.214c2.146,0.574,4.176,3.084,4.176,5.163v41.791h16.703V590.64h14.554V420.123h19.723V252.266
@@ -28,9 +49,12 @@ export default function Skyline () {
                             l12.047,106.881l12.249,1.084v82.03h50.461l22.396,6.002v2.897h71.561l22.035,5.904v17.554h28.762l22.033,5.903v59.885h19.539
                             v-25.059h13.41V307.522h11.682v-36.109h6.188v-19.379h72.947l31.82,8.527v17.718l6.191,1.66v32.979l11.682,3.13v115.519h10.414
                             v47.942h16.264V208.38h25.668v-6.712h24.195l25.049,6.712h0.621l31.82,8.526v11.985l8.373,2.243V590.64h90.047l27.503,25.905
-                            H280.604z"/>
-                        <g>
-                            <path fill="#244868" d="M22.241,583.024v3.41l-57.259,0.2l-0.21,34.911h1418.881l-38.119-35.905h-86.748V227.299l-8.373-2.243
+                            H280.604z"
+            />
+            <g>
+              <path
+                fill="#244868"
+                d="M22.241,583.024v3.41l-57.259,0.2l-0.21,34.911h1418.881l-38.119-35.905h-86.748V227.299l-8.373-2.243
                                 V213.07l-36.162-9.689h-0.621l-25.049-6.712h-29.854v6.712h-25.668v271.13h-6.264v-47.942h-10.414V312.213l-11.682-3.13v-32.979
                                 l-6.191-1.659v-17.719l-36.162-9.69H983.74v19.379h-6.188v36.109h-11.682v103.344h-13.41v25.059h-9.539v-58.722l-26.375-7.066
                                 h-24.42v-16.391l-26.377-7.067h-67.219v-1.734l-26.738-7.165h-46.119v-81.607l-12.738-1.127l-12.09-107.261h-11.168
@@ -568,37 +592,194 @@ export default function Skyline () {
                                 L4.937,543.475z M6.565,543.685l1.426-1.339l1.428,1.339H6.565z M11.048,543.475l-2.131-1.997l2.084-1.955l2.13,1.999
                                 L11.048,543.475z M12.677,543.685l1.379-1.296l1.38,1.296H12.677z M17.066,543.475l-2.084-1.955l2.131-1.997l2.083,1.955
                                 L17.066,543.475z M18.695,543.685l1.428-1.339l1.426,1.339H18.695z M23.177,543.475l-2.13-1.997l2.084-1.955l1.775,1.664v0.666
-                                L23.177,543.475z M24.806,543.685l0.101-0.095v0.095H24.806z"/>
-                        </g>
-                    </g>
-                </g>
-                <defs>
-                    <filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="-35.229" y="621.546" width="1455.055" height="478.761">
-                        <feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
-                    </filter>
-                </defs>
-                <mask maskUnits="userSpaceOnUse" x="-35.229" y="621.546" width="1455.055" height="478.761" id="SVGID_3_">
-                    <g filter="url(#Adobe_OpacityMaskFilter)">
-                        <linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="672.334" y1="480.1885" x2="672.334" y2="759.1909">
-                            <stop  offset="0" style="stop-color:#FFFFFF"/>
-                            <stop  offset="1" style="stop-color:#000000"/>
-                        </linearGradient>
-                        <rect x="-36.381" y="619.682" fill="url(#SVGID_4_)" width="1417.429" height="187.49"/>
-                    </g>
-                </mask>
+                                L23.177,543.475z M24.806,543.685l0.101-0.095v0.095H24.806z"
+              />
             </g>
-            <g id="vexels">
-
-                <g>
-                    <path fill="#FFFFFF" d="M2215.916,102.25h-644.659c-10.94,0-19.811,8.869-19.811,19.81v268.081l-62.03,19.924l62.03,18.008v186.82
+          </g>
+        </g>
+        <defs>
+          <filter
+            id="Adobe_OpacityMaskFilter"
+            filterUnits="userSpaceOnUse"
+            x="-35.229"
+            y="621.546"
+            width="1455.055"
+            height="478.761"
+          >
+            <feColorMatrix
+              type="matrix"
+              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"
+            />
+          </filter>
+        </defs>
+        <mask
+          maskUnits="userSpaceOnUse"
+          x="-35.229"
+          y="621.546"
+          width="1455.055"
+          height="478.761"
+          id="SVGID_3_"
+        >
+          <g filter="url(#Adobe_OpacityMaskFilter)">
+            <linearGradient
+              id="SVGID_4_"
+              gradientUnits="userSpaceOnUse"
+              x1="672.334"
+              y1="480.1885"
+              x2="672.334"
+              y2="759.1909"
+            >
+              <stop offset="0" style="stop-color:#FFFFFF" />
+              <stop offset="1" style="stop-color:#000000" />
+            </linearGradient>
+            <rect
+              x="-36.381"
+              y="619.682"
+              fill="url(#SVGID_4_)"
+              width="1417.429"
+              height="187.49"
+            />
+          </g>
+        </mask>
+      </g>
+      <g id="vexels">
+        <g>
+          <path
+            fill="#FFFFFF"
+            d="M2215.916,102.25h-644.659c-10.94,0-19.811,8.869-19.811,19.81v268.081l-62.03,19.924l62.03,18.008v186.82
                         c0,10.939,8.87,19.809,19.811,19.809h644.659c10.94,0,19.811-8.869,19.811-19.809V122.06
-                        C2235.727,111.119,2226.856,102.25,2215.916,102.25z"/>
-                    <g>
-                        <rect x="1626.073" y="157.628" fill="none" width="548" height="448.503"/>
-                        <text transform="matrix(1 0 0 1 1626.0732 174.668)"><tspan x="0" y="0" fill="#333333" font-family="'MyriadPro-Regular'" font-size="24">This design was made by vexels.com. It’s under CC 3.0 </tspan><tspan x="0" y="28.801" fill="#333333" font-family="'MyriadPro-Regular'" font-size="24">Attribution License. This means that for free use you </tspan><tspan x="0" y="57.6" fill="#333333" font-family="'MyriadPro-Regular'" font-size="24">must give credit and can’t do merchandise items. You </tspan><tspan x="0" y="86.4" fill="#333333" font-family="'MyriadPro-Regular'" font-size="24">can only do commercial and merchandise items </tspan><tspan x="0" y="115.201" fill="#333333" font-family="'MyriadPro-Regular'" font-size="24">without credit if you get a license. Learn more on </tspan><tspan x="0" y="144" fill="#C64B09" font-family="'MyriadPro-Regular'" font-size="24">www.vexels.com/plans</tspan><tspan x="0" y="201.6" fill="#333333" font-family="'MyriadPro-Regular'" font-size="24">You can’t sublicense, redistribute or resell an image or </tspan><tspan x="0" y="230.4" fill="#333333" font-family="'MyriadPro-Regular'" font-size="24">part of it. You can only use our contents for products </tspan><tspan x="0" y="259.201" fill="#333333" font-family="'MyriadPro-Regular'" font-size="24">where the design is the main reason it’s being </tspan><tspan x="0" y="288" fill="#333333" font-family="'MyriadPro-Regular'" font-size="24">purchased if you get a license. Learn more on </tspan><tspan x="0" y="316.801" fill="#C64B09" font-family="'MyriadPro-Regular'" font-size="24">www.vexels.com/terms-and-conditions</tspan><tspan x="0" y="374.4" fill="#333333" font-family="'MyriadPro-Regular'" font-size="24">Thanks!</tspan><tspan x="0" y="403.201" fill="#333333" font-family="'MyriadPro-Regular'" font-size="24">Vexels Team</tspan></text>
-                    </g>
-                </g>
-            </g>
-        </svg>
-    );
+                        C2235.727,111.119,2226.856,102.25,2215.916,102.25z"
+          />
+          <g>
+            <rect
+              x="1626.073"
+              y="157.628"
+              fill="none"
+              width="548"
+              height="448.503"
+            />
+            <text transform="matrix(1 0 0 1 1626.0732 174.668)">
+              <tspan
+                x="0"
+                y="0"
+                fill="#333333"
+                font-family="'MyriadPro-Regular'"
+                font-size="24"
+              >
+                This design was made by vexels.com. It’s under CC 3.0{' '}
+              </tspan>
+              <tspan
+                x="0"
+                y="28.801"
+                fill="#333333"
+                font-family="'MyriadPro-Regular'"
+                font-size="24"
+              >
+                Attribution License. This means that for free use you{' '}
+              </tspan>
+              <tspan
+                x="0"
+                y="57.6"
+                fill="#333333"
+                font-family="'MyriadPro-Regular'"
+                font-size="24"
+              >
+                must give credit and can’t do merchandise items. You{' '}
+              </tspan>
+              <tspan
+                x="0"
+                y="86.4"
+                fill="#333333"
+                font-family="'MyriadPro-Regular'"
+                font-size="24"
+              >
+                can only do commercial and merchandise items{' '}
+              </tspan>
+              <tspan
+                x="0"
+                y="115.201"
+                fill="#333333"
+                font-family="'MyriadPro-Regular'"
+                font-size="24"
+              >
+                without credit if you get a license. Learn more on{' '}
+              </tspan>
+              <tspan
+                x="0"
+                y="144"
+                fill="#C64B09"
+                font-family="'MyriadPro-Regular'"
+                font-size="24"
+              >
+                www.vexels.com/plans
+              </tspan>
+              <tspan
+                x="0"
+                y="201.6"
+                fill="#333333"
+                font-family="'MyriadPro-Regular'"
+                font-size="24"
+              >
+                You can’t sublicense, redistribute or resell an image or{' '}
+              </tspan>
+              <tspan
+                x="0"
+                y="230.4"
+                fill="#333333"
+                font-family="'MyriadPro-Regular'"
+                font-size="24"
+              >
+                part of it. You can only use our contents for products{' '}
+              </tspan>
+              <tspan
+                x="0"
+                y="259.201"
+                fill="#333333"
+                font-family="'MyriadPro-Regular'"
+                font-size="24"
+              >
+                where the design is the main reason it’s being{' '}
+              </tspan>
+              <tspan
+                x="0"
+                y="288"
+                fill="#333333"
+                font-family="'MyriadPro-Regular'"
+                font-size="24"
+              >
+                purchased if you get a license. Learn more on{' '}
+              </tspan>
+              <tspan
+                x="0"
+                y="316.801"
+                fill="#C64B09"
+                font-family="'MyriadPro-Regular'"
+                font-size="24"
+              >
+                www.vexels.com/terms-and-conditions
+              </tspan>
+              <tspan
+                x="0"
+                y="374.4"
+                fill="#333333"
+                font-family="'MyriadPro-Regular'"
+                font-size="24"
+              >
+                Thanks!
+              </tspan>
+              <tspan
+                x="0"
+                y="403.201"
+                fill="#333333"
+                font-family="'MyriadPro-Regular'"
+                font-size="24"
+              >
+                Vexels Team
+              </tspan>
+            </text>
+          </g>
+        </g>
+      </g>
+    </svg>
+  )
 }

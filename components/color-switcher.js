@@ -1,6 +1,6 @@
 import { IconButton, useColorMode } from 'theme-ui'
 
-const ColorSwitcher = (props) => {
+const ColorSwitcher = props => {
   const [mode, setMode] = useColorMode()
   return (
     <IconButton
@@ -16,8 +16,8 @@ const ColorSwitcher = (props) => {
         transition: 'box-shadow .125s ease-in-out',
         ':hover,:focus': {
           boxShadow: '0 0 0 3px',
-          outline: 'none'
-        }
+          outline: 'none',
+        },
       }}
       {...props}
     >

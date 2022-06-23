@@ -53,9 +53,9 @@ export const Features = () => (
         />
         <InfoBox iconGlyph="explore" heading="Build For Yourself">
           At Assemble, projects are judged on "hacker value" by peers– other
-          attendees. To get a vote, you need to ship something!  You'll also
-          have to build something not to impress a business-type or
-          thoughtleader, but other fellow hackers.
+          attendees. To get a vote, you need to ship something! You'll also have
+          to build something not to impress a business-type or thoughtleader,
+          but other fellow hackers.
         </InfoBox>
 
         <InfoBox iconGlyph="announcement" heading="Hack The Planet">
@@ -86,7 +86,7 @@ const InfoBox = ({ iconGlyph, heading, children }) => (
       textAlign: 'left',
       backgroundSize: '30px',
       backgroundImage: 'url(/patterns/white.png)',
-      border: '3px solid black'
+      border: '3px solid black',
     }}
   >
     <Box
