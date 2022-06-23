@@ -1,4 +1,6 @@
-import { Heading } from 'theme-ui' 
+import { Heading, Box } from 'theme-ui'
+
+<Box className="copy">
 
 Dear reader, viewer, person behind the screen,
 
@@ -8,29 +10,32 @@ seem to be missing from our new normal.
 
 The legends from before still linger… <a href="https://windyhacks.com" target="_blank">
 Windy City Hacks</a>, <a href="https://2018.hackchicago.io" target="_blank">Hack Chicago</a>
-& <a href="https://hackpenn.com" target="_blank">Hack Pennsylvania</a>, to name a few. 
+& <a href="https://hackpenn.com" target="_blank">Hack Pennsylvania</a>, to name a few.
 But if you’ve been to a hackathon since, it was probably online. We’re tired of virtual
 hackathons and we imagine you are too.
 
-Our summer project is to kick off a new renaissance.
+**Our summer project is to kick off a new renaissance, together.**
 
-**We're returning in-person high-school hackathons to San Francisco**. 
-
-We invite you, behind the screen, to come out and join us. Not through Zoom,
-Discord or Devpost, but IRL out in the Golden City. You’ll explore the Bay Area 
+We're starting in San Francisco and we invite you to join us. Not through Zoom,
+Discord or Devpost, but IRL in the heart of city for a hackathon of the ages. You’ll explore the Bay Area
 during your free time, hack with co-conspirators, solve a murder at midnight, and
-experience the energy of being in-person again. Together, we’ll assemble to form 
-the first IRL high school hackathon on this side of the pandemic.
+experience the energy of being in-person again.
+
+We can't do this alone. After Assemble, we'll open source the entire event, launch a guide to creating a hackathon and work with you to start your own hackathon. Together, we'll kick start a high school hackathon renaissance. 
 
 **Hackers, [assemble](https://airtable.com/shrqNfrlrI6JT5XYP)!**
+</Box>
 
-<style> 
+<style>
+  {/* TODO: don't force these to be global */}
   {`
-  p {
-    font-size: 18px!important;
+  .copy p {
+    font-size: 18px;
+    color: var(--theme-ui-colors-white);
   }
-  a {
-    color: var(--theme-ui-colors-red)!important;
+  .copy a {
+    color: var(--theme-ui-colors-white) !important;
+    text-decoration: underline;
   }
   `}
 </style>

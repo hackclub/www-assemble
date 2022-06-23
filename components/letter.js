@@ -1,5 +1,5 @@
 import { Box, Container } from 'theme-ui'
-import Copy from './fade.mdx'
+import Copy from './copy.mdx'
 import Parallax from './parallax'
 import { motion, useViewportScroll, useAnimation } from 'framer-motion'
 import { useEffect } from 'react'
