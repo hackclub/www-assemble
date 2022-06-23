@@ -29,7 +29,7 @@ export const Rundown = () => (
         >
           The Rundown & Registration
         </Heading>
-        <Grid>
+        <Grid sx={{fontSize: '18px'}}>
           <Box bg="white" p={3}>
             <b>Date & Time:</b> Starts at 6:00pm on August 5th and ends at
             2:00pm on August 7th.
