@@ -4,6 +4,7 @@ import ComicImage from './comic-image'
 
 export const Features = () => (
   <Box
+    id="features"
     sx={{
       py: 5,
       backgroundAttachment: 'fixed',

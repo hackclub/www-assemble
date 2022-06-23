@@ -6,7 +6,7 @@ import NextImage from 'next/image'
 import ComicImage from './comic-image'
 
 export const Rundown = () => (
-  <div>
+  <div id="rundown">
     <Box
       sx={{
         backgroundImage: 'url(patterns/red.png)',

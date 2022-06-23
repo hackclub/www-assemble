@@ -1,6 +1,7 @@
-import { Flex, Heading, Image } from 'theme-ui'
+import { Flex, Heading, Image, Box } from 'theme-ui'
 import { motion, useViewportScroll, useAnimation } from 'framer-motion'
 import { useEffect } from 'react'
+import Link from 'next/link'
 
 export const Nav = () => {
   const { scrollYProgress } = useViewportScroll()
@@ -8,7 +9,7 @@ export const Nav = () => {
   useEffect(
     () =>
       scrollYProgress.onChange(latest => {
-        if (latest > 0.10) {
+        if (latest > 0.1) {
           controls.start({
             opacity: 1,
             transition: { duration: 0.5 },
@@ -45,6 +46,9 @@ export const Nav = () => {
     >
       <Heading
         p={3}
+        as="a"
+        href="https://hackclub.com"
+        target="_blank"
         sx={{
           flexGrow: 1,
           display: 'flex',
@@ -56,11 +60,31 @@ export const Nav = () => {
       >
         <Image src="/textured-flag.png" height="30px" sx={{ height: '30px' }} />
       </Heading>
-      <Heading as="h3">The Hackathon</Heading>
-      <Heading as="h3">The Rundown</Heading>
-      <Heading as="h3" p={2} bg="green" sx={{ borderRadius: '4px' }}>
-        Register
-      </Heading>
+      <Link href="#features">
+        <Heading as="h3" sx={{ cursor: 'pointer' }}>
+          The Hackathon
+        </Heading>
+      </Link>
+      <Link href="#rundown">
+        <Heading as="h3" sx={{ cursor: 'pointer' }}>
+          The Rundown
+        </Heading>
+      </Link>
+      <Box
+        as="a"
+        href="https://airtable.com/shrqNfrlrI6JT5XYP"
+        target="_blank"
+        sx={{ color: 'white', textDecoration: 'none' }}
+      >
+        <Heading
+          as="h3"
+          p={2}
+          bg="green"
+          sx={{ borderRadius: '4px', cursor: 'pointer' }}
+        >
+          Register
+        </Heading>
+      </Box>
     </motion.div>
   )
 }
