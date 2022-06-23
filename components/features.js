@@ -52,8 +52,10 @@ export const Features = () => (
           alt="At the corner of Figma HQ"
         />
         <InfoBox iconGlyph="explore" heading="Build For Yourself">
-          At Assemble, projects are judged on "hacker value" by the people who
-          matter most. Attendees.
+          At Assemble, projects are judged on "hacker value" by peers– other
+          attendees. To get a vote, you need to ship something!  You'll also
+          have to build something not to impress a business-type or
+          thoughtleader, but other fellow hackers.
         </InfoBox>
 
         <InfoBox iconGlyph="announcement" heading="Hack The Planet">
