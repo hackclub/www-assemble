@@ -38,27 +38,31 @@ export const Nav = () => {
         position: 'fixed',
         top: 0,
         zIndex: 999,
-        width: '100vw',
+        width: '100%',
         display: 'flex',
         opacity: 0,
       }}
       animate={controls}
     >
       <Heading
-        p={3}
-        as="a"
-        href="https://hackclub.com"
+        p={2}
         target="_blank"
         sx={{
           flexGrow: 1,
           display: 'flex',
-          alignItems: 'flex-start',
+          alignItems: 'center',
           gap: 2,
           color: 'white',
           textAlign: 'left',
         }}
+        className="navMainLink"
       >
-        <Image src="/textured-flag.png" height="30px" sx={{ height: '30px' }} />
+        <Link href="#letter">
+          <Image src="/invert.png" height="40px" sx={{ height: '40px', cursor: 'pointer' }} />
+        </Link>
+        <Link href="#letter">
+          ASSEMBLE
+        </Link>
       </Heading>
       <Link href="#features">
         <Heading as="h3" sx={{ cursor: 'pointer' }}>

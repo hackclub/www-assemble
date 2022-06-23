@@ -1,8 +1,8 @@
-import { Box, Container } from 'theme-ui'
 import Copy from './copy.mdx'
-import Parallax from './parallax'
+import { Box, Container } from 'theme-ui'
 import { motion, useViewportScroll, useAnimation } from 'framer-motion'
 import { useEffect } from 'react'
+import Parallax from './parallax'
 
 const variants = {
   hidden: { opacity: 0 },
@@ -30,8 +30,11 @@ export const Letter = () => {
   return (
     <Box
       sx={{
+        backgroundImage:
+          'linear-gradient(90deg, rgba(5, 11, 20, 0.6) 0%, rgba(5, 11, 20, 0.5) 100% )',
         position: 'relative',
       }}
+      id="letter"
     >
       <motion.div
         animate={controls}
@@ -57,7 +60,7 @@ export const Letter = () => {
           }}
         >
           <Container variant="narrow">
-            <img src="welcome.png" height="84px" style={{maxWidth: '70vw'}}/>
+            <img src="welcome.png" height="84px" style={{maxWidth: '70vw'}} alt="welcome home..." />
           </Container>
         </motion.div>
         <motion.div
