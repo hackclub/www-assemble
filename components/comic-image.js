@@ -1,4 +1,11 @@
-const ComicImage = ({ href, src, alt, webp, objectPosition = undefined, sx }) => {
+const ComicImage = ({
+  href,
+  src,
+  alt,
+  webp,
+  objectPosition = undefined,
+  sx,
+}) => {
   const content = (
     <picture>
       {Boolean(webp) && <source srcSet={webp} type="image/webp" />}

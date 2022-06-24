@@ -44,22 +44,25 @@ export const Features = () => (
           alt="Two hackers problem-solving on the Hacker Zephyr"
           objectPosition="left bottom"
         />
-        {/* <Grid sx={{ gridColumn: [null, null, 'span 2'] }} columns={[1, 1, 2]}> */}
-        <InfoBox iconGlyph="explore" heading="Build For Yourself" sx={{ gridColumn: [null, null, '2/3'] }}>
-          At Assemble, projects are judged on "hacker value" by peers– other
-          attendees. To get a vote, you need to ship something! You'll also have
-          to build something not to impress a business-type or thoughtleader,
-          but other fellow hackers.
+        <InfoBox
+          iconGlyph="explore"
+          heading="Build For Yourself"
+          sx={{ gridColumn: [null, null, '2/3'] }}
+        >
+          At Assemble, attendees build projects that have value to themselves.
+          You'll build something that's meaningful to you and other hackers, not
+          pitching to impress a business-type. Learning and creating is valued
+          far above a long-term product plan.
         </InfoBox>
-        <Box sx={{ gridColumn: [null, null, '1/2'], gridRow: [null, null, '2/3'] }}>
+        <Box
+          sx={{ gridColumn: [null, null, '1/2'], gridRow: [null, null, '2/3'] }}
+        >
           <ComicImage
-            webp="https://cloud-nmdl7opdm-hack-club-bot.vercel.app/3hibernia.webp"
-            src="https://cloud-me9ijbqml-hack-club-bot.vercel.app/0hibernia.png"
-            href="https://cloud-kmmvp0jlq-hack-club-bot.vercel.app/0img_1372.jpg"
+            src="https://cloud-j0br81ugp-hack-club-bot.vercel.app/3zephyr2.jpg"
+            href="https://cloud-j0br81ugp-hack-club-bot.vercel.app/3zephyr2.jpg"
             alt="At the corner of Figma HQ"
           />
         </Box>
-        {/* </Grid> */}
         <InfoBox iconGlyph="announcement" heading="Hack The Planet">
           One hackathon doesn’t constitute a renaissance, so we’re open-sourcing
           and documenting everything we work on for Assemble to allow others to
@@ -89,7 +92,7 @@ const InfoBox = ({ iconGlyph, heading, children, sx }) => (
       backgroundSize: '30px',
       backgroundImage: 'url(/patterns/white.png)',
       border: '3px solid black',
-      ...sx
+      ...sx,
     }}
   >
     <Box
