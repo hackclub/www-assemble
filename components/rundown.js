@@ -53,10 +53,9 @@ export const Rundown = () => (
                   alt="At the corner of Figma HQ"
                 />
                 <ComicImage
-                  webp="https://cloud-nmdl7opdm-hack-club-bot.vercel.app/2financial_district.webp"
-                  src="https://cloud-me9ijbqml-hack-club-bot.vercel.app/1financial_district.png"
-                  href="https://cloud-kmmvp0jlq-hack-club-bot.vercel.app/1img_1520.jpg"
-                  alt="Within 5 blocks of the venue, overlooking the financial district"
+                  src="https://cloud-5epq3fukh-hack-club-bot.vercel.app/0image.png"
+                  href="hthttps://cloud-5epq3fukh-hack-club-bot.vercel.app/0image.png"
+                  alt="Inside the Figma office"
                 />
                 <ComicImage
                   webp="https://cloud-nmdl7opdm-hack-club-bot.vercel.app/0embarcadero.webp"
