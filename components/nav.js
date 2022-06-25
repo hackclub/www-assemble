@@ -67,12 +67,12 @@ export const Nav = () => {
         <Link href="#letter">ASSEMBLE</Link>
       </Heading>
       <Link href="#features">
-        <Heading as="h3" sx={{ cursor: 'pointer' }}>
+        <Heading as="h3" sx={{ cursor: 'pointer', display: ['none', 'block'] }}>
           The Hackathon
         </Heading>
       </Link>
       <Link href="#rundown">
-        <Heading as="h3" sx={{ cursor: 'pointer' }}>
+        <Heading as="h3" sx={{ cursor: 'pointer', display: ['none', 'block'] }}>
           The Rundown
         </Heading>
       </Link>

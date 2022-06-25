@@ -21,7 +21,9 @@ export const Features = () => (
             color: 'white',
             textShadow: 'elevated',
             mb: 4,
-            fontSize: [5, 5, '84px']
+            fontSize: [5, 5, '84px'],
+            textAlign: ['center', 'left'],
+            fontSize: ['42px',5]
           }}
         >
           150+ hackers all come together in downtown San Fransisco to...
@@ -102,7 +104,7 @@ const InfoBox = ({ iconGlyph, heading, children, sx }) => (
   <Box
     sx={{
       p: 1,
-      pb: 4,
+      pb: [2, 4],
       bg: 'sunken',
       color: 'black',
       textAlign: 'left',
@@ -134,7 +136,7 @@ const InfoBox = ({ iconGlyph, heading, children, sx }) => (
             fontSize: 32,
           }}
         >
-          <Box sx={{ color: '#FF544A', display: 'flex', alignItems: 'center' }}>
+          <Box sx={{ color: '#FF544A', display: ['none', 'flex'], alignItems: 'center' }}>
             <Icon glyph={iconGlyph} size={36} />
           </Box>
           {heading}

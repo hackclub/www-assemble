@@ -38,6 +38,7 @@ const PreviouslySection = () => {
               marginBottom: '16px',
               maxWidth: '700px',
               mx: 'auto',
+              px: [3, 0]
             }}
           >
             Curious about what we did last summer? Check out The Hacker Zephyr

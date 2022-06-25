@@ -71,7 +71,7 @@ export const Letter = () => {
           transition={{ duration: 4 }}
           style={{
             textAlign: 'left',
-            width: '70vw',
+            width: '90vw',
             margin: 'auto',
             paddingTop: '32px',
           }}
@@ -79,8 +79,7 @@ export const Letter = () => {
           <Container variant="narrow">
             <img
               src="welcome.png"
-              height="84px"
-              style={{ maxWidth: '70vw' }}
+              style={{ width: '70vw', maxWidth: '300px' }}
               alt="welcome home..."
             />
           </Container>
@@ -92,8 +91,7 @@ export const Letter = () => {
           transition={{ duration: 4, delay: 3 }}
           style={{
             textAlign: 'left',
-            paddingTop: '18px',
-            width: '70vw',
+            width: '90vw',
             margin: 'auto',
           }}
         >
