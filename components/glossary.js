@@ -59,7 +59,7 @@ const Glossary = () => (
         />
         <Card
           question="What do I need?"
-          answer="Your laptop, chargers, anything for your hack (hardware?), toiletries, and an open mind."
+          answer="Your laptop, chargers, anything for your hack (hardware?), toiletries, sleeping bags, and an open mind."
         />
         <Card
           question="How much does it cost?"
@@ -69,9 +69,10 @@ const Glossary = () => (
           question="I can't pay for travel..."
           answer={
             <>
-              We're providing travel stipends to both domestic and international attendees. 
-              Please request one on the registration form if needed. If you're
-              travelling internationally, we can issues visa letters and have prepared this{' '}
+              We're providing travel stipends to both domestic and international
+              attendees. Please request one on the registration form if needed.
+              If you're travelling internationally, we can issues visa letters
+              and have prepared this{' '}
               <a
                 style={{ color: 'black' }}
                 href="https://docs.google.com/document/d/e/2PACX-1vQ9i8Vpb9Bpu0pxabtC4V32Sab930B6aK48lkruZTJVPXkNDCAqSJjbzv_uGzzN4wpcI2gOBZ8zQLkK/pub"
@@ -122,6 +123,16 @@ const Glossary = () => (
           answer="Anything! Apps, art, sites, and hardware projects are all perfect for a hackathon."
         />
         <Card
+          question="What are the sleeping arrangements?"
+          answer={
+            <>
+              From 9pm - 7am on both nights we will have a designated sleeping
+              area in the Figma office with low lights and minimal sound for you
+              to rest! We have limited sleeping bags so please bring your own.
+            </>
+          }
+        />
+        <Card
           question="My parents are worried!"
           answer={
             <>
@@ -129,8 +140,9 @@ const Glossary = () => (
               <a style={{ color: 'black' }} href="mailto:assemble@hackclub.com">
                 assemble@hackclub.com
               </a>{' '}
-              and we'll make sure to answer all their questions. Assemble will be supervised{' '}
-              by background checked staff and overseen by 24/7 security staff.
+              and we'll make sure to answer all their questions. Assemble will
+              be supervised by background checked staff and overseen by 24/7
+              security staff.
             </>
           }
         />

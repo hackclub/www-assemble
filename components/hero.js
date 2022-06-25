@@ -1,4 +1,4 @@
-import { Box, Heading, Text, Grid, Flex } from 'theme-ui'
+import { Box, Button, Heading, Text, Grid, Flex } from 'theme-ui'
 import Icon from '@hackclub/icons'
 
 export const months = [
@@ -70,19 +70,33 @@ export const Hero = () => {
           />
           <Box
             sx={{
-              p: [4, 4, 2],
+              p: 2,
               px: ['0px', '0px', 4],
               color: 'white',
             }}
           >
             <Grid columns={[1, 1, 2]}>
-              <Stat icon="pin" stat="Figma HQ in San Francisco" bg="red" />
-              <Stat icon="clock" stat="Doors Open at 6PM" bg="orange" />
+              <Stat icon="pin" stat="Figma HQ in San Francisco" bg="orange" />
+              <Stat icon="clock" stat="Doors Open at 6PM" bg="pink" />
               <Stat icon="friend" stat="150+ Hackers" bg="blue" />
-              <Stat icon="send" stat="$40k in Travel Stipends" bg="green" />
+              <Stat icon="send" stat="$40k in Travel Stipends" bg="brown" />
             </Grid>
           </Box>
         </Flex>
+        <Button
+        as="a"
+          sx={{
+            fontSize: [3, 4],
+            textAlign: 'left',
+            fontFamily: 'Space Grotesk',
+            backgroundColor: 'green',
+            my: 3
+          }}
+          href="/register"
+          target="_blank"
+        >
+          Register <Icon glyph="external" size={38} />
+        </Button>
       </Box>
     </Box>
   )
@@ -115,7 +129,7 @@ export const CalendarDate = ({
         borderRadius: '12px',
       }}
       sx={{
-        mb: 4
+        mb: 4,
       }}
     >
       <Box
@@ -158,10 +172,10 @@ export const Stat = ({ stat, icon, bg }) => {
     <Text
       sx={{
         verticalAlign: 'bottom',
-        fontSize: '20px',
+        fontSize: ['16px', '20px'],
         fontWeight: 600,
         background: bg || 'green',
-        p: 2,
+        p: [1, 2],
         borderRadius: 5,
         display: 'flex',
         alignItems: 'center',
