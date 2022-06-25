@@ -126,7 +126,7 @@ export const WideRegisterButton = () => (
     }}
     className="largeRegisterButton"
     as="a"
-    href="https://airtable.com/shrqNfrlrI6JT5XYP"
+    href="/register"
     target="_blank"
   >
     <span className="assembleRegisterText">REGISTER</span>

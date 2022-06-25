@@ -78,7 +78,7 @@ export const Nav = () => {
       </Link>
       <Box
         as="a"
-        href="https://airtable.com/shrqNfrlrI6JT5XYP"
+        href="/register"
         target="_blank"
         sx={{ color: 'white', textDecoration: 'none' }}
       >
