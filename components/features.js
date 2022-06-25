@@ -89,8 +89,8 @@ export const Features = () => (
               transitionDuration: '300ms',
             },
           }}
-          src="/flagship.png"
-          href="/flagship.png"
+          src="/flagship.jpg"
+          href="/flagship.jpg"
           alt="Students at Flagship gathering"
           height="320px"
         />
