@@ -45,11 +45,11 @@ const Glossary = () => (
       <Grid columns={[1, null, 3]} gap={[3, 3, 3]}>
         <Card
           question="I can't pay for travel..."
-          answer="We're working on providing travel stipends & can issue letters for visa applications."
+          answer="We're are providing travel stipends and can issue letters of support for visa applications. These can be requested on the registration form."
         />
         <Card
           question="What do I need?"
-          answer="Your laptop, chargers, anything for your hack (hardware?), toiletries, and an open mind. We can help with the laptop. The mind thing is on you."
+          answer="Your laptop, chargers, anything for your hack (hardware?), toiletries, and an open mind. We can help with the laptop. The mind thing is on you, however."
         />
         <Card
           question="How much does it cost?"
@@ -63,7 +63,8 @@ const Glossary = () => (
               <a style={{ color: 'black' }} href="mailto:assemble@hackclub.com">
                 assemble@hackclub.com
               </a>{' '}
-              and we'll make sure to answer all their questions.
+              and we'll make sure to answer all their questions. Assemble will be 
+              supervised by background checked adults and 24/7 security staff.
             </>
           }
         />
