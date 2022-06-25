@@ -47,7 +47,7 @@ export const Features = () => (
           // src="https://cloud-me9ijbqml-hack-club-bot.vercel.app/0hibernia.png"
           src="https://cloud-e57ekrxp4-hack-club-bot.vercel.app/0shareknowledge.jpg"
           href="https://cloud-j0br81ugp-hack-club-bot.vercel.app/0zephyr5.jpg"
-          alt="Two hackers problem-solving on the Hacker Zephyr"
+          alt="Two hackers problem-solving on the Hacker Zephyr (Photo by Kunal Botla)"
           objectPosition="left bottom"
         />
         <InfoBox
@@ -73,7 +73,7 @@ export const Features = () => (
             }}
             src="https://cloud-j0br81ugp-hack-club-bot.vercel.app/3zephyr2.jpg"
             href="https://cloud-j0br81ugp-hack-club-bot.vercel.app/3zephyr2.jpg"
-            alt="Teenager coding on The Hacker Zephyr"
+            alt="Teenager coding on The Hacker Zephyr (Photo by Kunal Botla)"
           />
         </Box>
         <InfoBox iconGlyph="announcement" heading="Set New Standards">
