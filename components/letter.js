@@ -2,7 +2,6 @@ import Copy from './first-letter.mdx'
 import { Box, Container } from 'theme-ui'
 import { motion, useViewportScroll, useAnimation } from 'framer-motion'
 import { useEffect, useState } from 'react'
-import Parallax from './parallax'
 import { Hero } from './hero'
 
 const variants = {
@@ -101,8 +100,6 @@ export const Letter = () => {
         </motion.div></div>
         <Hero />
       </motion.div>
-  {//    <Parallax background={true}></Parallax>
-}
     </Box>
   )
 }
