@@ -1,5 +1,6 @@
-import { Box, Button, Heading, Text, Grid, Flex } from 'theme-ui'
+import { Box, Button, Heading, Link, Text, Grid, Flex } from 'theme-ui'
 import Icon from '@hackclub/icons'
+/** @jsxImportSource theme-ui */
 
 export const months = [
   'January',
@@ -70,7 +71,7 @@ export const Hero = () => {
           />
           <Box
             sx={{
-              p: 2,
+              p: 1,
               px: ['0px', '0px', 4],
               color: 'white',
             }}
@@ -81,12 +82,13 @@ export const Hero = () => {
               <Stat icon="friend" stat="150+ Hackers" bg="blue" />
               <Stat icon="send" stat="$40k in Travel Stipends" bg="brown" />
             </Grid>
+            <Link sx={{color: 'white', fontWeight: 400, display: 'flex', mt: '5px'}} href="https://hackclub.com/slack" target="_blank"> We're hanging out here til we meet irl → <Icon glyph="slack" sx={{width: ['16px', '24px'], height: ['16px', '24px']}}/></Link>
           </Box>
         </Flex>
         <Button
         as="a"
           sx={{
-            fontSize: [3, 4],
+            fontSize: [3, '38px'],
             textAlign: 'left',
             fontFamily: 'Space Grotesk',
             backgroundColor: 'green',
@@ -95,7 +97,7 @@ export const Hero = () => {
           href="/register"
           target="_blank"
         >
-          Register <Icon glyph="external" size={38} />
+          Register <Icon glyph="external" sx={{width: ['32px', '44px'], height: ['32px', '42px']}}/>
         </Button>
       </Box>
     </Box>
