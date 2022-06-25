@@ -120,7 +120,19 @@ const Glossary = () => (
         />
         <Card
           question="What can I make?"
-          answer="Anything! Apps, art, sites, and hardware projects are all perfect for a hackathon."
+          answer={<>Anything! Apps, art, sites, and hardware projects are all perfect for a hackathon. Check out what {' '}
+          <a
+            style={{ color: 'black' }}
+            href="https://hackclub.com/"
+          >
+            Hack Clubbers
+          </a>{' '} are {' '}
+          <a
+            style={{ color: 'black' }}
+            href="https://hackclub.com/ship/"
+          >
+            making every day
+          </a>!</>}
         />
         <Card
           question="What are the sleeping arrangements?"
