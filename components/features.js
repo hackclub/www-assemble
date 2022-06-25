@@ -83,14 +83,19 @@ export const Features = () => (
           backgroundImage: 'url(/patterns/white.png)',
           border: '3px solid black',
           mt: 3,
-          p: 4
+          p: 4,
+          '&:hover': {
+            transform: 'translateY(-7px) translateX(7px)',
+            boxShadow: '-7px 7px #000',
+            transitionDuration: '200ms'
+          }
         }}
       >
         <Heading
           as="h3"
           sx={{
             fontSize: 64,
-            textAlign: 'center'
+            textAlign: 'center',
           }}
         >
           And hack for 42 hours!
@@ -111,6 +116,11 @@ const InfoBox = ({ iconGlyph, heading, children, sx }) => (
       backgroundSize: '30px',
       backgroundImage: 'url(/patterns/white.png)',
       border: '3px solid black',
+      '&:hover': {
+        transform: 'translateY(-7px) translateX(7px)',
+        boxShadow: '-7px 7px #000',
+        transitionDuration: '200ms'
+      },
       ...sx,
     }}
   >
