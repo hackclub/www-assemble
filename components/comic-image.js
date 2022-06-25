@@ -1,3 +1,6 @@
+/** @jsxImportSource theme-ui */
+
+
 const ComicImage = ({
   href,
   src,
@@ -14,7 +17,7 @@ const ComicImage = ({
         src={src}
         alt={alt}
         title={alt}
-        style={{
+        sx={{
           objectFit: 'cover',
           border: '3px solid black',
           objectPosition,
@@ -22,8 +25,12 @@ const ComicImage = ({
           objectFit: 'cover',
           height: '100%',
           width: '100%',
+          '&:hover': {
+              transform: 'translateY(-7px) translateX(7px)',
+              boxShadow: '-7px 7px #000',
+              transitionDuration: '200ms'
+            }
         }}
-        sx={sx}
       />
     </picture>
   )
