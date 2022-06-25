@@ -1,3 +1,6 @@
+/** @jsxImportSource theme-ui */
+
+
 const ComicImage = ({
   href,
   src,
@@ -21,7 +24,7 @@ const ComicImage = ({
           minHeight: height,
           objectFit: 'cover',
           height: '100%',
-          width: '100%',
+          width: '100%'
         }}
         sx={sx}
       />

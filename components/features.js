@@ -35,6 +35,13 @@ export const Features = () => (
           people, get help from peers, and support your fellow hackers.
         </InfoBox>
         <ComicImage
+          sx={{
+            '&:hover': {
+              transform: 'translateY(-7px) translateX(7px)',
+              boxShadow: '-7px 7px #000',
+              transitionDuration: '300ms',
+            },
+          }}
           // webp="https://cloud-nmdl7opdm-hack-club-bot.vercel.app/3hibernia.webp"
           // src="https://cloud-me9ijbqml-hack-club-bot.vercel.app/0hibernia.png"
           src="https://cloud-e57ekrxp4-hack-club-bot.vercel.app/0shareknowledge.jpg"
@@ -56,9 +63,16 @@ export const Features = () => (
           sx={{ gridColumn: [null, null, '1/2'], gridRow: [null, null, '2/3'] }}
         >
           <ComicImage
+            sx={{
+              '&:hover': {
+                transform: 'translateY(-7px) translateX(7px)',
+                boxShadow: '-7px 7px #000',
+                transitionDuration: '300ms',
+              },
+            }}
             src="https://cloud-j0br81ugp-hack-club-bot.vercel.app/3zephyr2.jpg"
             href="https://cloud-j0br81ugp-hack-club-bot.vercel.app/3zephyr2.jpg"
-            alt="At the corner of Figma HQ"
+            alt="Teenager coding on The Hacker Zephyr"
           />
         </Box>
         <InfoBox iconGlyph="announcement" heading="Hack The Planet">
@@ -67,6 +81,13 @@ export const Features = () => (
           to create incredible hackathons in their communities.
         </InfoBox>
         <ComicImage
+          sx={{
+            '&:hover': {
+              transform: 'translateY(-7px) translateX(7px)',
+              boxShadow: '-7px 7px #000',
+              transitionDuration: '300ms',
+            },
+          }}
           webp="https://cloud-o7avz9t60-hack-club-bot.vercel.app/020191026_151117.webp"
           src="https://cloud-zlnkdqme0-hack-club-bot.vercel.app/020191026_151117.jpg"
           href="https://cloud-zlnkdqme0-hack-club-bot.vercel.app/020191026_151117.jpg"
@@ -83,6 +104,11 @@ export const Features = () => (
           border: '3px solid black',
           mt: 3,
           p: 4,
+          '&:hover': {
+            transform: 'translateY(-7px) translateX(7px)',
+            boxShadow: '-7px 7px #000',
+            transitionDuration: '300ms',
+          },
         }}
       >
         <Heading
@@ -110,6 +136,11 @@ const InfoBox = ({ iconGlyph, heading, children, sx }) => (
       backgroundSize: '30px',
       backgroundImage: 'url(/patterns/white.png)',
       border: '3px solid black',
+      '&:hover': {
+        transform: 'translateY(-7px) translateX(7px)',
+        boxShadow: '-7px 7px #000',
+        transitionDuration: '300ms',
+      },
       ...sx,
     }}
   >
