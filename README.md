@@ -1,4 +1,4 @@
-![Assemble logo](https://assemble.hackclub.com/logo.png)
+<img src="https://assemble.hackclub.com/logo.png" alt="Assemble logo" width="200">
 
 # www-assemble
 
