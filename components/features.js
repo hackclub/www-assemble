@@ -76,7 +76,7 @@ export const Features = () => (
             alt="Teenager coding on The Hacker Zephyr"
           />
         </Box>
-        <InfoBox iconGlyph="announcement" heading="Hack The Planet">
+        <InfoBox iconGlyph="announcement" heading="Set New Standards">
           One hackathon doesn’t constitute a renaissance, so we’re open-sourcing
           and documenting everything we work on for Assemble to allow attendees
           to create incredible hackathons in their communities.
@@ -114,11 +114,11 @@ export const Features = () => (
         <Heading
           as="h3"
           sx={{
-            fontSize: 64,
+            fontSize: [4, '40px'],
             textAlign: 'center',
           }}
         >
-          And hack for 42 hours!
+          And hack for 42 hours (with time for sleep)!
         </Heading>
       </Box>
     </Container>

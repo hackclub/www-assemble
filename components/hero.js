@@ -1,5 +1,6 @@
-import { Box, Heading, Text, Grid, Flex } from 'theme-ui'
+import { Box, Button, Heading, Link, Text, Grid, Flex } from 'theme-ui'
 import Icon from '@hackclub/icons'
+/** @jsxImportSource theme-ui */
 
 export const months = [
   'January',
@@ -70,19 +71,34 @@ export const Hero = () => {
           />
           <Box
             sx={{
-              p: [4, 4, 2],
+              p: 1,
               px: ['0px', '0px', 4],
               color: 'white',
             }}
           >
             <Grid columns={[1, 1, 2]}>
-              <Stat icon="pin" stat="Figma HQ in San Francisco" bg="red" />
-              <Stat icon="clock" stat="Doors Open at 6PM" bg="orange" />
+              <Stat icon="pin" stat="Figma HQ in San Francisco" bg="orange" />
+              <Stat icon="clock" stat="Doors Open at 6PM" bg="pink" />
               <Stat icon="friend" stat="150+ Hackers" bg="blue" />
-              <Stat icon="send" stat="$40k in Travel Stipends" bg="green" />
+              <Stat icon="send" stat="$40k in Travel Stipends" bg="brown" />
             </Grid>
+            <Link sx={{color: 'white', fontWeight: 400, display: 'flex', mt: '5px'}} href="https://hackclub.com/slack" target="_blank"> We're hanging out here til we meet irl → <Icon glyph="slack" sx={{width: ['16px', '24px'], height: ['16px', '24px']}}/></Link>
           </Box>
         </Flex>
+        <Button
+        as="a"
+          sx={{
+            fontSize: [3, '38px'],
+            textAlign: 'left',
+            fontFamily: 'Space Grotesk',
+            backgroundColor: 'green',
+            my: 3
+          }}
+          href="/register"
+          target="_blank"
+        >
+          Register <Icon glyph="external" sx={{width: ['32px', '44px'], height: ['32px', '42px']}}/>
+        </Button>
       </Box>
     </Box>
   )
@@ -115,7 +131,7 @@ export const CalendarDate = ({
         borderRadius: '12px',
       }}
       sx={{
-        mb: 4
+        mb: 4,
       }}
     >
       <Box
@@ -158,10 +174,10 @@ export const Stat = ({ stat, icon, bg }) => {
     <Text
       sx={{
         verticalAlign: 'bottom',
-        fontSize: '20px',
+        fontSize: ['16px', '20px'],
         fontWeight: 600,
         background: bg || 'green',
-        p: 2,
+        p: [1, 2],
         borderRadius: 5,
         display: 'flex',
         alignItems: 'center',
