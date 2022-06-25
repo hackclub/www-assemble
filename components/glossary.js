@@ -59,7 +59,7 @@ const Glossary = () => (
         />
         <Card
           question="What do I need?"
-          answer="Your laptop, chargers, anything for your hack (hardware?), toiletries, and an open mind. We can help with the laptop. The mind thing is on you, however."
+          answer="Your laptop, chargers, anything for your hack (hardware?), toiletries, and an open mind."
         />
         <Card
           question="How much does it cost?"
