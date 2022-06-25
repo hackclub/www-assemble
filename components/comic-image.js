@@ -5,6 +5,7 @@ const ComicImage = ({
   webp,
   objectPosition = undefined,
   sx,
+  height = undefined
 }) => {
   const content = (
     <picture>
@@ -17,6 +18,8 @@ const ComicImage = ({
           objectFit: 'cover',
           border: '3px solid black',
           objectPosition,
+          minHeight: height,
+          objectFit: 'cover',
           height: '100%',
           width: '100%',
         }}
