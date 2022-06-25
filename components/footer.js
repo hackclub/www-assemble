@@ -39,6 +39,14 @@ const Footer = () => (
         >
           hackclub/www-assemble
         </Link>.
+        Hacker Zephyr photos by{' '}
+        <Link
+          href="https://kunalbotla.com"
+          sx={{ color: 'white', fontWeight: 800 }}
+          target="_blank"
+        >
+          Kunal Botla
+        </Link>.
       </Box>
       {/* only uncomment this once the bank project is in transparency mode & the site repo is public */}
 
