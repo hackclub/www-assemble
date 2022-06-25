@@ -22,7 +22,6 @@ const ComicImage = ({
           border: '3px solid black',
           objectPosition,
           minHeight: height,
-          objectFit: 'cover',
           height: '100%',
           width: '100%'
         }}
