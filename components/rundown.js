@@ -43,8 +43,11 @@ export const Rundown = () => (
             }}
           >
             <Box>
-              <b>Venue:</b> Figma HQ <br /> 760 Market St, San Francisco
-              <br /> California 94102
+              <b>Venue:</b> Figma HQ
+              <br />
+              760 Market St.
+              <br />
+              San Francisco, California 94102
               <Grid columns={[1, 2, 2]} mt={2}>
                 <ComicImage
                   webp="https://cloud-nmdl7opdm-hack-club-bot.vercel.app/3hibernia.webp"
