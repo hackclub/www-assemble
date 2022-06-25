@@ -60,7 +60,7 @@ export const Hero = () => {
         >
           Assemble!
         </Heading>
-        <Flex sx={{ flexDirection: ['column', 'row', 'row'] }}>
+        <Flex sx={{ flexDirection: ['column', 'column', 'row'] }}>
           <CalendarDate
             date={new Date('Aug 5 2022 06:00')}
             topBackgroundColor="#0b1a2e"
@@ -70,12 +70,12 @@ export const Hero = () => {
           />
           <Box
             sx={{
-              p: [4, 2, 2],
-              px: ['0px', 4, 4],
+              p: [4, 4, 2],
+              px: ['0px', '0px', 4],
               color: 'white',
             }}
           >
-            <Grid columns={[1, 2, 2]}>
+            <Grid columns={[1, 1, 2]}>
               <Stat icon="pin" stat="Figma HQ in San Francisco" bg="red" />
               <Stat icon="clock" stat="Doors Open at 6PM" bg="orange" />
               <Stat icon="friend" stat="150+ Hackers" bg="blue" />
@@ -106,6 +106,11 @@ export const CalendarDate = ({
     <Box
       style={{
         width: '125px',
+        height: '138px',
+        minHeight: '138px',
+        maxHeight: '138px',
+        maxWidth: '125px',
+        minWidth: '125px',
         border: '3px solid ' + color,
         borderRadius: '12px',
       }}
