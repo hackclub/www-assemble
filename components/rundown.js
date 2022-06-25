@@ -32,7 +32,7 @@ export const Rundown = () => (
         <Grid sx={{ fontSize: '18px' }}>
           <Box bg="white" p={3}>
             <b>Date & Time:</b> Starts at 6:00pm on August 5th and ends at
-            2:00pm on August 7th.
+            12:00pm on August 7th.
           </Box>
           <Grid
             bg="white"

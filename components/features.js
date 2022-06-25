@@ -13,27 +13,24 @@ export const Features = () => (
     }}
   >
     <Container variant="copy" sx={{ maxWidth: ['copy', null, 'copyUltra'] }}>
-      <Link href="https://youtu.be/oolpPmuK2I8" target="_blank">
         <Text
           variant="title"
           sx={{
             display: 'block',
-            my: 2,
+            my: 2, 
             color: 'white',
             textShadow: 'elevated',
-            textDecoration: 'underline',
             mb: 4,
+            fontSize: [5, 5, '84px']
           }}
         >
-          Come together to...
-        </Text>
-      </Link>
-      {/* <Text variant="title" color="white" sx={{display:['inline', null,'none']}}>Create a renaissance</Text> */}
+          150+ hackers all come together in downtown San Fransisco to...
+      </Text>
       <Grid columns={[1, 1, 2]}>
-        <InfoBox iconGlyph="support" heading="Share Your Knowledge">
-          At Assemble, you'll have the opportunity to give & watch talks from
+        <InfoBox iconGlyph="support" heading="Share Their Knowledge">
+          At Assemble, you'll be able to give & watch talks from
           peers, gain experience, make connections, and discover yourself.
-          You'll meet new people, get help from peers, and teach your fellow
+          You'll meet new people, get help from peers, and support your fellow
           hackers.
         </InfoBox>
         <ComicImage
@@ -46,7 +43,7 @@ export const Features = () => (
         />
         <InfoBox
           iconGlyph="explore"
-          heading="Build For Yourself"
+          heading="Build For Themselves"
           sx={{ gridColumn: [null, null, '2/3'] }}
         >
           At Assemble, attendees build projects that have value to themselves.
@@ -65,18 +62,38 @@ export const Features = () => (
         </Box>
         <InfoBox iconGlyph="announcement" heading="Hack The Planet">
           One hackathon doesn’t constitute a renaissance, so we’re open-sourcing
-          and documenting everything we work on for Assemble to allow others to
-          create incredible hackathons in their communities. At the end of
-          Assemble, we’ll launch a comprehensive guide for hackathon organizing
-          so you can reboot the hackathon ecosystem at your high school.
+          and documenting everything we work on for Assemble to allow attendees to
+          create incredible hackathons in their communities.
         </InfoBox>
         <ComicImage
           webp="https://cloud-o7avz9t60-hack-club-bot.vercel.app/020191026_151117.webp"
           src="https://cloud-zlnkdqme0-hack-club-bot.vercel.app/020191026_151117.jpg"
           href="https://cloud-zlnkdqme0-hack-club-bot.vercel.app/020191026_151117.jpg"
           alt="Students at MAHacks with laptops sitting at tables in a room"
+          height="320px"
         />
       </Grid>
+      <Box
+        sx={{
+          bg: 'sunken',
+          color: 'black',
+          backgroundSize: '30px',
+          backgroundImage: 'url(/patterns/white.png)',
+          border: '3px solid black',
+          mt: 3,
+          p: 4
+        }}
+      >
+        <Heading
+          as="h3"
+          sx={{
+            fontSize: 64,
+            textAlign: 'center'
+          }}
+        >
+          And to hack for 42 hours!
+        </Heading>
+      </Box>
     </Container>
   </Box>
 )
@@ -100,6 +117,7 @@ const InfoBox = ({ iconGlyph, heading, children, sx }) => (
         p: 3,
         display: 'flex',
         gap: '12px',
+        fontSize: 2,
       }}
     >
       <Box>

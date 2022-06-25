@@ -1,8 +1,9 @@
-import Copy from './copy.mdx'
+import Copy from './first-letter.mdx'
 import { Box, Container } from 'theme-ui'
 import { motion, useViewportScroll, useAnimation } from 'framer-motion'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import Parallax from './parallax'
+import { Hero } from './hero'
 
 const variants = {
   hidden: { opacity: 0 },
@@ -12,23 +13,29 @@ const variants = {
 export const Letter = () => {
   const { scrollYProgress } = useViewportScroll()
   const controls = useAnimation()
+  const [backgroundOverlay, setBackgroundOverlay] = useState(`linear-gradient(90deg, rgba(5, 11, 20, 100%) 0%, rgba(5, 11, 20, 100%) 100% )`)
+
   useEffect(
     () =>
       scrollYProgress.onChange(latest => {
-        if (latest > 0) {
-          controls.start({
-            backgroundImage:
-              'linear-gradient(90deg, rgba(5, 11, 20, 0.9) 0%, rgba(5, 11, 20, 0.9) 100% )',
-            transition: { duration: 0.5 },
-          })
-        }
-        if (latest == 0) {
-          controls.start({
-            backgroundImage:
-              'linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100% )',
-            transition: { duration: 1 },
-          })
-        }
+        // if (latest > 0) {
+        //   controls.start({
+        //     backgroundImage:
+        //       'linear-gradient(90deg, rgba(5, 11, 20, 0.7) 0%, rgba(5, 11, 20, 0.7) 100% )',
+        //     transition: { duration: 0.3 },
+        //   })
+        // }
+        // if (latest == 0) {
+        //   controls.start({
+        //     backgroundImage:
+        //       'linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100% )',
+        //     transition: { duration: 1 },
+        //   })
+        // }
+      
+          const css = `clamp(70%, ${100 - Math.round(latest / 0.3 * 100)}%, 100%)`;
+          setBackgroundOverlay(`linear-gradient(90deg, rgba(5, 11, 20, ${css}) 0%, rgba(5, 11, 20, ${css}) 100% )`);
+      
       }),
     [],
   )
@@ -36,8 +43,10 @@ export const Letter = () => {
   return (
     <Box
       sx={{
-        backgroundImage:
-          'linear-gradient(90deg, rgba(5, 11, 20, 0.6) 0%, rgba(5, 11, 20, 0.5) 100% )',
+         backgroundImage:
+           'url("https://cloud-bs04w09ot-hack-club-bot.vercel.app/0image.png")',
+        backgroundAttachment: 'fixed',
+        backgroundSize: 'cover',
         position: 'relative',
       }}
       id="letter"
@@ -50,10 +59,11 @@ export const Letter = () => {
           position: 'relative',
           zIndex: 99,
           minHeight: '100vh',
-          backgroundImage:
-            'linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100% )',
+          backgroundImage:backgroundOverlay
+            //  'linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100% )',
         }}
       >
+        <div style={{minHeight: '100vh'}}>
         <motion.div
           initial="hidden"
           animate="visible"
@@ -90,9 +100,11 @@ export const Letter = () => {
           <Container variant="narrow">
             <Copy />
           </Container>
-        </motion.div>
+        </motion.div></div>
+        <Hero />
       </motion.div>
-      <Parallax background={true}></Parallax>
+  {//    <Parallax background={true}></Parallax>
+}
     </Box>
   )
 }
