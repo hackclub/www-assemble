@@ -13,29 +13,35 @@ export const Features = () => (
     }}
   >
     <Container variant="copy" sx={{ maxWidth: ['copy', null, 'copyUltra'] }}>
-        <Text
-          variant="title"
-          sx={{
-            display: 'block',
-            my: 2, 
-            color: 'white',
-            textShadow: 'elevated',
-            mb: 4,
-            fontSize: [5, 5, '84px'],
-            textAlign: ['center', 'left'],
-            fontSize: ['42px',5]
-          }}
-        >
-          150+ hackers all come together in downtown San Fransisco to...
+      <Text
+        variant="title"
+        sx={{
+          display: 'block',
+          my: 2,
+          color: 'white',
+          textShadow: 'elevated',
+          mb: 4,
+          fontSize: [5, 5, '84px'],
+          textAlign: ['center', 'left'],
+          fontSize: ['42px', 5],
+        }}
+      >
+        150+ hackers all come together in downtown San Fransisco to...
       </Text>
       <Grid columns={[1, 1, 2]}>
         <InfoBox iconGlyph="support" heading="Share Their Knowledge">
-          At Assemble, you'll be able to give & watch talks from
-          peers, gain experience, make connections, and discover yourself.
-          You'll meet new people, get help from peers, and support your fellow
-          hackers.
+          At Assemble, you'll be able to give & watch talks from peers, gain
+          experience, make connections, and discover yourself. You'll meet new
+          people, get help from peers, and support your fellow hackers.
         </InfoBox>
         <ComicImage
+          sx={{
+            '&:hover': {
+              transform: 'translateY(-7px) translateX(7px)',
+              boxShadow: '-7px 7px #000',
+              transitionDuration: '300ms',
+            },
+          }}
           // webp="https://cloud-nmdl7opdm-hack-club-bot.vercel.app/3hibernia.webp"
           // src="https://cloud-me9ijbqml-hack-club-bot.vercel.app/0hibernia.png"
           src="https://cloud-e57ekrxp4-hack-club-bot.vercel.app/0shareknowledge.jpg"
@@ -57,17 +63,31 @@ export const Features = () => (
           sx={{ gridColumn: [null, null, '1/2'], gridRow: [null, null, '2/3'] }}
         >
           <ComicImage
+            sx={{
+              '&:hover': {
+                transform: 'translateY(-7px) translateX(7px)',
+                boxShadow: '-7px 7px #000',
+                transitionDuration: '300ms',
+              },
+            }}
             src="https://cloud-j0br81ugp-hack-club-bot.vercel.app/3zephyr2.jpg"
             href="https://cloud-j0br81ugp-hack-club-bot.vercel.app/3zephyr2.jpg"
-            alt="At the corner of Figma HQ"
+            alt="Teenager coding on The Hacker Zephyr"
           />
         </Box>
         <InfoBox iconGlyph="announcement" heading="Hack The Planet">
           One hackathon doesn’t constitute a renaissance, so we’re open-sourcing
-          and documenting everything we work on for Assemble to allow attendees to
-          create incredible hackathons in their communities.
+          and documenting everything we work on for Assemble to allow attendees
+          to create incredible hackathons in their communities.
         </InfoBox>
         <ComicImage
+          sx={{
+            '&:hover': {
+              transform: 'translateY(-7px) translateX(7px)',
+              boxShadow: '-7px 7px #000',
+              transitionDuration: '300ms',
+            },
+          }}
           webp="https://cloud-o7avz9t60-hack-club-bot.vercel.app/020191026_151117.webp"
           src="https://cloud-zlnkdqme0-hack-club-bot.vercel.app/020191026_151117.jpg"
           href="https://cloud-zlnkdqme0-hack-club-bot.vercel.app/020191026_151117.jpg"
@@ -87,8 +107,8 @@ export const Features = () => (
           '&:hover': {
             transform: 'translateY(-7px) translateX(7px)',
             boxShadow: '-7px 7px #000',
-            transitionDuration: '200ms'
-          }
+            transitionDuration: '300ms',
+          },
         }}
       >
         <Heading
@@ -119,7 +139,7 @@ const InfoBox = ({ iconGlyph, heading, children, sx }) => (
       '&:hover': {
         transform: 'translateY(-7px) translateX(7px)',
         boxShadow: '-7px 7px #000',
-        transitionDuration: '200ms'
+        transitionDuration: '300ms',
       },
       ...sx,
     }}
@@ -146,7 +166,13 @@ const InfoBox = ({ iconGlyph, heading, children, sx }) => (
             fontSize: 32,
           }}
         >
-          <Box sx={{ color: '#FF544A', display: ['none', 'flex'], alignItems: 'center' }}>
+          <Box
+            sx={{
+              color: '#FF544A',
+              display: ['none', 'flex'],
+              alignItems: 'center',
+            }}
+          >
             <Icon glyph={iconGlyph} size={36} />
           </Box>
           {heading}

@@ -17,20 +17,16 @@ const ComicImage = ({
         src={src}
         alt={alt}
         title={alt}
-        sx={{
+        style={{
           objectFit: 'cover',
           border: '3px solid black',
           objectPosition,
           minHeight: height,
           objectFit: 'cover',
           height: '100%',
-          width: '100%',
-          '&:hover': {
-              transform: 'translateY(-7px) translateX(7px)',
-              boxShadow: '-7px 7px #000',
-              transitionDuration: '200ms'
-            }
+          width: '100%'
         }}
+        sx={sx}
       />
     </picture>
   )
