@@ -114,6 +114,9 @@ export const CalendarDate = ({
         border: '3px solid ' + color,
         borderRadius: '12px',
       }}
+      sx={{
+        mb: 4
+      }}
     >
       <Box
         style={{
