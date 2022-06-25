@@ -32,7 +32,9 @@ export const Features = () => (
         <InfoBox iconGlyph="support" heading="Share Their Knowledge">
           At Assemble, you'll be able to give & watch talks from peers, gain
           experience, make connections, and discover yourself. You'll meet new
-          people, get help from peers, and support your fellow hackers.
+          people from around the world (including 
+          <a href="https://hackclub.com/amas#past-amas">previous AMA guests</a>),{' '}
+          get help from peers, and support your fellow hackers.
         </InfoBox>
         <ComicImage
           sx={{
