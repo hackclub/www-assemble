@@ -93,7 +93,7 @@ export const Features = () => (
             textAlign: 'center'
           }}
         >
-          And to hack for 42 hours!
+          And hack for 42 hours!
         </Heading>
       </Box>
     </Container>

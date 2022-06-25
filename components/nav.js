@@ -34,7 +34,7 @@ export const Nav = () => {
         color: 'white',
         alignItems: 'center',
         gap: '16px',
-        padding: '0px 16px',
+        padding: '4px 16px',
         position: 'fixed',
         top: 0,
         zIndex: 999,
@@ -60,8 +60,8 @@ export const Nav = () => {
         <Link href="#letter">
           <Image
             src="/invert.png"
-            height="40px"
-            sx={{ height: '40px', cursor: 'pointer' }}
+            height="32px"
+            sx={{ height: '32px', cursor: 'pointer' }}
           />
         </Link>
         <Link href="#letter">ASSEMBLE</Link>

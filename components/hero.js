@@ -28,7 +28,6 @@ export const Hero = () => {
             <Box sx={{ maxWidth: '1200px', margin: '0px auto', paddingLeft: '20px', paddingRight: '20px', boxSizing: 'border-box' }}>
                 <Heading variant="headline" sx={{
                     textTransform: 'uppercase',
-                    fontFamily: 'Phantom Sans',
                     color: 'white',
                     my: 0
                 }}>
@@ -36,7 +35,7 @@ export const Hero = () => {
                 </Heading>
                 <Heading variant="ultratitle" sx={{
                     textTransform: 'uppercase',
-                    pb: 5,
+                    pb: 4,
                     fontFamily: 'Space Grotesk',
                     color: '#fa4639',
                     WebkitTextFillColor:  '#fa4639', /* Will override color (regardless of order) */
@@ -61,10 +60,10 @@ export const Hero = () => {
                         color: 'white'
                     }}>
                         <Grid columns={2}>
-                            <Stat icon="pin" stat="Figma HQ in San Francisco" />
-                            <Stat icon="friend" stat="150 Hackers" />
-                            <Stat icon="send" stat="$40k in Travel Stipends" />
-                            <Stat icon="code" stat="Everything Open Source" />
+                            <Stat icon="pin" stat="Figma HQ in San Francisco" bg="red" />
+                            <Stat icon="clock" stat="Doors Open at 6PM" bg="orange" />
+                            <Stat icon="friend" stat="150+ Hackers" bg="blue" />
+                            <Stat icon="send" stat="$40k in Travel Stipends" bg="green" />
                         </Grid>
                     </Box>
                 </Flex>
@@ -80,12 +79,12 @@ export const CalendarDate = ({ duration, date, color = 'white', topColor = color
     const endDay = startDay + duration;
 
     return (
-        <div style={{ 
+        <Box style={{ 
             width: '125px',
             border: '3px solid ' + color,
             borderRadius: '12px'
         }}>
-            <div style={{
+            <Box style={{
                 width: '100%',
                 borderBottom: '3px solid white',
                 textAlign: 'center',
@@ -97,28 +96,35 @@ export const CalendarDate = ({ duration, date, color = 'white', topColor = color
                 backgroundColor: topBackgroundColor
             }}>
                 <Heading sx={{ textTransform: 'uppercase' }}>{month}</Heading>
-            </div>
+            </Box>
 
-            <div style={{
-                fontFamily: 'Phantom Sans',
+            <Box style={{
                 textAlign: 'center',
-                padding: '16px',
+                padding: '8px',
                 color: bottomColor,
                 backgroundColor: bottomBackgroundColor
             }}>
-                <Heading variant="ultratitle" sx={{ color: bottomColor, fontSize: '60px!important' }}>{startDay}</Heading>
-            </div>
-        </div>
+                <Heading variant="ultratitle" sx={{ color: bottomColor, fontSize: '70px!important' }}>{startDay}</Heading>
+            </Box>
+        </Box>
     )
 }
 
-export const Stat = ({ stat, icon }) => {
+export const Stat = ({ stat, icon, bg }) => {
     return (
-        <Text style={{
+        <Text sx={{
             verticalAlign: 'bottom',
-            fontSize: '20px'
+            fontSize: '20px',
+            fontWeight: 600,
+            background: bg || 'green',
+            p: 2,
+            borderRadius: 5,
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px',
+            pr: 3
         }}>
-            <Icon glyph={icon} size={40} style={{
+            <Icon glyph={icon} size={32} style={{
                 verticalAlign: 'middle'
             }} />
             {stat}
