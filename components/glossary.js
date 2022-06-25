@@ -138,9 +138,9 @@ const Glossary = () => (
           question="What are the sleeping arrangements?"
           answer={
             <>
-              From 9pm - 7am on both nights we will have a designated sleeping
+              From 9PM - 7AM on both nights we will have a designated sleeping
               area in the Figma office with low lights and minimal sound for you
-              to rest! We have limited sleeping bags so please bring your own.
+              to rest! Make sure to bring a sleeping bag!
             </>
           }
         />
