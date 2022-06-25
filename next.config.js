@@ -8,7 +8,20 @@ module.exports = withMDX({
       {
         source: '/register',
         permanent: true,
-        destination: 'https://www-assemble-register.hackclub.dev/',
+        destination: 'https://airtable.com/shrqNfrlrI6JT5XYP',
+      },
+    ]
+  },
+  async headers() {
+    return [
+      {
+        source: '/hackers-assemble.png',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=3600, stale-while-revalidate=3600',
+          }
+        ],
       },
     ]
   },

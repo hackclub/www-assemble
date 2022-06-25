@@ -8,7 +8,7 @@ const ComicImage = ({
   webp,
   objectPosition = undefined,
   sx,
-  height = undefined
+  height = undefined,
 }) => {
   const content = (
     <picture>

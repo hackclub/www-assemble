@@ -101,36 +101,43 @@ export const Rundown = () => (
             performing anonymous contact tracing and supporting any participant
             who tests positive with isolation.
           </Box>
-          <Box
-            p={3}
-            sx={{
-              color: 'white!important',
-              fontWeight: 800,
-              textAlign: 'center',
-              backgroundImage:
-                'linear-gradient(90deg, rgba(5, 11, 20, 0.3) 0%, rgba(5, 11, 20, 0.3) 100% ), url(/patterns/dots_blue.png)',
-              // backgroundSize: '190px',
-              boxShadow: 'elevated',
-              fontSize: 3,
-            }}
-            className="largeRegisterButton"
-            as="a"
-            href="https://airtable.com/shrqNfrlrI6JT5XYP"
-            target="_blank"
-          >
-            <span className="assembleRegisterText">REGISTER</span>
-            <Text
-              sx={{
-                transform: 'translateY(-3.5px)',
-                display: 'inline-block',
-              }}
-              className="externalIcon"
-            >
-              <Icon glyph="external" size={16} />
-            </Text>
-          </Box>
+          <WideRegisterButton />
         </Grid>
       </Container>
     </Box>
   </div>
+)
+
+export const WideRegisterButton = () => (
+  <Box
+    p={3}
+    sx={{
+      color: 'white!important',
+      fontWeight: 800,
+      textAlign: 'center',
+      backgroundImage:
+        'linear-gradient(90deg, rgba(5, 11, 20, 0.3) 0%, rgba(5, 11, 20, 0.3) 100% ), url(/patterns/dots_blue.png)',
+      // backgroundSize: '190px',
+      boxShadow: '0 1px 2px rgba(0, 0, 0, 0.0625),0 8px 12px rgba(0, 0, 0, 0.125)',
+      fontSize: 3,
+      '&:hover': {
+        boxShadow: '0 1px 2px rgba(0, 0, 0, 0.0625),0 8px 12px rgba(0, 0, 0, 0.325)',
+      }
+    }}
+    className="largeRegisterButton"
+    as="a"
+    href="/register"
+    target="_blank"
+  >
+    <span className="assembleRegisterText">REGISTER</span>
+    <Text
+      sx={{
+        transform: 'translateY(-3.5px)',
+        display: 'inline-block',
+      }}
+      className="externalIcon"
+    >
+      <Icon glyph="external" size={16} />
+    </Text>
+  </Box>
 )
