@@ -48,7 +48,7 @@ export const Letter = () => {
     <Box
       sx={{
         backgroundImage:
-          'url("https://cloud-bs04w09ot-hack-club-bot.vercel.app/0image.png")',
+          'url("/hackers-assemble.png")',
         backgroundAttachment: 'fixed',
         backgroundSize: 'cover',
         position: 'relative',
