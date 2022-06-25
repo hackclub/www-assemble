@@ -13,27 +13,26 @@ export const Features = () => (
     }}
   >
     <Container variant="copy" sx={{ maxWidth: ['copy', null, 'copyUltra'] }}>
-        <Text
-          variant="title"
-          sx={{
-            display: 'block',
-            my: 2, 
-            color: 'white',
-            textShadow: 'elevated',
-            mb: 4,
-            fontSize: [5, 5, '84px'],
-            textAlign: ['center', 'left'],
-            fontSize: ['42px',5]
-          }}
-        >
-          150+ hackers all come together in downtown San Fransisco to...
+      <Text
+        variant="title"
+        sx={{
+          display: 'block',
+          my: 2,
+          color: 'white',
+          textShadow: 'elevated',
+          mb: 4,
+          fontSize: [5, 5, '84px'],
+          textAlign: ['center', 'left'],
+          fontSize: ['42px', 5],
+        }}
+      >
+        150+ hackers all come together in downtown San Fransisco to...
       </Text>
       <Grid columns={[1, 1, 2]}>
         <InfoBox iconGlyph="support" heading="Share Their Knowledge">
-          At Assemble, you'll be able to give & watch talks from
-          peers, gain experience, make connections, and discover yourself.
-          You'll meet new people, get help from peers, and support your fellow
-          hackers.
+          At Assemble, you'll be able to give & watch talks from peers, gain
+          experience, make connections, and discover yourself. You'll meet new
+          people, get help from peers, and support your fellow hackers.
         </InfoBox>
         <ComicImage
           // webp="https://cloud-nmdl7opdm-hack-club-bot.vercel.app/3hibernia.webp"
@@ -64,8 +63,8 @@ export const Features = () => (
         </Box>
         <InfoBox iconGlyph="announcement" heading="Hack The Planet">
           One hackathon doesn’t constitute a renaissance, so we’re open-sourcing
-          and documenting everything we work on for Assemble to allow attendees to
-          create incredible hackathons in their communities.
+          and documenting everything we work on for Assemble to allow attendees
+          to create incredible hackathons in their communities.
         </InfoBox>
         <ComicImage
           webp="https://cloud-o7avz9t60-hack-club-bot.vercel.app/020191026_151117.webp"
@@ -83,14 +82,14 @@ export const Features = () => (
           backgroundImage: 'url(/patterns/white.png)',
           border: '3px solid black',
           mt: 3,
-          p: 4
+          p: 4,
         }}
       >
         <Heading
           as="h3"
           sx={{
             fontSize: 64,
-            textAlign: 'center'
+            textAlign: 'center',
           }}
         >
           And hack for 42 hours!
@@ -136,7 +135,13 @@ const InfoBox = ({ iconGlyph, heading, children, sx }) => (
             fontSize: 32,
           }}
         >
-          <Box sx={{ color: '#FF544A', display: ['none', 'flex'], alignItems: 'center' }}>
+          <Box
+            sx={{
+              color: '#FF544A',
+              display: ['none', 'flex'],
+              alignItems: 'center',
+            }}
+          >
             <Icon glyph={iconGlyph} size={36} />
           </Box>
           {heading}
