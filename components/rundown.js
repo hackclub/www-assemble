@@ -96,7 +96,7 @@ export const Rundown = () => (
           </Box>
           <Box bg="white" p={3}>
             <b>COVID-19:</b> We require all participants to be vaccinated
-            against COVID-19 or to have a medical exemption. We'll be providing
+            against COVID-19 or to have a medical exemption and will be providing
             all participants with N95 masks and rapid tests. We'll also be
             performing anonymous contact tracing and supporting any participant
             who tests positive with isolation.
