@@ -21,12 +21,11 @@ export const Features = () => (
           color: 'white',
           textShadow: 'elevated',
           mb: 4,
-          fontSize: [5, 5, '84px'],
           textAlign: ['center', 'left'],
           fontSize: ['42px', 5],
         }}
       >
-        150+ hackers all come together in downtown San Fransisco to...
+        150+ hackers from all over the world come together in San Fransisco to...
       </Text>
       <Grid columns={[1, 1, 2]}>
         <InfoBox iconGlyph="support" heading="Share Their Knowledge">
