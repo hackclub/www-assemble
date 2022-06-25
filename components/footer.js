@@ -19,7 +19,7 @@ const Footer = () => (
         },
       }}
     >
-      <Box my={1} mb={1}>
+      <Box my={1} mb={1} sx={{lineHeight: '2'}}>
         Pages hand inked by{' '}
         <Text sx={{ fontWeight: 'bold', color: 'white', textDecoration: 'none' }} as="a" href="https://hackclub.com" target="_blank">Hack&nbsp;Club</Text> ~ Send mail 📮
         to{' '}
@@ -38,7 +38,7 @@ const Footer = () => (
           target="_blank"
         >
           hackclub/www-assemble
-        </Link>
+        </Link>.
       </Box>
       {/* only uncomment this once the bank project is in transparency mode & the site repo is public */}
 
