@@ -88,10 +88,9 @@ export const Features = () => (
               transitionDuration: '300ms',
             },
           }}
-          webp="https://cloud-o7avz9t60-hack-club-bot.vercel.app/020191026_151117.webp"
-          src="https://cloud-zlnkdqme0-hack-club-bot.vercel.app/020191026_151117.jpg"
-          href="https://cloud-zlnkdqme0-hack-club-bot.vercel.app/020191026_151117.jpg"
-          alt="Students at MAHacks with laptops sitting at tables in a room"
+          src="/flagship.png"
+          href="/flagship.png"
+          alt="Students at Flagship gathering"
           height="320px"
         />
       </Grid>
