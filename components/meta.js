@@ -8,9 +8,9 @@ const makeTitle = (title, name) =>
 const Meta = ({
   title = 'Assemble', // page title
   name = 'Assemble', // site name
-  description = 'Join us in SF!', // page description
-  image = '/social.png', // social card image URL
-  url = 'https://hackclub.com',
+  description = 'The first IRL high school hackathon in San Francisco since the pandemic and the beginning of a hackathon renaissance. Come join 150+ fellow hackers on Aug 5th for a hackathon to remember!', // page description
+  image = 'https://assemble.hackclub.com/meta-assemble.png', // social card image URL
+  url = 'https://assemble.hackclub.com',
   children,
 }) => {
   const [focus, setFocus] = useState(true)
