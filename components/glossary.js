@@ -44,8 +44,18 @@ const Glossary = () => (
       </Text>
       <Grid columns={[1, null, 3]} gap={[3, 3, 3]}>
         <Card
-          question="I can't pay for travel..."
-          answer="We're are providing travel stipends and can issue letters of support for visa applications. These can be requested on the registration form."
+          question="Can I join?"
+          answer={
+            <>
+              If you're in middle school, high school, or an alumni of Hack
+              Club, yes, we are so excited to see you in SF! If you're not sure,
+              shoot us a mail at{' '}
+              <a style={{ color: 'black' }} href="mailto:assemble@hackclub.com">
+                assemble@hackclub.com
+              </a>
+              .
+            </>
+          }
         />
         <Card
           question="What do I need?"
@@ -56,21 +66,21 @@ const Glossary = () => (
           answer="Nothing! We’ll have meals, snacks, and beverages onsite at the hackathon, as well as swag, prizes, and fun mini-events."
         />
         <Card
-          question="My parents are worried!"
+          question="I can't pay for travel..."
           answer={
             <>
-              We're here to help, ask them to reach out to us at{' '}
-              <a style={{ color: 'black' }} href="mailto:assemble@hackclub.com">
-                assemble@hackclub.com
+              We're providing travel stipends to both domestic and international attendees. 
+              Please request one on the registration form if needed. If you're
+              travelling internationally, we can issues visa letters and have prepared this{' '}
+              <a
+                style={{ color: 'black' }}
+                href="https://docs.google.com/document/d/e/2PACX-1vQ9i8Vpb9Bpu0pxabtC4V32Sab930B6aK48lkruZTJVPXkNDCAqSJjbzv_uGzzN4wpcI2gOBZ8zQLkK/pub"
+              >
+                guide
               </a>{' '}
-              and we'll make sure to answer all their questions. Assemble will be 
-              supervised by background checked adults and 24/7 security staff.
+              to help you.
             </>
           }
-        />
-        <Card
-          question="What can I make?"
-          answer="Anything! Apps, art, sites, and hardware projects are all perfect for a hackathon."
         />
         <Card
           question="Who is judging?"
@@ -86,6 +96,41 @@ const Glossary = () => (
                 pretty cool people
               </a>{' '}
               hang out with us.
+            </>
+          }
+        />
+        <Card
+          question="I'm not that good at coding..."
+          answer={
+            <>
+              This hackathon is for hackers of all skill levels! We'll have
+              workshops and other events so join us and let's learn together. If
+              you'd like to start exploring some introductory projects, check
+              out{' '}
+              <a
+                style={{ color: 'black' }}
+                href="https://workshops.hackclub.com"
+              >
+                Hack Club Workshops
+              </a>{' '}
+              .
+            </>
+          }
+        />
+        <Card
+          question="What can I make?"
+          answer="Anything! Apps, art, sites, and hardware projects are all perfect for a hackathon."
+        />
+        <Card
+          question="My parents are worried!"
+          answer={
+            <>
+              We're here to help, ask them to reach out to us at{' '}
+              <a style={{ color: 'black' }} href="mailto:assemble@hackclub.com">
+                assemble@hackclub.com
+              </a>{' '}
+              and we'll make sure to answer all their questions. Assemble will be supervised{' '}
+              by background checked staff and overseen by 24/7 security staff.
             </>
           }
         />
