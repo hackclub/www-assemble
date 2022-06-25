@@ -41,7 +41,7 @@ const Meta = ({
       <meta key="og_type" property="og:type" content="website" />
       <meta key="og_site" property="og:site_name" content={name} />
       <meta key="tw_site" name="twitter:site" content="@hackclub" />
-      <title key="title">{focus == null ? 'Assemble' : focus ? 'Come together...' : '...over me'}</title>
+      <title key="title">{focus == null ? 'Hack Club Assemble' : focus ? 'Come together...' : '...over me'}</title>
       <meta
         key="og_title"
         property="og:title"
