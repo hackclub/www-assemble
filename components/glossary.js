@@ -44,7 +44,7 @@ const Glossary = () => (
       </Text>
       <Grid columns={[1, null, 3]} gap={[3, 3, 3]}>
         <Card
-          question="Can i join?"
+          question="Can I join?"
           answer={
             <>
               If you're in middle school, high school, or an alumni of Hack
@@ -52,7 +52,7 @@ const Glossary = () => (
               shoot us a mail at{' '}
               <a style={{ color: 'black' }} href="mailto:assemble@hackclub.com">
                 assemble@hackclub.com
-              </a>{' '}
+              </a>
               .
             </>
           }
@@ -69,16 +69,16 @@ const Glossary = () => (
           question="I can't pay for travel..."
           answer={
             <>
-              We're working on providing travel stipends so please indicate your
-              request in the registration form and we'll try our best! If you're
-              travelling internationally, we can issues visa letters and this{' '}
+              We're providing travel stipends to both domestic and international attendees. 
+              Please request one on the registration form if needed. If you're
+              travelling internationally, we can issues visa letters and have prepared this{' '}
               <a
                 style={{ color: 'black' }}
                 href="https://docs.google.com/document/d/e/2PACX-1vQ9i8Vpb9Bpu0pxabtC4V32Sab930B6aK48lkruZTJVPXkNDCAqSJjbzv_uGzzN4wpcI2gOBZ8zQLkK/pub"
               >
                 guide
               </a>{' '}
-              might also be helpful.
+              to help you.
             </>
           }
         />
