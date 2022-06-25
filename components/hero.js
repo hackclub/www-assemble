@@ -82,7 +82,8 @@ export const Hero = () => {
               <Stat icon="friend" stat="150+ Hackers" bg="blue" />
               <Stat icon="send" stat="$40k in Travel Stipends" bg="brown" />
             </Grid>
-{//<Link sx={{color: 'white', fontWeight: 400, display: 'flex', mt: '5px'}} href="https://hackclub.com/slack" target="_blank"> We're hanging out here til we meet irl → <Icon glyph="slack" sx={{width: ['16px', '24px'], height: ['16px', '24px']}}/></>}
+{//<Link sx={{color: 'white', fontWeight: 400, display: 'flex', mt: '5px'}} href="https://hackclub.com/slack" target="_blank"> We're hanging out here til we meet irl → <Icon glyph="slack" sx={{width: ['16px', '24px'], height: ['16px', '24px']}}/></>
+}
   
           </Box>
         </Flex>
