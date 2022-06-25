@@ -59,7 +59,7 @@ const Glossary = () => (
         />
         <Card
           question="What do I need?"
-          answer="Your laptop, chargers, anything for your hack (hardware?), toiletries, and an open mind. We can help with the laptop. The mind thing is on you."
+          answer="Your laptop, chargers, anything for your hack (hardware?), toiletries, and an open mind. We can help with the laptop. The mind thing is on you, however."
         />
         <Card
           question="How much does it cost?"
@@ -129,7 +129,8 @@ const Glossary = () => (
               <a style={{ color: 'black' }} href="mailto:assemble@hackclub.com">
                 assemble@hackclub.com
               </a>{' '}
-              and we'll make sure to answer all their questions.
+              and we'll make sure to answer all their questions. Assemble will be supervised{' '}
+              by background checked staff and overseen by 24/7 security staff.
             </>
           }
         />

@@ -8,7 +8,7 @@ module.exports = withMDX({
       {
         source: '/register',
         permanent: true,
-        destination: 'https://airtable.com/shrqNfrlrI6JT5XYP',
+        destination: 'https://register.assemble.hackclub.com',
       },
     ]
   },

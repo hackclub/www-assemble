@@ -1,9 +1,14 @@
 ![Assemble logo](https://assemble.hackclub.com/logo.png)
 
 # www-assemble
-The website for [Assemble](https://assemble.hackclub.com).
 
+The website for [Assemble](https://assemble.hackclub.com). Built using Next.js, Theme UI & MDX. 
 
+To run locally:
+
+```
+yarn && yarn dev
+```
 
 ## Attribution
 
