@@ -26,6 +26,7 @@ export const Nav = () => {
   )
   return (
     <motion.div
+      id="nav"
       style={{
         background: 'white',
         backgroundImage:

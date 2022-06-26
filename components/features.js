@@ -31,16 +31,16 @@ export const Features = () => (
         <InfoBox iconGlyph="support" heading="Share Their Knowledge">
           At Assemble, you'll be able to give & watch talks from peers, gain
           experience, make connections, and discover yourself. You'll meet new
-          people from around the world (including{' '} 
+          people from around the world (including{' '}
           <Link href="https://hackclub.com/amas#past-amas" target="_blank">previous AMA guests</Link>),{' '}
           get help from peers, and support your fellow hackers.
         </InfoBox>
         <ComicImage
           sx={{
+            transitionDuration: '300ms',
             '&:hover': {
               transform: 'translateY(-7px) translateX(7px)',
               boxShadow: '-7px 7px #000',
-              transitionDuration: '300ms',
             },
           }}
           // webp="https://cloud-nmdl7opdm-hack-club-bot.vercel.app/3hibernia.webp"
@@ -65,10 +65,10 @@ export const Features = () => (
         >
           <ComicImage
             sx={{
+              transitionDuration: '300ms',
               '&:hover': {
                 transform: 'translateY(-7px) translateX(7px)',
                 boxShadow: '-7px 7px #000',
-                transitionDuration: '300ms',
               },
             }}
             src="https://cloud-j0br81ugp-hack-club-bot.vercel.app/3zephyr2.jpg"
@@ -83,10 +83,10 @@ export const Features = () => (
         </InfoBox>
         <ComicImage
           sx={{
+            transitionDuration: '300ms',
             '&:hover': {
               transform: 'translateY(-7px) translateX(7px)',
               boxShadow: '-7px 7px #000',
-              transitionDuration: '300ms',
             },
           }}
           src="/flagship.jpg"
@@ -104,10 +104,10 @@ export const Features = () => (
           border: '3px solid black',
           mt: 3,
           p: 4,
+          transitionDuration: '300ms',
           '&:hover': {
             transform: 'translateY(-7px) translateX(7px)',
             boxShadow: '-7px 7px #000',
-            transitionDuration: '300ms',
           },
         }}
       >
@@ -136,10 +136,10 @@ const InfoBox = ({ iconGlyph, heading, children, sx }) => (
       backgroundSize: '30px',
       backgroundImage: 'url(/patterns/white.png)',
       border: '3px solid black',
+      transitionDuration: '300ms',
       '&:hover': {
         transform: 'translateY(-7px) translateX(7px)',
         boxShadow: '-7px 7px #000',
-        transitionDuration: '300ms',
       },
       ...sx,
     }}
