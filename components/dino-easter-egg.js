@@ -1,10 +1,11 @@
-import { Image, Box } from 'theme-ui'
+import { Image, Box, Text } from 'theme-ui'
 
 const DinoEasterEgg = props => {
   // return null
   return (
     <>
       <Box
+        id="dino-easter-egg"
         sx={{
           position: 'fixed',
           bottom: 0,
@@ -12,24 +13,34 @@ const DinoEasterEgg = props => {
           height: '240px',
           width: '240px',
           zIndex: '200',
-          '&:hover > img': {
+          '&:hover > div': {
             bottom: '-80px',
           },
         }}
       >
-        <Image
-          src="/dinosaur-waving.png"
-          sx={{
-            position: 'relative',
+        <Box sx={{
+            position: "relative",
             bottom: '-100%',
-            height: '240px',
             right: -45,
-            zIndex: '200',
-            cursor: 'pointer',
             transition: 'ease-in-out 0.3s',
-          }}
-          onClick={() => window.open('https://www.dinosaurbbq.org/', '_blank')}
-        />
+        }}>
+          <Image
+            src="/dinosaur-waving.png"
+            sx={{
+              position: 'relative',
+              height: '240px',
+              zIndex: '200',
+              cursor: 'pointer',
+            }}
+              onClick={() => window.open('https://www.dinosaurbbq.org/', '_blank')}
+            />
+            <Text sx={{
+              position: "absolute",
+              top: "7px",
+              left: "-151px",
+              color: "white"
+            }}>Try pressing <kbd>ctrl</kbd>/<kbd>cmd</kbd> + <kbd>s</kbd>!</Text>
+          </Box>
       </Box>
     </>
   )
