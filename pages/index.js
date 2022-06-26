@@ -9,8 +9,19 @@ import { Letter } from '../components/letter'
 import { Rundown } from '../components/rundown'
 import { Features } from '../components/features'
 import { BetaWelcome } from '../components/beta-welcome'
+import { useEffect } from 'react'
 
 export default function Index() {
+  useEffect(() => {
+    console.log(` █████╗ ███████╗███████╗███████╗███╗   ███╗██████╗ ██╗     ███████╗
+██╔══██╗██╔════╝██╔════╝██╔════╝████╗ ████║██╔══██╗██║     ██╔════╝
+███████║███████╗███████╗█████╗  ██╔████╔██║██████╔╝██║     █████╗  
+██╔══██║╚════██║╚════██║██╔══╝  ██║╚██╔╝██║██╔══██╗██║     ██╔══╝  
+██║  ██║███████║███████║███████╗██║ ╚═╝ ██║██████╔╝███████╗███████╗
+╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝╚═╝     ╚═╝╚═════╝ ╚══════╝╚══════╝
+
+Hey hacker! Register for Assemble at https://assemble.hackclub.com/register. We hope to see you there!`)
+  }, [])
   return (
     <>
       <DinoEasterEgg />
