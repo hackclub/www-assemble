@@ -31,29 +31,22 @@ const Footer = () => (
         </Link>
         .
         <br />
-        Everything open source at{' '}
+        Source code open sourced at{' '}
         <Link
           href="https://github.com/hackclub/www-assemble"
           sx={{ color: 'white', fontWeight: 800 }}
           target="_blank"
         >
           hackclub/www-assemble
-        </Link>.
-        Hacker Zephyr photos by{' '}
+        </Link> and finances released{' '}
         <Link
-          href="https://kunalbotla.com"
+          href="https://bank.hackclub.com/assemble"
           sx={{ color: 'white', fontWeight: 800 }}
           target="_blank"
         >
-          Kunal Botla
-        </Link>.
+          on Hack Club Bank.
+        </Link>
       </Box>
-      {/* only uncomment this once the bank project is in transparency mode & the site repo is public */}
-
-      {/* Open source:{' '}
-      <Link href="https://github.com/hackclub/www-assemble">Code</Link>
-      {' & '}
-      <Link href="https://bank.hackclub.com/assemble">Finances</Link> */}
     </Container>
   </Box>
 )
