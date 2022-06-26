@@ -1,4 +1,6 @@
-import { Box, Container, Link, Text } from 'theme-ui'
+import { Box, Image, Container, Link, Text } from 'theme-ui'
+import Ingot from './ingot.js'
+
 const Footer = () => (
   <Box
     sx={{
@@ -46,6 +48,7 @@ const Footer = () => (
         >
           on Hack Club Bank.
         </Link>
+	<Ingot/>
       </Box>
     </Container>
   </Box>
