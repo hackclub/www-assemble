@@ -43,6 +43,44 @@ Hey hacker! Register for Assemble at https://assemble.hackclub.com/register. We 
         if (success) setShowRegistration(true)
       }
     }
+    // Credit to https://workshops.hackclub.com/konami_code/ for the logic of the konami code.
+    const keys = []
+    const secretCode = [
+      'ArrowUp',
+      'ArrowUp',
+      'ArrowDown',
+      'ArrowDown',
+      'ArrowLeft',
+      'ArrowRight',
+      'ArrowLeft',
+      'ArrowRight',
+      'b',
+      'a',
+      'Enter',
+    ]
+    window.addEventListener('keyup', e => {
+      keys.push(e.key)
+      if (keys.length > secretCode.length) {
+        keys.shift()
+      }
+      if (JSON.stringify(keys) === JSON.stringify(secretCode)) {
+        // Credit to https://github.com/sc420/jellify-ur-website for designing this amazing jellifing bookmarklet!
+
+        const urls = [
+          // Dependencies should be loaded first
+          'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js',
+          'https://cdn.jsdelivr.net/npm/matter-js@0.17.1/build/matter.min.js',
+          // Main script is loaded last
+          'https://sc420.github.io/jellify-ur-website/js/jellify.js',
+        ]
+        urls.forEach(url => {
+          const head = document.getElementsByTagName('head')[0]
+          const script = document.createElement('script')
+          script.src = url
+          head.appendChild(script)
+        })
+      }
+    })
   }, [])
   return (
     <>
