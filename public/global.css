@@ -67,17 +67,17 @@ body {
     0 24px 24px rgba(0, 0, 0, 0.2), 0 36px 36px rgba(0, 0, 0, 0.15);
 }
 
-.largeRegisterButton:hover > .externalIcon {
+.largeRegisterButton:not(.closed):hover > .externalIcon {
   transform: translate(4px, 0px) scale(2);
 }
 
-.largeRegisterButton:hover > .assembleRegisterText {
+.largeRegisterButton:not(.closed):hover > .assembleRegisterText {
   position: relative;
   left: -4px;
   top: 0px;
 }
 
-.largeRegisterButton > .assembleRegisterText {
+.largeRegisterButton:not(.closed) > .assembleRegisterText {
   position: relative;
   left: 0px;
   top: 0px;

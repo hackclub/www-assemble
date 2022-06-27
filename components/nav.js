@@ -2,6 +2,7 @@ import { Flex, Heading, Image, Box } from 'theme-ui'
 import { motion, useViewportScroll, useAnimation } from 'framer-motion'
 import { useEffect } from 'react'
 import Link from 'next/link'
+import { registrationState, closed } from '../lib/waitlist'
 
 export const Nav = () => {
   const { scrollYProgress } = useViewportScroll()
@@ -93,21 +94,21 @@ export const Nav = () => {
       </Link>
       <Box
         as="a"
-        href="/register"
-        target="_blank"
+        href={!closed ? "/register" : "javascript:void(0)"}
+        target={!closed ? "_blank" : "_self"}
         sx={{ color: 'white', textDecoration: 'none' }}
       >
         <Heading
           as="h3"
           p={2}
-          bg="green"
+          bg={!closed ? "green" : "gray"}
           sx={{
             borderRadius: '4px',
-            cursor: 'pointer',
+            cursor: !closed ? 'pointer' : 'default',
             fontSize: [null, '16px', '20px'],
           }}
         >
-          Register
+          {({ open: 'Register', waitlist: 'Join the Waitlist', closed: 'Registration Closed' })[registrationState]}
         </Heading>
       </Box>
     </motion.div>

@@ -1,5 +1,6 @@
 import { Box, Button, Heading, Link, Text, Grid, Flex } from 'theme-ui'
 import Icon from '@hackclub/icons'
+import { registrationState, closed } from '../lib/waitlist'
 /** @jsxImportSource theme-ui */
 
 export const months = [
@@ -108,15 +109,18 @@ export const Hero = () => {
             fontFamily: 'Space Grotesk',
             backgroundColor: 'green',
             my: 3,
+            filter: closed ? 'grayscale(100%)' : undefined,
+            cursor: closed ? 'default' : 'pointer'
           }}
-          href="/register"
-          target="_blank"
+          href={!closed ? "/register" : 'javascript:void(0)'}
+          target={closed ? '_self' : '_blank'}
+          disabled={closed + ""}
         >
-          Register{' '}
-          <Icon
+          {({ waitlist: 'Join the Waitlist', open: 'Register', closed: 'Registration Closed'  })[registrationState]}{' '}
+          {!closed && <Icon
             glyph="external"
             sx={{ width: ['32px', '44px'], height: ['32px', '42px'] }}
-          />
+          />}
         </Button>
       </Box>
     </Box>

@@ -4,6 +4,7 @@ import ImgFlagship1 from '../public/flagship.jpg'
 import ImgFlagship2 from '../public/flagship2.jpg'
 import NextImage from 'next/image'
 import ComicImage from './comic-image'
+import { registrationState, closed } from '../lib/waitlist'
 
 export const Rundown = () => (
   <div id="rundown">
@@ -124,18 +125,20 @@ export const WideRegisterButton = () => (
       boxShadow:
         '0 1px 2px rgba(0, 0, 0, 0.0625),0 8px 12px rgba(0, 0, 0, 0.125)',
       fontSize: 3,
-      '&:hover': {
+      '&:hover': !closed ? {
         boxShadow:
           '0 1px 2px rgba(0, 0, 0, 0.0625),0 8px 12px rgba(0, 0, 0, 0.325)',
-      },
+      } : undefined,
+      cursor: closed ? 'default' : 'pointer',
+      filter: closed ? 'grayscale(100%)' : undefined,
     }}
-    className="largeRegisterButton"
+    className={`largeRegisterButton${closed ? ' closed' : ''}`}
     as="a"
-    href="/register"
-    target="_blank"
+    href={!closed ? "/register" : 'javascript:void(0)'}
+    target={!closed ? "_blank" : "_self"}
   >
-    <span className="assembleRegisterText">REGISTER</span>
-    <Text
+    <span className="assembleRegisterText">{({ open: 'REGISTER', closed: 'REGISTRATION CLOSED', waitlist: 'JOIN THE WAITLIST' })[registrationState]}</span>
+    {!closed ? <Text
       sx={{
         transform: 'translateY(-3.5px)',
         display: 'inline-block',
@@ -143,6 +146,6 @@ export const WideRegisterButton = () => (
       className="externalIcon"
     >
       <Icon glyph="external" size={16} />
-    </Text>
+    </Text> : null}
   </Box>
 )
