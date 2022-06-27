@@ -4,10 +4,10 @@ import Meta from '../components/meta'
 import theme from '../lib/theme'
 import { ThemeProvider } from 'theme-ui'
 import '../public/global.css'
-import {useEatSterEgg} from "../components/eat-ster-egg";
+import { useEatSterEgg } from '../components/eat-ster-egg'
 
 const App = ({ Component, pageProps }) => {
-  useEatSterEgg();
+  useEatSterEgg()
 
   return (
     <ThemeProvider theme={withModalTheme(theme)}>

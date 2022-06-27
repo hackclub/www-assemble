@@ -99,10 +99,10 @@ export const Rundown = () => (
           </Box>
           <Box bg="white" p={3}>
             <b>COVID-19:</b> We require all participants to be vaccinated
-            against COVID-19 or to have a medical exemption and will be providing
-            all participants with N95 masks and rapid tests. We'll also be
-            performing anonymous contact tracing and supporting any participant
-            who tests positive with isolation.
+            against COVID-19 or to have a medical exemption and will be
+            providing all participants with N95 masks and rapid tests. We'll
+            also be performing anonymous contact tracing and supporting any
+            participant who tests positive with isolation.
           </Box>
           <WideRegisterButton />
         </Grid>
@@ -121,11 +121,13 @@ export const WideRegisterButton = () => (
       backgroundImage:
         'linear-gradient(90deg, rgba(5, 11, 20, 0.3) 0%, rgba(5, 11, 20, 0.3) 100% ), url(/patterns/dots_blue.png)',
       // backgroundSize: '190px',
-      boxShadow: '0 1px 2px rgba(0, 0, 0, 0.0625),0 8px 12px rgba(0, 0, 0, 0.125)',
+      boxShadow:
+        '0 1px 2px rgba(0, 0, 0, 0.0625),0 8px 12px rgba(0, 0, 0, 0.125)',
       fontSize: 3,
       '&:hover': {
-        boxShadow: '0 1px 2px rgba(0, 0, 0, 0.0625),0 8px 12px rgba(0, 0, 0, 0.325)',
-      }
+        boxShadow:
+          '0 1px 2px rgba(0, 0, 0, 0.0625),0 8px 12px rgba(0, 0, 0, 0.325)',
+      },
     }}
     className="largeRegisterButton"
     as="a"

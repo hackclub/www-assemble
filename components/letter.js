@@ -47,8 +47,7 @@ export const Letter = () => {
   return (
     <Box
       sx={{
-        backgroundImage:
-          'url("/hackers-assemble.png")',
+        backgroundImage: 'url("/hackers-assemble.png")',
         backgroundAttachment: 'fixed',
         backgroundSize: 'cover',
         position: 'relative',

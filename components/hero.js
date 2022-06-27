@@ -82,22 +82,41 @@ export const Hero = () => {
               <Stat icon="friend" stat="150+ Hackers" bg="blue" />
               <Stat icon="send" stat="$40k in Travel Stipends" bg="brown" />
             </Grid>
-            <Link sx={{color: 'white', fontWeight: 400, display: 'flex', mt: '5px'}} href="https://hackclub.com/slack" target="_blank">BTW: We're hanging out here until we meet IRL → <Icon glyph="slack" sx={{width: ['16px', '24px'], height: ['16px', '24px']}}/></Link>
+            <Link
+              sx={{
+                color: 'white',
+                fontWeight: 400,
+                display: 'flex',
+                mt: '5px',
+              }}
+              href="https://hackclub.com/slack"
+              target="_blank"
+            >
+              BTW: We're hanging out here until we meet IRL →{' '}
+              <Icon
+                glyph="slack"
+                sx={{ width: ['16px', '24px'], height: ['16px', '24px'] }}
+              />
+            </Link>
           </Box>
         </Flex>
         <Button
-        as="a"
+          as="a"
           sx={{
             fontSize: [3, '38px'],
             textAlign: 'left',
             fontFamily: 'Space Grotesk',
             backgroundColor: 'green',
-            my: 3
+            my: 3,
           }}
           href="/register"
           target="_blank"
         >
-          Register <Icon glyph="external" sx={{width: ['32px', '44px'], height: ['32px', '42px']}}/>
+          Register{' '}
+          <Icon
+            glyph="external"
+            sx={{ width: ['32px', '44px'], height: ['32px', '42px'] }}
+          />
         </Button>
       </Box>
     </Box>

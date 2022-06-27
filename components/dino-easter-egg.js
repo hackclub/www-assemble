@@ -18,12 +18,14 @@ const DinoEasterEgg = props => {
           },
         }}
       >
-        <Box sx={{
-            position: "relative",
+        <Box
+          sx={{
+            position: 'relative',
             bottom: '-100%',
             right: -45,
             transition: 'ease-in-out 0.3s',
-        }}>
+          }}
+        >
           <Image
             src="/dinosaur-waving.png"
             sx={{
@@ -32,15 +34,21 @@ const DinoEasterEgg = props => {
               zIndex: '200',
               cursor: 'pointer',
             }}
-              onClick={() => window.open('https://www.dinosaurbbq.org/', '_blank')}
-            />
-            <Text sx={{
-              position: "absolute",
-              top: "7px",
-              left: "-151px",
-              color: "white"
-            }}>Try pressing <kbd>ctrl</kbd>/<kbd>cmd</kbd> + <kbd>s</kbd>!</Text>
-          </Box>
+            onClick={() =>
+              window.open('https://www.dinosaurbbq.org/', '_blank')
+            }
+          />
+          <Text
+            sx={{
+              position: 'absolute',
+              top: '7px',
+              left: '-151px',
+              color: 'white',
+            }}
+          >
+            Try pressing <kbd>ctrl</kbd>/<kbd>cmd</kbd> + <kbd>s</kbd>!
+          </Text>
+        </Box>
       </Box>
     </>
   )

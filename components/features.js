@@ -25,15 +25,18 @@ export const Features = () => (
           fontSize: ['42px', 5],
         }}
       >
-        150+ hackers from all over the world come together in San Fransisco to...
+        150+ hackers from all over the world come together in San Fransisco
+        to...
       </Text>
       <Grid columns={[1, 1, 2]}>
         <InfoBox iconGlyph="support" heading="Share Their Knowledge">
           At Assemble, you'll be able to give & watch talks from peers, gain
           experience, make connections, and discover yourself. You'll meet new
           people from around the world (including{' '}
-          <Link href="https://hackclub.com/amas#past-amas" target="_blank">previous AMA guests</Link>),{' '}
-          get help from peers, and support your fellow hackers.
+          <Link href="https://hackclub.com/amas#past-amas" target="_blank">
+            previous AMA guests
+          </Link>
+          ), get help from peers, and support your fellow hackers.
         </InfoBox>
         <ComicImage
           sx={{

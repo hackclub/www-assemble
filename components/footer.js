@@ -19,10 +19,17 @@ const Footer = () => (
         },
       }}
     >
-      <Box my={1} mb={1} sx={{lineHeight: '2'}}>
+      <Box my={1} mb={1} sx={{ lineHeight: '2' }}>
         Pages hand inked by{' '}
-        <Text sx={{ fontWeight: 'bold', color: 'white', textDecoration: 'none' }} as="a" href="https://hackclub.com" target="_blank">Hack&nbsp;Club</Text> ~ Send mail 📮
-        to{' '}
+        <Text
+          sx={{ fontWeight: 'bold', color: 'white', textDecoration: 'none' }}
+          as="a"
+          href="https://hackclub.com"
+          target="_blank"
+        >
+          Hack&nbsp;Club
+        </Text>{' '}
+        ~ Send mail 📮 to{' '}
         <Link
           href="mailto:assemble@hackclub.com"
           sx={{ color: 'white', fontWeight: 800 }}
@@ -38,7 +45,8 @@ const Footer = () => (
           target="_blank"
         >
           hackclub/www-assemble
-        </Link> and finances released{' '}
+        </Link>{' '}
+        and finances released{' '}
         <Link
           href="https://bank.hackclub.com/assemble"
           sx={{ color: 'white', fontWeight: 800 }}
