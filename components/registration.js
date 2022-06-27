@@ -23,6 +23,9 @@ export default function Registration () {
                 x: (i % 6) / 6 * 90 + 15,
                 y: Math.floor(i / 6) / 5 * 90 + 15,
             })));
+            const registrationAudio = new Audio('/registration.mp3');
+            registrationAudio.currentTime = 12.85;
+            registrationAudio.play();
             for (let i = 0; i < 20; i++) {
                 await wait(1000 * 0.85 ** (i + 1));
                 console.log([ ...backgroundImages, registrants[i] ]);
