@@ -23,7 +23,7 @@ export default function Registration() {
       setFloatingDinos(
         registrants.map((registrant, i) => ({
           src: registrant,
-          x: ((i % 6) / 6) * 90 + 15,
+          x: ((i % 6) / 6) * 90 + 12.5,
           y: (Math.floor(i / 6) / 5) * 90 + 15,
         })),
       )
@@ -84,8 +84,9 @@ export default function Registration() {
                     transform: 'translate(-50%, -50%)',
                     objectFit: 'contain',
                     objectPosition: 'center',
-                    maxWidth: '200px',
-                    maxHeight: '200px',
+                    maxWidth: 'calc(16vw - 20px)',
+                    maxHeight: 'calc(20vh - 20px)',
+                    borderRadius: '4px',
                     ...noselect,
                   }}
                 />
@@ -109,6 +110,7 @@ export default function Registration() {
                 left: '50%',
                 zIndex: '1000010',
                 transform: 'translate(-50%, -50%)',
+                backgroundColor: '#ffffff55',
               }}
             >
               <Heading
