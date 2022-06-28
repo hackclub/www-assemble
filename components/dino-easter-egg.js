@@ -7,6 +7,7 @@ const DinoEasterEgg = props => {
       <Box
         id="dino-easter-egg"
         sx={{
+          display: ['none', 'block', 'block'],
           position: 'fixed',
           bottom: 0,
           right: 0,
