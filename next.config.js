@@ -10,6 +10,11 @@ module.exports = withMDX({
         permanent: true,
         destination: 'https://register.assemble.hackclub.com',
       },
+      {
+        source: '/email',
+        permanent: true,
+        destination: 'mailto:assemble@hackclub.com',
+      }
     ]
   },
   async headers() {
