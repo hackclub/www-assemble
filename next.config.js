@@ -14,7 +14,7 @@ module.exports = withMDX({
         source: '/email',
         permanent: true,
         destination: 'mailto:assemble@hackclub.com',
-      }
+      },
     ]
   },
   async headers() {

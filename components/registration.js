@@ -17,7 +17,6 @@ export default function Registration() {
     'https://get-a-dino.hackclub.dev/dino.png',
   ])
   let [floatingDinos, setFloatingDinos] = useState([])
-  
 
   useEffect(() => {
     ;(async () => {

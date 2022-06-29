@@ -56,7 +56,7 @@ const Footer = () => (
         >
           on Hack Club Bank.
         </Link>
-	<Ingot/>
+        <Ingot />
       </Box>
     </Container>
   </Box>
