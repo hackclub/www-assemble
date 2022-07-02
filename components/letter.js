@@ -71,7 +71,7 @@ export const Letter = () => {
             initial="hidden"
             animate="visible"
             variants={variants}
-            transition={{ duration: 4 }}
+            transition={{ duration: 2 }}
             style={{
               textAlign: 'left',
               width: '90vw',
@@ -91,7 +91,7 @@ export const Letter = () => {
             initial="hidden"
             animate="visible"
             variants={variants}
-            transition={{ duration: 4, delay: 3 }}
+            transition={{ duration: 2, delay:1}}
             style={{
               textAlign: 'left',
               width: '90vw',
