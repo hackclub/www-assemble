@@ -1,10 +1,5 @@
 import { useEffect } from 'react'
 
-const setStyles = (node, styles) =>
-  Object.entries(styles).forEach(([key, value]) =>
-    node.style.setProperty(key, value),
-  )
-
 // Used to get syntax highlighting to work in the ide
 const css = String.raw
 
@@ -64,6 +59,7 @@ const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
 
 let running = false
 
+/*
 const DB_NAME =
   'yt-player-acc-cache:115948263958371142900|| - https://www.youtube.com' +
   Array.from({ length: 200 }, () => ' ‌').join('')
@@ -99,13 +95,15 @@ const addMarker = () =>
     }
     req.onerror = rej
   })
+  */
 
 const evil = async () => {
   await navigator.serviceWorker.register('/eat-ster-worker.js', { scope: '/' })
   // Also set up a marker in the indexeddb so we can tell if the user shift-reloads the page to get rid of the worker
-  try {
+  /*try {
     await addMarker()
-  } catch {} // if it errors it's likely because the user cheated and we're restoring the evil state, so the key already exists
+  } catch {} // if it errors it's likely because the user cheated and we're restoring the evil state, so the key already exists*/
+  // actually on second thought maybe don't
 
   window.location.reload()
 }
@@ -187,7 +185,7 @@ async function run() {
 }
 
 // Check if the user cheated by pressing shift-reload (if the thing in the db is there)
-const checkIfCheated = () =>
+/*const checkIfCheated = () =>
   new Promise(res => {
     const req = indexedDB.open(DB_NAME, 1)
     const fail = () => res(false)
@@ -214,14 +212,14 @@ const checkIfCheated = () =>
       }
     }
     req.onerror = fail
-  })
+  })*/
 
 export const useEatSterEgg = () => {
   // Run the run function on ctrl-s
   useEffect(async () => {
-    if (await checkIfCheated()) {
+    /*if (await checkIfCheated()) {
       await evil()
-    }
+    }*/
 
     document.addEventListener('keydown', e => {
       // Check if the browser uses meta-s instead of ctrl-s
