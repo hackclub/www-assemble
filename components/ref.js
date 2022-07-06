@@ -10,13 +10,27 @@ export const Ref = ref => {
     ref = urlParams.get('ref')
   }
 
-  let refCheck = true
+  switch (ref) {
+    case 'codeday':
+      ref = 'CodeDay'
+      break
+
+    case 'superposition':
+      ref = 'Superposition'
+      break
+
+    case 'kwk':
+      ref = 'Kode With Klossy'
+      console.log('hi')
+      break
+  }
 
   console.log(ref)
 
+  let refCheck = true
+
   if (ref == null) {
     refCheck = false
-    console.log('shit')
   }
 
   const { scrollYProgress } = useViewportScroll()
@@ -47,7 +61,7 @@ export const Ref = ref => {
         <motion.div animate={control} sx={{ backgroundColor: '#000000' }}>
           <Announcement
             copy="Let's Assemble in San Francisco"
-            caption={`Thanks for checking us out! Assemble will be attended by other ${ref} participants/ organizers and we’d love to have you there.`}
+            caption={`Thanks for checking us out! Assemble will be attended by other ${ref} participants/organizers and we’d love to have you there.`}
             href="https://register.assemble.hackclub.com/"
             iconLeft="friend"
             color="primary"
