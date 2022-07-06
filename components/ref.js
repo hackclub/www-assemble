@@ -21,7 +21,6 @@ export const Ref = ref => {
 
     case 'kwk':
       ref = 'Kode With Klossy'
-      console.log('hi')
       break
   }
 
