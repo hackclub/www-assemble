@@ -18,10 +18,17 @@ export const Ref = props => {
       case 'codeday':
         setRef(ref = 'CodeDay')
         break
-
       case 'superposition':
         serRef(ref = 'Superposition')
         break
+      case 'kwk':
+        serRef(ref = 'Kode With Klossy')
+        break
+      
+      case 'techtogether':
+        serRef(ref = 'TechTogether')
+        break
+  }
 
       case 'kwk':
         setRef(ref = 'Kode With Klossy')
