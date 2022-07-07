@@ -30,10 +30,10 @@ export const Ref = ref => {
 
   console.log(ref)
 
-  let refCheck = true
+  let refCheck = false
 
-  if (ref == null) {
-    refCheck = false
+  if (ref !== null) {
+    refCheck = true
   }
 
   const { scrollYProgress } = useViewportScroll()
