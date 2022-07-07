@@ -35,7 +35,7 @@ const Announcement = ({
       display: 'flex',
       alignItems: 'center',
       py: '10px !important',
-      px: '20px !important',
+      px: '15px !important',
         mx: 'auto',
       transform: 'scale(1)',
     //   borderTop: ['20px solid black', null, null],

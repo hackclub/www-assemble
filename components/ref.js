@@ -1,40 +1,47 @@
 import Announcement from './announcement'
 import { motion, useViewportScroll, useAnimation } from 'framer-motion'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 /** @jsxImportSource theme-ui */
 
-export const Ref = ref => {
-  if (typeof window !== 'undefined') {
-    const queryURL = window.location.search
-    const urlParams = new URLSearchParams(queryURL)
-    ref = urlParams.get('ref')
-  }
+export const Ref = props => {
+  const [ref, setRef] = useState('')
+  const [refCheck, setrefCheck] = useState(false)
 
-  switch (ref) {
-    case 'codeday':
-      ref = 'CodeDay'
-      break
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const queryURL = window.location.search
+      const urlParams = new URLSearchParams(queryURL)
+      setRef(ref = urlParams.get('ref'))
+    }
 
-    case 'superposition':
-      ref = 'Superposition'
-      break
-
-    case 'kwk':
-      ref = 'Kode With Klossy'
-      break
+    switch (ref) {
+      case 'codeday':
+        setRef(ref = 'CodeDay')
+        break
+      case 'superposition':
+        serRef(ref = 'Superposition')
+        break
+      case 'kwk':
+        serRef(ref = 'Kode With Klossy')
+        break
       
-    case 'techtogether':
-      ref = 'TechTogether'
-      break
+      case 'techtogether':
+        serRef(ref = 'TechTogether')
+        break
   }
 
-  console.log(ref)
+      case 'kwk':
+        setRef(ref = 'Kode With Klossy')
+        break
+    }
 
-  let refCheck = false
+    console.log(ref)
 
-  if (ref !== null) {
-    refCheck = true
+    if (ref !== null) {
+      setrefCheck(setRef = true)
+    }
   }
+  )
 
   const { scrollYProgress } = useViewportScroll()
   const control = useAnimation()
@@ -64,7 +71,7 @@ export const Ref = ref => {
         <motion.div animate={control} sx={{ backgroundColor: '#000000' }}>
           <Announcement
             copy="Let's Assemble in San Francisco"
-            caption={`Thanks for checking us out! Assemble will be attended by other ${ref} participants/organizers and we’d love to have you there.`}
+            caption={`Thanks for checking us out! Assemble will be attended by other ${ref} participants/\norganizers and we’d love to have you there.`}
             href="https://register.assemble.hackclub.com/"
             iconLeft="friend"
             color="primary"
