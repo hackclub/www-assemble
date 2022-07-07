@@ -11,37 +11,31 @@ export const Ref = props => {
     if (typeof window !== 'undefined') {
       const queryURL = window.location.search
       const urlParams = new URLSearchParams(queryURL)
-      setRef(ref = urlParams.get('ref'))
+      setRef((ref = urlParams.get('ref')))
+    }
+
+    if (ref !== null) {
+      setrefCheck(true)
     }
 
     switch (ref) {
       case 'codeday':
-        setRef(ref = 'CodeDay')
+        setRef('CodeDay')
         break
       case 'superposition':
-        serRef(ref = 'Superposition')
+        setRef('Superposition')
         break
       case 'kwk':
-        serRef(ref = 'Kode With Klossy')
+        serRef((ref = 'Kode With Klossy'))
         break
-      
-      case 'techtogether':
-        serRef(ref = 'TechTogether')
-        break
-  }
 
-      case 'kwk':
-        setRef(ref = 'Kode With Klossy')
+      case 'techtogether':
+        serRef((ref = 'TechTogether'))
         break
     }
 
     console.log(ref)
-
-    if (ref !== null) {
-      setrefCheck(setRef = true)
-    }
-  }
-  )
+  })
 
   const { scrollYProgress } = useViewportScroll()
   const control = useAnimation()
