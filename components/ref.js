@@ -14,25 +14,25 @@ export const Ref = props => {
       setRef(ref = urlParams.get('ref'))
     }
 
+    if (ref !== null) {
+      setrefCheck(true)
+    }
+
     switch (ref) {
       case 'codeday':
-        setRef(ref = 'CodeDay')
+        setRef('CodeDay')
         break
 
       case 'superposition':
-        serRef(ref = 'Superposition')
+        setRef('Superposition')
         break
 
       case 'kwk':
-        setRef(ref = 'Kode With Klossy')
+        setRef('Kode With Klossy')
         break
     }
 
     console.log(ref)
-
-    if (ref !== null) {
-      setrefCheck(setRef = true)
-    }
   }
   )
 
