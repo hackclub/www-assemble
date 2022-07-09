@@ -6,6 +6,22 @@ import NextImage from 'next/image'
 import ComicImage from './comic-image'
 import { registrationState, closed } from '../lib/waitlist'
 
+const Card = ({ header = 'header', description = 'description' }) => (
+  <Box
+    bg="white"
+    p={3}
+    sx={{
+      ':hover': {
+        transform: 'translateY(-3px)',
+        transition: 'transform 0.2s',
+      },
+      transition: 'transform 0.2s',
+    }}
+  >
+    <b>{header}</b> {description}
+  </Box>
+)
+
 export const Rundown = () => (
   <div id="rundown">
     <Box
@@ -31,16 +47,23 @@ export const Rundown = () => (
           The Rundown & Registration
         </Heading>
         <Grid sx={{ fontSize: '18px' }}>
-          <Box bg="white" p={3}>
-            <b>Date & Time:</b> Starts at 6:00pm on August 5th and ends at
-            12:00pm on August 7th.
-          </Box>
+          <Card
+            header="Date & Time:"
+            description="Starts at 6:00pm on August 5th and ends at
+            12:00pm on August 7th."
+          />
           <Grid
             bg="white"
             p={3}
             sx={{
               display: 'grid',
               gridTemplateColumns: ['1fr', '1fr', '1fr 1fr'],
+
+              ':hover': {
+                transform: 'translateY(-3px)',
+                transition: 'transform 0.2s',
+              },
+              transition: 'transform 0.2s',
             }}
           >
             <Box>
@@ -87,24 +110,27 @@ export const Rundown = () => (
               ></iframe>
             </Box>
           </Grid>
-          <Box bg="white" p={3}>
-            <b>Travel Stipends:</b> We're offering a limited number of stipends
+          <Card
+            header="Travel Stipends:"
+            description="We're offering a limited number of stipends
             to cover travel expenses. If you need support with your travel
             stipend, please indicate this on your registration form and we will
-            consider you for a travel stipend.
-          </Box>
-          <Box bg="white" p={3}>
-            <b>Eligibility:</b> All high-school & upper-middle-school aged
+            consider you for a travel stipend."
+          />
+          <Card
+            header="Eligibility:"
+            description="All high-school & upper-middle-school aged
             students are welcome to come! You don't have to be a member of the
-            Hack Club community or be a Hack Club leader.
-          </Box>
-          <Box bg="white" p={3}>
-            <b>COVID-19:</b> We require all participants to be vaccinated
+            Hack Club community or be a Hack Club leader."
+          />
+          <Card
+            header="COVID-19:"
+            description="We require all participants to be vaccinated
             against COVID-19 or to have a medical exemption and will be
             providing all participants with N95 masks and rapid tests. We'll
             also be performing anonymous contact tracing and supporting any
-            participant who tests positive with isolation.
-          </Box>
+            participant who tests positive with isolation."
+          />
           <WideRegisterButton />
         </Grid>
       </Container>
@@ -126,8 +152,8 @@ export const WideRegisterButton = () => (
         '0 1px 2px rgba(0, 0, 0, 0.0625),0 8px 12px rgba(0, 0, 0, 0.125)',
       fontSize: 3,
       '&:hover': !closed ? {
-        boxShadow:
-          '0 1px 2px rgba(0, 0, 0, 0.0625),0 8px 12px rgba(0, 0, 0, 0.325)',
+            boxShadow:
+              '0 1px 2px rgba(0, 0, 0, 0.0625),0 8px 12px rgba(0, 0, 0, 0.325)',
       } : undefined,
       cursor: closed ? 'default' : 'pointer',
       filter: closed ? 'grayscale(100%)' : undefined,
@@ -139,13 +165,13 @@ export const WideRegisterButton = () => (
   >
     <span className="assembleRegisterText">{({ open: 'REGISTER', closed: 'REGISTRATION CLOSED', waitlist: 'JOIN THE WAITLIST' })[registrationState]}</span>
     {!closed ? <Text
-      sx={{
-        transform: 'translateY(-3.5px)',
-        display: 'inline-block',
-      }}
-      className="externalIcon"
-    >
-      <Icon glyph="external" size={16} />
+        sx={{
+          transform: 'translateY(-3.5px)',
+          display: 'inline-block',
+        }}
+        className="externalIcon"
+      >
+        <Icon glyph="external" size={16} />
     </Text> : null}
   </Box>
 )
