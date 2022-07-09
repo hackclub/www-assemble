@@ -94,21 +94,27 @@ export const Nav = () => {
       </Link>
       <Box
         as="a"
-        href={!closed ? "/register" : "javascript:void(0)"}
-        target={!closed ? "_blank" : "_self"}
+        href={!closed ? '/register' : 'javascript:void(0)'}
+        target={!closed ? '_blank' : '_self'}
         sx={{ color: 'white', textDecoration: 'none' }}
       >
         <Heading
           as="h3"
           p={2}
-          bg={!closed ? "green" : "gray"}
+          bg={!closed ? 'green' : 'gray'}
           sx={{
             borderRadius: '4px',
             cursor: !closed ? 'pointer' : 'default',
             fontSize: [null, '16px', '20px'],
           }}
         >
-          {({ open: 'Register', waitlist: 'Join the Waitlist', closed: 'Registration Closed' })[registrationState]}
+          {
+            {
+              open: 'Register',
+              waitlist: 'Join the Waitlist',
+              closed: 'Registration Closed',
+            }[registrationState]
+          }
         </Heading>
       </Box>
     </motion.div>

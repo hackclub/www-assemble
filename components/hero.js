@@ -110,17 +110,25 @@ export const Hero = () => {
             backgroundColor: 'green',
             my: 3,
             filter: closed ? 'grayscale(100%)' : undefined,
-            cursor: closed ? 'default' : 'pointer'
+            cursor: closed ? 'default' : 'pointer',
           }}
-          href={!closed ? "/register" : 'javascript:void(0)'}
+          href={!closed ? '/register' : 'javascript:void(0)'}
           target={closed ? '_self' : '_blank'}
-          disabled={closed + ""}
+          disabled={closed + ''}
         >
-          {({ waitlist: 'Join the Waitlist', open: 'Register', closed: 'Registration Closed'  })[registrationState]}{' '}
-          {!closed && <Icon
-            glyph="external"
-            sx={{ width: ['32px', '44px'], height: ['32px', '42px'] }}
-          />}
+          {
+            {
+              waitlist: 'Join the Waitlist',
+              open: 'Register',
+              closed: 'Registration Closed',
+            }[registrationState]
+          }{' '}
+          {!closed && (
+            <Icon
+              glyph="external"
+              sx={{ width: ['32px', '44px'], height: ['32px', '42px'] }}
+            />
+          )}
         </Button>
       </Box>
     </Box>

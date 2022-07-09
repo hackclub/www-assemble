@@ -9,6 +9,7 @@ import { Letter } from '../components/letter'
 import { Rundown } from '../components/rundown'
 import { Features } from '../components/features'
 import { BetaWelcome } from '../components/beta-welcome'
+import { Ref } from '../components/ref'
 import { useEffect, useState } from 'react'
 import Registration, { cache, registrants } from '../components/registration'
 
@@ -85,6 +86,7 @@ Hey hacker! Register for Assemble at https://assemble.hackclub.com/register. We 
   return (
     <>
       <DinoEasterEgg />
+      <Ref />
       {true && <Nav />}
       {/* <BetaWelcome /> */}
       <Letter />
