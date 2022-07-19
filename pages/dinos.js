@@ -1,4 +1,3 @@
-import Registration from '../components/registration'
 import AudioCheck from '../components/audio-check'
 import { useEffect } from 'react'
 import Registration, { cache, registrants } from '../components/registration'
