@@ -159,7 +159,8 @@ export const WideRegisterButton = () => (
         : undefined,
       cursor: closed ? 'default' : 'pointer',
       filter: closed ? 'grayscale(100%)' : undefined,
-      textDecoration: 'none'
+      textDecoration: 'none',
+      lineHeight: 1.3
     }}
     className={`largeRegisterButton${closed ? ' closed' : ''}`}
     as="a"
@@ -196,7 +197,7 @@ export const WideRegisterButton = () => (
           maxWidth: '850px', 
           fontSize: '0.7em',
           textDecoration: 'none!important',
-          marginTop: '6px'
+          marginTop: '8px'
       }}
      >
       Why a waitlist? Unfortunately, we are overbooked at the moment. {' '}
