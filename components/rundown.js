@@ -50,7 +50,7 @@ export const Rundown = () => (
           <Card
             header="Date & Time:"
             description="Starts at 6:00pm on August 5th and ends at
-            12:00pm on August 7th."
+            12:00 noon on August 7th."
           />
           <Grid
             bg="white"
