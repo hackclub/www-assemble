@@ -159,13 +159,14 @@ export const WideRegisterButton = () => (
         : undefined,
       cursor: closed ? 'default' : 'pointer',
       filter: closed ? 'grayscale(100%)' : undefined,
+      textDecoration: 'none'
     }}
     className={`largeRegisterButton${closed ? ' closed' : ''}`}
     as="a"
     href={!closed ? '/register' : 'javascript:void(0)'}
     target={!closed ? '_blank' : '_self'}
   >
-    <span className="assembleRegisterText">
+    <span className="assembleRegisterText" style={{textDecoration: 'underline'}}>
       {
         {
           open: 'REGISTER',
@@ -185,5 +186,21 @@ export const WideRegisterButton = () => (
         <Icon glyph="external" size={16} />
       </Text>
     ) : null}
+    <br />
+    <small 
+      style={{
+          lineHeight: 1.2,
+          fontWeight: 600,
+          margin: 'auto',
+          display: 'block',
+          maxWidth: '850px', 
+          fontSize: '0.7em',
+          textDecoration: 'none!important',
+          marginTop: '6px'
+      }}
+     >
+      Why a waitlist? Unfortunately, we are overbooked at the moment. {' '}
+      However, we expect places to open up and will be offering these places to those on the waitlist.
+    </small>
   </Box>
 )
