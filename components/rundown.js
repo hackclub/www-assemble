@@ -80,8 +80,8 @@ export const Rundown = () => (
                   alt="At the corner of Figma HQ"
                 />
                 <ComicImage
-                  src="https://cloud-fweg9uw4i-hack-club-bot.vercel.app/0screenshot_2022-06-25_at_10.30.41_pm.png"
-                  href="https://cloud-fweg9uw4i-hack-club-bot.vercel.app/0screenshot_2022-06-25_at_10.30.41_pm.png"
+                  src="/figmahqbeige.jpg"
+                  href="/figmahqbeige.jpg"
                   alt="Inside the Figma office"
                 />
                 <ComicImage
