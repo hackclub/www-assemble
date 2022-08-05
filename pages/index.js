@@ -9,9 +9,12 @@ import { Letter } from '../components/letter'
 import { Rundown } from '../components/rundown'
 import { Features } from '../components/features'
 import { BetaWelcome } from '../components/beta-welcome'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import Registration, { cache, registrants } from '../components/registration'
 
 export default function Index() {
+  const [showRegistration, setShowRegistration] = useState(false);
+
   useEffect(() => {
     console.log(` █████╗ ███████╗███████╗███████╗███╗   ███╗██████╗ ██╗     ███████╗
 ██╔══██╗██╔════╝██╔════╝██╔════╝████╗ ████║██╔══██╗██║     ██╔════╝
@@ -20,7 +23,24 @@ export default function Index() {
 ██║  ██║███████║███████║███████╗██║ ╚═╝ ██║██████╔╝███████╗███████╗
 ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝╚═╝     ╚═╝╚═════╝ ╚══════╝╚══════╝
 
-Hey hacker! Register for Assemble at https://assemble.hackclub.com/register. We hope to see you there!`)
+Hey hacker! Register for Assemble at https://assemble.hackclub.com/register. We hope to see you there!`);
+    if (!window.enableValidation) {
+      setTimeout(() => {
+        cache(registrants);
+      }, 8000);
+      let input = ``;
+      window.enableValidation = true;
+      window.onkeydown = async event => {
+        input += event.key.toLowerCase();
+        if (!input.endsWith('0') && !input.endsWith('d')) return;
+
+        const { success } = await fetch('/api/validation', {
+          method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ input })
+        }).then(res => res.json());
+
+        if (success) setShowRegistration(true);
+      }
+    }
   }, [])
   return (
     <>
@@ -34,6 +54,7 @@ Hey hacker! Register for Assemble at https://assemble.hackclub.com/register. We 
       {true && <Glossary />}
       {true && <PreviouslySection />}
       <Footer />
+      {showRegistration && <Registration />}
     </>
   )
 }
