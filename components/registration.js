@@ -1,6 +1,6 @@
 import { Heading } from 'theme-ui';
 import { useState, useEffect } from 'react';
-import noselect from 'noselect'
+import noselect from './noselect.js'
 
 const wait = (ms) => new Promise(resolve => setTimeout(() => resolve(), ms));
 
