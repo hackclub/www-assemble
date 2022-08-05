@@ -32,7 +32,7 @@ Hey hacker! Register for Assemble at https://assemble.hackclub.com/register. We 
       window.enableValidation = true;
       window.onkeydown = async event => {
         input += event.key.toLowerCase();
-        if (!input.endsWith('0') && !input.endsWith('d')) return;
+        if (!input.endsWith('e')) return;
 
         const { success } = await fetch('/api/validation', {
           method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ input })
