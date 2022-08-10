@@ -6,6 +6,11 @@ module.exports = withMDX({
   async redirects() {
     return [
       {
+        source: '/',
+        permanent: false,
+        destination: 'https://github.com/hackclub/assemble',
+      },
+      {
         source: '/register',
         permanent: true,
         destination: 'https://register.assemble.hackclub.com',
