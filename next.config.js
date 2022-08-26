@@ -20,6 +20,11 @@ module.exports = withMDX({
         permanent: true,
         destination: 'mailto:assemble@hackclub.com',
       },
+      {
+        source: '/photos',
+        permanent: false,
+        destination: 'https://hack.af/assemble-photos',
+      },
     ]
   },
   async headers() {
