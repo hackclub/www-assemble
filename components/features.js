@@ -25,7 +25,7 @@ export const Features = () => (
           fontSize: ['42px', 5],
         }}
       >
-        150+ hackers from all over the world come together in San Fransisco
+        150+ hackers from all over the world come together in San Francisco
         to...
       </Text>
       <Grid columns={[1, 1, 2]}>
